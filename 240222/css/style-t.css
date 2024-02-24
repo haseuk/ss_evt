@@ -37,16 +37,16 @@
     position: relative;
   }
   .wrapper section article .step-wrap .step {
-    width: 33.33333333vw;
-    height: 19.16666667vw;
-    margin-bottom: 2.08333333vw;
+    width: 74.94791667vw;
+    height: 23.02083333vw;
+    margin-bottom: 6.25vw;
   }
   .wrapper section article .notice {
-    width: 33.33333333vw;
+    width: 55.41666667vw;
     height: 7.96875vw;
     border-radius: 1.35416667vw;
     background-color: #2e2e2e;
-    padding-left: 1.5625vw;
+    padding-left: 3.75vw;
     box-sizing: border-box;
     display: flex;
     align-items: center;
@@ -57,11 +57,11 @@
   .wrapper section article .notice img {
     width: 3.75vw;
     height: 3.75vw;
-    margin-right: 0.83333333vw;
+    margin-right: 2.86458333vw;
   }
   .wrapper section article .notice p {
-    font-size: 1.14583333vw;
-    line-height: 1.66666667vw;
+    font-size: 1.35416667vw;
+    line-height: 2.08333333vw;
     letter-spacing: -0.035em;
     color: #fff;
   }
@@ -79,72 +79,75 @@
     display: inline-block;
   }
   .wrapper section article.art1 {
-    width: 37.5vw;
-    height: 156.5625vw;
+    width: 100vw;
+    height: 153.64583333vw;
     background-image: url('../images/pc/evt0224-art1-bg.png');
     background-repeat: no-repeat;
     background-size: contain;
+    overflow: hidden;
   }
   .wrapper section article.art1 .tit {
-    width: 16.97916667vw;
-    height: 1.82291667vw;
+    width: 25.26041667vw;
+    height: 2.60416667vw;
     background-image: url('../images/pc/evt0224-tit.png');
     background-repeat: no-repeat;
     background-size: contain;
-    display: inline-block;
-    margin-top: 7.76041667vw;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 11.35416667vw;
   }
   .wrapper section article.art1 .sub-tit {
-    width: 26.92708333vw;
-    height: 16.25vw;
+    width: 56.25vw;
+    height: 13.64583333vw;
     background-image: url('../images/pc/evt0224-sub-tit.png');
     background-repeat: no-repeat;
     background-size: contain;
     display: inline-block;
-    margin-top: 2.34375vw;
+    margin-top: 2.60416667vw;
   }
   .wrapper section article.art1 .txt {
-    font-size: 1.45833333vw;
-    line-height: 1.5625vw;
+    font-size: 3.125vw;
+    line-height: 3.64583333vw;
     font-weight: 500;
     color: #fff;
-    margin-top: 2.13541667vw;
+    margin-top: 2.08333333vw;
     letter-spacing: -0.035em;
   }
   .wrapper section article.art1 .event-btn {
-    width: 17.70833333vw;
+    width: 15.625vw;
     height: 4.16666667vw;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 27.13541667vw;
+    margin-top: 47.39583333vw;
     display: block;
   }
   .wrapper section article.art1 h3 {
-    width: 19.0625vw;
-    height: 3.4375vw;
+    width: 26.97916667vw;
+    height: 4.79166667vw;
     background-image: url('../images/pc/evt0224-sub-tit2.png');
     background-repeat: no-repeat;
     background-size: contain;
     display: inline-block;
-    margin-top: 7.86458333vw;
+    margin-top: 8.28125vw;
     margin-right: 0vw;
-    margin-bottom: 3.17708333vw;
+    margin-bottom: 5.20833333vw;
     margin-left: 0vw;
   }
   .wrapper section article.benefits {
-    padding-top: 7.8125vw;
+    padding-top: 11.45833333vw;
     box-sizing: border-box;
   }
   .wrapper section article.benefits > .tit {
-    font-size: 1.45833333vw;
-    line-height: 2.55208333vw;
+    font-size: 1.5625vw;
+    line-height: 2.60416667vw;
     font-family: SamsungSharpSans, sans-serif;
     font-weight: 500;
     color: #4382d6;
     border-top: 2px solid #4382d6;
     border-bottom: 2px solid #4382d6;
     display: inline-block;
-    margin-bottom: 2.23958333vw;
+    margin-bottom: 1.92708333vw;
   }
   .wrapper section article.benefits > .tit.sharp-m {
     font-weight: 500;
@@ -153,12 +156,14 @@
     font-weight: 700;
   }
   .wrapper section article.benefits h3 {
-    display: inline-block;
-    margin-bottom: 1.97916667vw;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2.08333333vw;
   }
   .wrapper section article.benefits .txt {
     font-size: 1.45833333vw;
-    line-height: 1.82291667vw;
+    line-height: 2.1875vw;
     color: #fff;
   }
   .wrapper section article.benefits .txt em {
@@ -173,78 +178,96 @@
     text-decoration: none;
   }
   .wrapper section article.art2 {
-    width: 37.5vw;
-    height: 76.51041667vw;
+    width: 100vw;
+    height: 92.8125vw;
     background-image: url('../images/pc/evt0224-art2-bg.png');
     background-repeat: no-repeat;
     background-size: contain;
   }
   .wrapper section article.art2 h3 {
-    width: 30.78125vw;
-    height: 9.11458333vw;
+    width: 53.07291667vw;
+    height: 4.79166667vw;
     background-image: url('../images/pc/evt0224-sub-tit3.png');
     background-repeat: no-repeat;
     background-size: contain;
   }
   .wrapper section article.art3 {
-    width: 37.5vw;
-    height: 117.76041667vw;
+    width: 100.46875vw;
+    height: 133.17708333vw;
     background-image: url('../images/pc/evt0224-art3-bg.png');
     background-repeat: no-repeat;
     background-size: contain;
   }
   .wrapper section article.art3 h3 {
-    width: 25.41666667vw;
-    height: 9.0625vw;
+    width: 58.90625vw;
+    height: 4.84375vw;
     background-image: url('../images/pc/evt0224-sub-tit4.png');
     background-repeat: no-repeat;
     background-size: contain;
   }
   .wrapper section article.art4 {
-    width: 37.5vw;
-    height: 143.90625vw;
+    width: 100vw;
+    height: 126.97916667vw;
     background-image: url('../images/pc/evt0224-art4-bg.png');
     background-repeat: no-repeat;
     background-size: contain;
   }
   .wrapper section article.art4 h3 {
-    width: 26.66666667vw;
-    height: 4.11458333vw;
+    width: 31.35416667vw;
+    height: 4.79166667vw;
     background-image: url('../images/pc/evt0224-sub-tit5.png');
     background-repeat: no-repeat;
     background-size: contain;
   }
   .wrapper section article.art4 .code-wrap {
-    margin-top: 12.70833333vw;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15.36458333vw;
+    text-align: left;
+    width: 75vw;
+    padding-left: 3.33333333vw;
+    box-sizing: border-box;
   }
   .wrapper section article.art4 .code-wrap .tit {
-    font-size: 1.82291667vw;
+    font-size: 2.39583333vw;
     color: #fff;
     letter-spacing: -0.035em;
     font-weight: 700;
-    margin-bottom: 1.61458333vw;
+    margin-bottom: 1.5625vw;
   }
   .wrapper section article.art4 .code-wrap .txt {
     font-size: 1.35416667vw;
     line-height: 1.875vw;
-    margin-bottom: 0.98958333vw;
+    margin-bottom: 1.5625vw;
   }
   .wrapper section article.art4 .code-wrap .txt em {
     font-weight: 700;
   }
   .wrapper section article.art4 h4 {
-    margin-top: 24.84375vw;
+    margin-top: 0vw;
+    margin-right: 0vw;
+    margin-bottom: -5.41666667vw;
+    margin-left: 0vw;
+    position: relative;
+    z-index: 1;
+  }
+  .wrapper section article.art4 .step-wrapper {
+    margin-top: 13.02083333vw;
+  }
+  .wrapper section article.art4 .step-wrapper .step-wrap .step {
+    width: 75vw;
+    height: 32.8125vw;
   }
   .wrapper section article.art5 {
-    width: 37.5vw;
-    height: 78.59375vw;
+    width: 100vw;
+    height: 76.04166667vw;
     background-image: url('../images/pc/evt0224-art5-bg.png');
     background-repeat: no-repeat;
     background-size: contain;
   }
   .wrapper section article.art5 h3 {
-    width: 27.5vw;
-    height: 9.01041667vw;
+    width: 55.3125vw;
+    height: 4.84375vw;
     background-image: url('../images/pc/evt0224-sub-tit6.png');
     background-repeat: no-repeat;
     background-size: contain;
@@ -255,10 +278,11 @@
     color: #a4a4a4;
     display: block;
     margin-top: 0.26041667vw;
+    letter-spacing: -0.035em;
   }
   .wrapper section article.art6 {
-    width: 37.5vw;
-    height: 28.48958333vw;
+    width: 100vw;
+    height: 21.61458333vw;
     background-image: url('../images/pc/evt0224-art6-bg.png');
     background-repeat: no-repeat;
     background-size: contain;
@@ -286,8 +310,8 @@
     text-align: left;
   }
   .wrapper section article.art7 {
-    width: 37.5vw;
-    height: 95.46875vw;
+    width: 100vw;
+    height: 42.44791667vw;
     background-image: url('../images/pc/evt0224-art7-bg.png');
     background-repeat: no-repeat;
     background-size: contain;
@@ -295,8 +319,8 @@
     box-sizing: border-box;
   }
   .wrapper section article.art8 {
-    width: 37.5vw;
-    height: 26.25vw;
+    width: 100vw;
+    height: 24.375vw;
     background-image: url('../images/pc/evt0224-art8-bg.png');
     background-repeat: no-repeat;
     background-size: contain;
@@ -304,9 +328,9 @@
     box-sizing: border-box;
   }
   .wrapper section article.art9 {
-    width: 37.5vw;
-    height: 84.32291667vw;
-    background-image: url('../images/mo/evt0224-art9-bg.png');
+    width: 100vw;
+    height: 56.19791667vw;
+    background-image: url('../images/pc/evt0224-art9-bg.png');
     background-repeat: no-repeat;
     background-size: contain;
     padding: 4.94791667vw;
