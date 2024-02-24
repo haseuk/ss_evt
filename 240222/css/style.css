@@ -1,0 +1,356 @@
+@media screen and (max-width: 720px) {
+  .wrapper {
+    font-size: 0vw;
+    font-family: 'SamsungOneKorean', Dotum, '돋움', sans-serif;
+  }
+  .wrapper .mo {
+    display: inline-block;
+  }
+  .wrapper .web {
+    display: none;
+  }
+  .wrapper img {
+    width: 100%;
+    vertical-align: top;
+  }
+  .wrapper .btn {
+    position: relative;
+    cursor: pointer;
+    z-index: 1;
+  }
+  .wrapper .blind-txt {
+    display: none;
+  }
+  .wrapper .ss-one {
+    font-family: 'SamsungOneKorean', sans-serif;
+  }
+  .wrapper .sharp {
+    font-family: SamsungSharpSans, sans-serif;
+  }
+  .wrapper .sharp.sharp-m {
+    font-weight: 500;
+  }
+  .wrapper section {
+    text-align: center;
+  }
+  .wrapper section article {
+    position: relative;
+  }
+  .wrapper section article .step-wrap .step {
+    width: 88.88888889vw;
+    height: 51.11111111vw;
+    margin-bottom: 5.55555556vw;
+  }
+  .wrapper section article .notice {
+    width: 88.88888889vw;
+    height: 21.25vw;
+    border-radius: 3.61111111vw;
+    background-color: #2e2e2e;
+    padding-left: 4.16666667vw;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .wrapper section article .notice img {
+    width: 10vw;
+    height: 10vw;
+    margin-right: 2.22222222vw;
+  }
+  .wrapper section article .notice p {
+    font-size: 3.05555556vw;
+    line-height: 4.44444444vw;
+    letter-spacing: -0.035em;
+    color: #fff;
+  }
+  .wrapper section article h4 {
+    text-align: center;
+    margin-bottom: 6.25vw;
+  }
+  .wrapper section article h4 span {
+    font-size: 3.61111111vw;
+    color: #fff;
+    font-weight: 700;
+    padding-bottom: 1.38888889vw;
+    box-sizing: border-box;
+    border-bottom: 2px solid #fff;
+    display: inline-block;
+  }
+  .wrapper section article.art1 {
+    width: 100vw;
+    height: 417.5vw;
+    background-image: url('../images/mo/evt0224-art1-bg.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  .wrapper section article.art1 .tit {
+    width: 45.27777778vw;
+    height: 4.86111111vw;
+    background-image: url('../images/mo/evt0224-tit.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: inline-block;
+    margin-top: 20.69444444vw;
+  }
+  .wrapper section article.art1 .sub-tit {
+    width: 71.80555556vw;
+    height: 43.33333333vw;
+    background-image: url('../images/mo/evt0224-sub-tit.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: inline-block;
+    margin-top: 6.25vw;
+  }
+  .wrapper section article.art1 .txt {
+    font-size: 3.88888889vw;
+    line-height: 4.16666667vw;
+    font-weight: 500;
+    color: #fff;
+    margin-top: 5.69444444vw;
+    letter-spacing: -0.035em;
+  }
+  .wrapper section article.art1 .event-btn {
+    width: 47.22222222vw;
+    height: 11.11111111vw;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 72.36111111vw;
+    display: block;
+  }
+  .wrapper section article.art1 h3 {
+    width: 50.83333333vw;
+    height: 9.16666667vw;
+    background-image: url('../images/mo/evt0224-sub-tit2.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: inline-block;
+    margin-top: 20.97222222vw;
+    margin-right: 0vw;
+    margin-bottom: 8.47222222vw;
+    margin-left: 0vw;
+  }
+  .wrapper section article.benefits {
+    padding-top: 20.83333333vw;
+    box-sizing: border-box;
+  }
+  .wrapper section article.benefits > .tit {
+    font-size: 3.88888889vw;
+    line-height: 6.80555556vw;
+    font-family: SamsungSharpSans, sans-serif;
+    font-weight: 500;
+    color: #4382d6;
+    border-top: 2px solid #4382d6;
+    border-bottom: 2px solid #4382d6;
+    display: inline-block;
+    margin-bottom: 5.97222222vw;
+  }
+  .wrapper section article.benefits > .tit.sharp-m {
+    font-weight: 500;
+  }
+  .wrapper section article.benefits > .tit b {
+    font-weight: 700;
+  }
+  .wrapper section article.benefits h3 {
+    display: inline-block;
+    margin-bottom: 5.27777778vw;
+  }
+  .wrapper section article.benefits .txt {
+    font-size: 3.88888889vw;
+    line-height: 4.86111111vw;
+    color: #fff;
+  }
+  .wrapper section article.benefits .txt em {
+    font-weight: 700;
+  }
+  .wrapper section article.benefits .txt s {
+    font-size: 3.05555556vw;
+    line-height: 5.83333333vw;
+    font-weight: 400 !important;
+    color: #a9bada;
+    display: block;
+    text-decoration: none;
+  }
+  .wrapper section article.art2 {
+    width: 100vw;
+    height: 204.02777778vw;
+    background-image: url('../images/mo/evt0224-art2-bg.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  .wrapper section article.art2 h3 {
+    width: 82.08333333vw;
+    height: 24.30555556vw;
+    background-image: url('../images/mo/evt0224-sub-tit3.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  .wrapper section article.art3 {
+    width: 100vw;
+    height: 314.02777778vw;
+    background-image: url('../images/mo/evt0224-art3-bg.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  .wrapper section article.art3 h3 {
+    width: 67.77777778vw;
+    height: 24.16666667vw;
+    background-image: url('../images/mo/evt0224-sub-tit4.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  .wrapper section article.art4 {
+    width: 100vw;
+    height: 383.75vw;
+    background-image: url('../images/mo/evt0224-art4-bg.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  .wrapper section article.art4 h3 {
+    width: 71.11111111vw;
+    height: 10.97222222vw;
+    background-image: url('../images/mo/evt0224-sub-tit5.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  .wrapper section article.art4 .code-wrap {
+    margin-top: 33.88888889vw;
+  }
+  .wrapper section article.art4 .code-wrap .tit {
+    font-size: 4.86111111vw;
+    color: #fff;
+    letter-spacing: -0.035em;
+    font-weight: 700;
+    margin-bottom: 4.30555556vw;
+  }
+  .wrapper section article.art4 .code-wrap .txt {
+    font-size: 3.61111111vw;
+    line-height: 5vw;
+    margin-bottom: 2.63888889vw;
+  }
+  .wrapper section article.art4 .code-wrap .txt em {
+    font-weight: 700;
+  }
+  .wrapper section article.art4 h4 {
+    margin-top: 66.25vw;
+  }
+  .wrapper section article.art5 {
+    width: 100vw;
+    height: 209.58333333vw;
+    background-image: url('../images/mo/evt0224-art5-bg.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  .wrapper section article.art5 h3 {
+    width: 73.33333333vw;
+    height: 24.02777778vw;
+    background-image: url('../images/mo/evt0224-sub-tit6.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  .wrapper section article.art5 .txt s {
+    font-size: 3.05555556vw;
+    line-height: 4.44444444vw;
+    color: #a4a4a4;
+    display: block;
+    margin-top: 0.69444444vw;
+  }
+  .wrapper section article.art6 {
+    width: 100vw;
+    height: 75.97222222vw;
+    background-image: url('../images/mo/evt0224-art6-bg.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding: 5.55555556vw;
+    box-sizing: border-box;
+  }
+  .wrapper section article.art6 h4 {
+    margin-bottom: 5.55555556vw;
+  }
+  .wrapper section article.art6 .g-tit {
+    font-size: 4.86111111vw;
+    line-height: 6.11111111vw;
+    letter-spacing: -0.035em;
+    color: #fff;
+    font-weight: 700;
+    text-align: left;
+    margin-bottom: 2.08333333vw;
+  }
+  .wrapper section article.art6 .g-txt {
+    font-size: 3.61111111vw;
+    line-height: 5vw;
+    letter-spacing: -0.035em;
+    color: #fff;
+    font-weight: 500;
+    text-align: left;
+  }
+  .wrapper section article.art7 {
+    width: 100vw;
+    height: 254.58333333vw;
+    background-image: url('../images/mo/evt0224-art7-bg.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding: 13.19444444vw;
+    box-sizing: border-box;
+  }
+  .wrapper section article.art8 {
+    width: 100vw;
+    height: 70vw;
+    background-image: url('../images/mo/evt0224-art8-bg.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding: 13.19444444vw;
+    box-sizing: border-box;
+  }
+  .wrapper section article.art9 {
+    width: 100vw;
+    height: 224.86111111vw;
+    background-image: url('../images/mo/evt0224-art9-bg.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding: 13.19444444vw;
+    box-sizing: border-box;
+  }
+  .wrapper section article.art9 .tag-copy__btn {
+    width: 29.16666667vw;
+    height: 5.55555556vw;
+    position: absolute;
+    left: 11.25vw;
+    top: 109.44444444vw;
+    right: auto;
+    bottom: auto;
+  }
+  .wrapper section article.art9 .event-btn {
+    width: 41.66666667vw;
+    height: 11.11111111vw;
+    margin-top: 167.22222222vw;
+  }
+  .wrapper .notice-wrap {
+    padding-top: 13.88888889vw;
+    padding-right: 5.55555556vw;
+    padding-bottom: 13.88888889vw;
+    padding-left: 5.55555556vw;
+    box-sizing: border-box;
+    background-color: #000;
+  }
+  .wrapper .notice-wrap p {
+    color: #fff;
+    letter-spacing: -0.035em;
+  }
+  .wrapper .notice-wrap p.tit {
+    font-size: 3.33333333vw;
+    line-height: 4.30555556vw;
+    color: #fff;
+    font-weight: 700;
+    margin-bottom: 3.05555556vw;
+  }
+  .wrapper .notice-wrap p.txt {
+    font-size: 3.05555556vw;
+    line-height: 4.72222222vw;
+    color: #9c9c9c;
+    text-indent: -0.97222222vw;
+    margin-left: 0.97222222vw;
+  }
+}
+/*# sourceMappingURL=style.css.map */
