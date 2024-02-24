@@ -306,13 +306,13 @@
   .wrapper section article.art9 {
     width: 37.5vw;
     height: 84.32291667vw;
-    background-image: url('../images/pc/evt0224-art9-bg.png');
+    background-image: url('../images/mo/evt0224-art9-bg.png');
     background-repeat: no-repeat;
     background-size: contain;
     padding: 4.94791667vw;
     box-sizing: border-box;
   }
-  .wrapper section article.art9 .tag-copy__btn {
+  .wrapper section article.art9 .tag-wrap {
     width: 10.9375vw;
     height: 2.08333333vw;
     position: absolute;

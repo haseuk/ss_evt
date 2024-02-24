@@ -119,8 +119,8 @@
         <p class="blind-txt">참여조건에 맞추어 다양한 사진과 시청 후기를 블로그, 인스타그램에 필수 해시태그와 함께 업로드하기</p>
         <p class="blind-txt">응모하기 버튼을 눌러 추천인 코드와 함께 후기 게시물 URL 작성하면 응모완료!</p>
 
-        <div class="tag-copy__btn">
-          <button class="clipboard__btn" data-clipboard-text="삼성tv, samsung8kclub, 삼성닷컴이벤트, 삼성, samsungkorea"></button>
+        <div class="tag-wrap">
+          <button class="clipboard-btn">삼성tv, samsung8kclub, 삼성닷컴이벤트, 삼성, samsungkorea</button>
         </div>
 
         <button class="event-btn" onclick="fnCallPop2()" data-popup-target><img src="images/mo/evt0224-button2-bl.png" alt="응모하기"></button>
@@ -146,25 +146,21 @@
   <script src="/sec/static/_script/jquery.form.min.js"></script>
   <script>
     // 해시태그 복사
-    const pasteClips = document.querySelector('.evt-wrap .evt-clip .copy-btn');
+    let pasteClip = document.querySelector('.clipboard-btn');
 
-    pasteClips.forEach(pasteClip => {
-      pasteClip.addEventListener('click', () => {
-        const $paste_el = pasteClip.closest('.evt-clip').querySelector('.copy-txt p');
-        const $paste_txt = $paste_el.innerHTML.replace(/<br>|<br class="evt-mo-show">/g, '');
-
-        navigator.clipboard.writeText($paste_txt)
-            .then(() => {
-              const promoWrap = document.querySelector('.tooltip');
-              promoWrap.classList.add('on');
-              setTimeout(() => {
-                promoWrap.classList.remove('on');
-              }, 1500);
-            })
-            .catch(err => {
-              console.log('Something went wrong', err);
-            });
-      });
+    pasteClip.addEventListener('click', () => {
+      let copyTxt = "삼성tv, samsung8kclub, 삼성닷컴이벤트, 삼성, samsungkorea";
+      navigator.clipboard.writeText(copyTxt)
+        .then(() => {
+          const promoWrap = document.querySelector('.alert-msg');
+          promoWrap.classList.add('on');
+          setTimeout(() => {
+            promoWrap.classList.remove('on');
+          }, 1500);
+        })
+        .catch(err => {
+          console.log('Something went wrong', err);
+        });
     });
   </script>
 </body>
