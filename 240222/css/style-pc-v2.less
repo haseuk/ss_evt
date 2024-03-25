@@ -1,0 +1,58 @@
+@import "../../asset/asset";
+
+.alert-msg { .fs(16,40); .fix; .lt; .wh(100%,40); .c(#fff); .bgc(#000); .tc; .flex; .flex-center; .justify-center; .o(0); .crop;
+  &.on { .o(1); visibility: visible; transition: 0.75s; }
+}
+.wrapper { .fs(0); font-family: 'SamsungOneKorean', Dotum, '돋움', sans-serif; .max-w(1920); .mh-c;
+  .mo { .hide; }
+  .web { .ib; }
+  img { .wf; .vat; }
+  .evt-dv-btn { .rel; .pointer; .z(1); }
+  .blind-txt { .hide!important; }
+  .ss-one { font-family: 'SamsungOneKorean', sans-serif; }
+  .sharp { font-family: 'SamsungSharpSans', sans-serif;
+    &.sharp-m { .medium; }
+  }
+  section { .tc;
+    article { .rel;
+      &.top { background:url("../images/pc/evt0224-top.png")center top no-repeat; .h(800); }
+
+      &.art1 { .h(3227); background: url('../images/pc/evt0224-v2-bg1.png')center top no-repeat; .crop;
+        .model-no { .wh(1380,141); .abs; .lt(50%,765); .ml(-690); .tc; .p(30,0); .-box;
+          p { .fs(26,40); .ls(-0.03em); .c(#fff); }
+        }
+        .event-btn { .fs(0); .wh(300,80); .abs; .lt(50%,1868); .ml(-150); }
+      }
+      &.art2 { .h(1776); background: url('../images/pc/evt0224-v2-bg2.png')center top no-repeat; .crop; }
+      &.art3 { .h(2702); background: url('../images/pc/evt0224-v2-bg3.png')center top no-repeat; .crop;
+        .evt-dv-btn { .wh(220,50); .abs; .lt(50%,1358); .ml(283); }
+      }
+      &.art4 { .h(2436); background: url('../images/pc/evt0224-v2-bg4.png')center top no-repeat; .crop; }
+      &.art5 { .h(1452); background: url('../images/pc/evt0224-v2-bg5.png')center top no-repeat; .crop; }
+      &.art6 { .h(415); background: url('../images/pc/evt0224-v2-bg6.png')center top no-repeat; .crop; }
+      &.art7 { .h(815); background: url('../images/pc/evt0224-v2-bg7.png')center top no-repeat; .crop; }
+      &.art8 { .h(468); background: url('../images/pc/evt0224-v2-bg8.png')center top no-repeat; .crop;
+        ul { .mh-c; .mt(283); .w(1382);
+          li { .flex; .space-between; .h(54); .mb(12);
+            p { .fs(26,54); .medium; .tc; .c(#fff); .ls(-0.03em); }
+            .model { .w(1021); }
+            .reward { .w(349); }
+          }
+        }
+      }
+      &.art9  { .h(1079); background: url('../images/pc/evt0224-v2-bg9.png')center top no-repeat; .crop;
+        .tag-txt { .fs(20,26); .c(#b0b0b0); .ls(-0.025em); .wh(370,92); .p(19,36); .-box; .abs; .lt(50%,517); .ml(-185); .tl; }
+        .clipboard__btn { .fs(0); .wh(210,40); .abs; .lt(50%,632); .ml(-185); }
+        .event-btn { .fs(0); .wh(300,80); .abs; .lt(50%,840); .ml(-150);  }
+      }
+    }
+  }
+  .notice-wrap { .p(150,0); .-box; .bgc(#000); .tc;
+    .noti-inner { .mh-c; .tl; .flex; .w(1440);
+      p { .c(#fff); .ls(-0.035em);
+        &.tit { .fs(20,31); .c(#fff); .bold; .mr(100); }
+        &.txt { .fs(18,32); .c(#9c9c9c); }
+      }
+    }
+  }
+}

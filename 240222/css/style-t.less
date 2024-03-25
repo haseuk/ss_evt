@@ -3,6 +3,9 @@
 @vw: 1920;
 
 @media screen and (max-width: 1440px) {
+  .alert-msg { .fs(16,40); .fix; .lt; .wh(100%,40); .c(#fff); .bgc(#000); .tc; .flex; .flex-center; .justify-center; .o(0); .crop;
+    &.on { .o(1); visibility: visible; transition: 0.75s; }
+  }
   .wrapper { .fs(0); font-family: 'SamsungOneKorean', Dotum, '돋움', sans-serif;
     .mo { .hide; }
     .web { .ib; }
@@ -13,8 +16,9 @@
     .sharp { font-family: SamsungSharpSans, sans-serif;
       &.sharp-m { .medium; }
     }
-    section { .tc;
+    section { .tc; .bgc(#222222);
       article { .rel;
+        &.top { .wh(1920,800); .contain("https://images.samsung.com/kdp/editor/common/202402/29510ed4-c2fe-4264-a06b-b01917469563.png"); }
         .step-wrap {
           .step { .wh(1439,442); .mb(120); }
         }
@@ -22,16 +26,16 @@
           img { .wh(72,72); .mr(55); }
           p { .fs(26,40); .ls(-0.035em); .c(#fff); }
         }
-        h4 { .tc; .mb(45);
-          span { .fs(26); .c(#fff); .bold; .pb(10); .-box; .-b(#fff,2px); .ib; }
+        h4 { .tc; .mb(58);
+          span { .fs(26,26); .c(#fff); .bold; .pb(10); .-box; .-b(#fff,2px); .ib; }
         }
 
-        &.art1 { .wh(1920,2950); .contain('../images/pc/evt0224-art1-bg.png'); .crop;
-          .tit { .wh(485,50); .contain('../images/pc/evt0224-tit.png'); .block; .mh-c; .mt(218); }
-          .sub-tit { .wh(1080,262); .contain('../images/pc/evt0224-sub-tit.png'); .ib; .mt(50); }
+        &.art1 { .wh(1920,2950); .contain('https://images.samsung.com/kdp/editor/common/202402/91bc7e88-0d65-4640-8078-18e908dd82ad.png'); .crop;
+          .tit { .wh(485,50); .contain('https://images.samsung.com/kdp/editor/common/202402/b4374b73-6ed5-400e-904a-031539094090.png'); .block; .mh-c; .mt(218); }
+          .sub-tit { .wh(1080,262); .contain('https://images.samsung.com/kdp/editor/common/202402/5118f777-e267-4f58-a8ad-709453febcfa.png'); .ib; .mt(50); }
           .txt { .fs(60,70); .medium; .c(#fff); .mt(40); .ls(-0.035em); }
           .event-btn { .wh(300,80); .mh-c; .mt(910); .block; }
-          h3 { .wh(518,92); .contain('../images/pc/evt0224-sub-tit2.png'); .ib; .m(159,0,100); }
+          h3 { .wh(518,92); .contain('https://images.samsung.com/kdp/editor/common/202402/62f01c57-6416-4db3-a52b-fd3a44d58aeb.png'); .ib; .m(159,0,100); }
         }
 
         &.benefits { .pt(220); .-box;
@@ -45,14 +49,14 @@
           }
         }
 
-        &.art2 { .wh(1920,1782); .contain('../images/pc/evt0224-art2-bg.png');
-          h3 { .wh(1019,92); .contain('../images/pc/evt0224-sub-tit3.png'); }
+        &.art2 { .wh(1920,1782); .contain('https://images.samsung.com/kdp/editor/common/202402/2d91d11f-828a-4ad0-ad4f-38e5712e4e49.png');
+          h3 { .wh(1019,92); .contain('https://images.samsung.com/kdp/editor/common/202402/d4727700-5667-4c58-b7eb-9c4dcfd9ee78.png'); }
         }
-        &.art3 { .wh(1929,2557); .contain('../images/pc/evt0224-art3-bg.png');
-          h3 { .wh(1131,93); .contain('../images/pc/evt0224-sub-tit4.png'); }
+        &.art3 { .wh(1920,2557); .contain('https://images.samsung.com/kdp/editor/common/202402/be11d36c-64bc-48f9-830c-16327759f176.png');
+          h3 { .wh(1131,93); .contain('https://images.samsung.com/kdp/editor/common/202402/718550c0-9396-437f-a2bb-13aa0cf3640b.png'); }
         }
-        &.art4 { .wh(1920,2438); .contain('../images/pc/evt0224-art4-bg.png');
-          h3 { .wh(602,92); .contain('../images/pc/evt0224-sub-tit5.png'); }
+        &.art4 { .wh(1920,2438); .contain('https://images.samsung.com/kdp/editor/common/202402/fdb907c7-d1ca-456f-bb6d-35d764c603b5.png');
+          h3 { .wh(602,92); .contain('https://images.samsung.com/kdp/editor/common/202402/8f7622c8-9be4-4439-a47a-9838d79eac63.png'); }
           .code-wrap { .mh-c; .mt(295); .tl; .w(1440); .pl(64); .-box;
             .tit { .fs(46); .c(#fff); .ls(-0.035em); .bold; .mb(30); }
             .txt { .fs(26,36); .mb(30);
@@ -64,31 +68,44 @@
             .step-wrap .step { .wh(1440,630); }
           }
         }
-        &.art5 { .wh(1920,1460); .contain('../images/pc/evt0224-art5-bg.png');
-          h3 { .wh(1062,93); .contain('../images/pc/evt0224-sub-tit6.png'); }
+        &.art5 { .wh(1920,1460); .contain('https://images.samsung.com/kdp/editor/common/202402/9ed0a140-547f-4aec-813d-2c5d2725b4a9.png');
+          h3 { .wh(1062,93); .contain('https://images.samsung.com/kdp/editor/common/202402/d41c5cf9-d6bc-4f9f-b1d7-36a625a0a324.png'); }
           .txt {
             s { .fs(22,32); .c(#a4a4a4); .block; .mt(5); .ls(-0.035em); }
           }
         }
-        &.art6 { .wh(1920,415); .contain('../images/pc/evt0224-art6-bg.png'); .p(40); .-box;
-          h4 { .mb(40); }
-          .g-tit { .fs(35,44); .ls(-0.035em); .c(#fff); .bold; .tl; .mb(15); }
-          .g-txt { .fs(26,36); .ls(-0.035em); .c(#fff); .medium; .tl; }
+        &.art6 { .wh(1920,415); .contain('https://images.samsung.com/kdp/editor/common/202402/b3a6abea-66d4-4f87-ab67-f301acf322d4.png'); background-color: #183164;
+          .cnt-inner { .abs; .lt(50%,100); .tl; .pl(57); .-box;
+            h4 { .mb(40); .tl; }
+            .g-tit { .fs(35,44); .ls(-0.035em); .c(#fff); .bold; .tl; .mb(15); }
+            .g-txt { .fs(26,36); .ls(-0.035em); .c(#fff); .medium; .tl; }
+          }
         }
-        &.art7 { .wh(1920,815); .contain('../images/pc/evt0224-art7-bg.png'); .p(95); .-box; }
-        &.art8 { .wh(1920,468); .contain('../images/pc/evt0224-art8-bg.png'); .p(95); .-box; }
-        &.art9 { .wh(1920,1079); .contain('../images/pc/evt0224-art9-bg.png'); .p(95); .-box;
-          .tag-wrap { .wh(210,40); .abs; .lt(81,788); }
-          .event-btn { .wh(300,80); .mt(1204); }
+        &.art7 { .wh(1920,815); .contain('https://images.samsung.com/kdp/editor/common/202402/0f837ac8-7fe7-4504-8dd6-8f2ea2d91e5a.png'); .pt(120); .-box; }
+        &.art8 { .wh(1920,468); .contain('https://images.samsung.com/kdp/editor/common/202402/1acc4d22-adcc-4756-b52e-34278d7be898.png'); .pt(120); .-box;
+          ul { .mh-c; .mt(124); .w(1382);
+            li { .flex; .space-between; .h(54); .mb(12);
+              p { .fs(26,54); .medium; .tc; .c(#fff); .ls(-0.03em); }
+              .model { .w(1021); }
+              .reward { .w(349); }
+            }
+          }
+        }
+        &.art9 { .wh(1920,1079); .contain('https://images.samsung.com/kdp/editor/common/202402/a6eaad60-8467-42b3-9c29-2411866ffc77.png'); .pt(180); .-box;
+          .tag-txt { .fs(20,26); .c(#b0b0b0); .ls(-0.025em); .wh(370,92); .p(19,36); .-box; .abs; .lt(50%,519); .ml(-185); .tl; }
+          .clipboard__btn { .fs(0); .wh(210,40); .abs; .lt(50%,632); .ml(-185); }
+          .event-btn { .wh(300,80); .abs; .lt(50%,840); .ml(-150);  }
         }
 
       }
     }
 
-    .notice-wrap { .p(100,40); .-box; .bgc(#000);
-      p { .c(#fff); .ls(-0.035em);
-        &.tit { .fs(24,31); .c(#fff); .bold; .mb(22); }
-        &.txt { .fs(22,34); .c(#9c9c9c); .ti(-7); .ml(7); }
+    .notice-wrap { .p(150,0); .-box; .bgc(#000); .tc;
+      .noti-inner { .mh-c; .tl; .flex; .w(1440);
+        p { .c(#fff); .ls(-0.035em);
+          &.tit { .fs(20,31); .c(#fff); .bold; .mr(100); }
+          &.txt { .fs(18,32); .c(#9c9c9c); }
+        }
       }
     }
   }

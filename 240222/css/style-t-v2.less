@@ -1,0 +1,63 @@
+@import "../../asset/asset";
+@use-vw: true;
+@vw: 1920;
+
+@media screen and (max-width: 1440px) {
+  .alert-msg { .fs(16,40); .fix; .lt; .wh(100%,40); .c(#fff); .bgc(#000); .tc; .flex; .flex-center; .justify-center; .o(0); .crop;
+    &.on { .o(1); visibility: visible; transition: 0.75s; }
+  }
+  .wrapper { .fs(0); font-family: 'SamsungOneKorean', Dotum, '돋움', sans-serif;
+    .mo { .hide; }
+    .web { .ib; }
+    img { .wf; .vat; }
+    .btn { .rel; .pointer; .z(1); }
+    .blind-txt { .hide; }
+    .ss-one { font-family: 'SamsungOneKorean', sans-serif; }
+    .sharp { font-family: 'SamsungSharpSans', sans-serif;
+      &.sharp-m { .medium; }
+    }
+    section { .tc;
+      article { .rel;
+        &.top { .contain("../images/pc/evt0224-top.png"); .wh(1920,800); }
+
+        &.art1 { .wh(1920,3227); .contain('../images/pc/evt0224-v2-bg1.png'); .crop;
+          .model-no { .wh(1380,141); .abs; .lt(50%,765); .ml(-690); .tc; .p(30,0); .-box;
+            p { .fs(26,40); .ls(-0.03em); .c(#fff); }
+          }
+          .event-btn { .fs(0); .wh(300,80); .abs; .lt(50%,1868); .ml(-150); }
+        }
+        &.art2 { .wh(1920,1776); .contain('../images/pc/evt0224-v2-bg2.png'); .crop; }
+        &.art3 { .wh(1920,2702); .contain('../images/pc/evt0224-v2-bg3.png'); .crop;
+          .evt-dv-btn { .wh(220,50); .abs; .lt(50%,1358); .ml(283); }
+        }
+        &.art4 { .wh(1920,2436); .contain('../images/pc/evt0224-v2-bg4.png'); .crop; }
+        &.art5 { .wh(1920,1452); .contain('../images/pc/evt0224-v2-bg5.png'); .crop; }
+        &.art6 { .wh(1920,415); .contain('../images/pc/evt0224-v2-bg6.png'); .crop; }
+        &.art7 { .wh(1920,815); .contain('../images/pc/evt0224-v2-bg7.png'); .crop; }
+        &.art8 { .wh(1920,468); .contain('../images/pc/evt0224-v2-bg8.png'); .crop;
+          ul { .mh-c; .mt(283); .w(1382);
+            li { .flex; .space-between; .h(54); .mb(12);
+              p { .fs(26,54); .medium; .tc; .c(#fff); .ls(-0.03em); }
+              .model { .w(1021); }
+              .reward { .w(349); }
+            }
+          }
+        }
+        &.art9  { .wh(1920,1079); .contain('../images/pc/evt0224-v2-bg9.png'); .crop;
+          .tag-txt { .fs(20,26); .c(#b0b0b0); .ls(-0.025em); .wh(370,92); .p(19,36); .-box; .abs; .lt(50%,517); .ml(-185); .tl; }
+          .clipboard__btn { .fs(0); .wh(210,40); .abs; .lt(50%,632); .ml(-185); }
+          .event-btn { .fs(0); .wh(300,80); .abs; .lt(50%,840); .ml(-150);  }
+        }
+      }
+    }
+
+    .notice-wrap { .p(150,0); .-box; .bgc(#000); .tc;
+      .noti-inner { .mh-c; .tl; .flex; .w(1440);
+        p { .c(#fff); .ls(-0.035em);
+          &.tit { .fs(20,31); .c(#fff); .bold; .mr(100); }
+          &.txt { .fs(18,32); .c(#9c9c9c); }
+        }
+      }
+    }
+  }
+}

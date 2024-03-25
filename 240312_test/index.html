@@ -1,0 +1,2957 @@
+<style scoped="scoped">@font-face {
+  font-family: "SamsungSharpSans";
+  font-style: normal;
+  font-weight: normal;
+  src: url('/sec/static/_font/SamsungSharpSans-regular.TTF') format("truetype"),
+    url('/sec/static/_font/SamsungSharpSans-regular.TTF') format("embedded-opentype");
+}
+
+@font-face {
+  font-family: "SamsungSharpSans";
+  font-style: normal;
+  font-weight: bold;
+  src: url('/sec/static/_font/SamsungSharpSans-Bold.eot');
+  src: url('/sec/static/_font/SamsungSharpSans-Bold.eot?#iefix') format("embedded-opentype"),
+    url('/sec/static/_font/SamsungSharpSans-Bold.woff2') format("woff2"),
+    url('/sec/static/_font/SamsungSharpSans-Bold.woff') format("woff"),
+    url('/sec/static/_font/SamsungSharpSans-Bold.ttf') format("truetype");
+}
+
+@font-face {
+  font-family: "SamsungOneKorean";
+  font-style: normal;
+  font-weight: normal;
+  src: url('/sec/static/_font/SamsungOneKorean-400.eot');
+  src: url('/sec/static/_font/SamsungOneKorean-400.eot?#iefix') format("embedded-opentype"),
+    url('/sec/static/_font/SamsungOneKorean-400.woff2') format("woff2"),
+    url('/sec/static/_font/SamsungOneKorean-400.woff') format("woff"),
+    url('/sec/static/_font/SamsungOneKorean-400.ttf') format("truetype");
+}
+
+@font-face {
+  font-family: "SamsungOneKorean";
+  font-style: normal;
+  font-weight: bold;
+  src: url('/sec/static/_font/SamsungOneKorean-700.eot');
+  src: url('/sec/static/_font/SamsungOneKorean-700.eot?#iefix') format("embedded-opentype"),
+    url('/sec/static/_font/SamsungOneKorean-700.woff2') format("woff2"),
+    url('/sec/static/_font/SamsungOneKorean-700.woff') format("woff"),
+    url('/sec/static/_font/SamsungOneKorean-700.ttf') format("truetype");
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  font-family: "SamsungOneKorean";
+  word-break: keep-all;
+  box-sizing: border-box;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+figure {
+  font-size: 0;
+}
+
+strong {
+  font-weight: bold;
+}
+
+strong.en,
+.font_en {
+  font-family: SamsungSharpSans;
+}
+
+hr {
+  margin: 24px 0;
+}
+
+span.en {
+  font-family: SamsungSharpSans;
+}
+
+.font_w_b {
+  font-weight: bold;
+}
+
+.section {
+  width: 100%;
+  position: relative;
+}
+
+.section .section__inner {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.main_wrap {
+  position: relative;
+}
+
+.anchor-navigation {
+  background-color: #333;
+  height: 124px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -14px;
+}
+
+.anchor-navigation .an__list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.anchor-navigation .an__item {
+  height: 100%;
+  position: relative;
+  margin: 0 4px;
+}
+
+.anchor-navigation .an__item a {
+  display: block;
+  width: 272px;
+  height: 124px;
+  color: #fff;
+  text-align: center;
+}
+
+.anchor-navigation .item-text {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.anchor-navigation .item-text span {
+  display: block;
+}
+
+.event-notice {
+  text-align: center;
+  margin: 0 0;
+  padding: 0 0 80px;
+}
+
+.event-notice .event-notice__btn {
+  border-bottom: 1px solid #333333;
+  display: inline-block;
+}
+
+.event-notice .event-notice__btn button {
+  font-size: 14px;
+  font-weight: bold;
+  color: #333333;
+  padding: 8px 0;
+}
+
+.event-notice .event-notice__btn button .icons {
+  width: 12px;
+  height: 6px;
+  display: inline-block;
+  transition: 0.5s;
+  position: relative;
+  bottom: 3px;
+  margin-left: 4px;
+}
+
+.event-notice .event-notice__btn button .icons img {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.event-notice .event-notice__btn button.on .icons {
+  transform: rotate(180deg);
+}
+
+.event-notice .event-notice__inner {
+  max-width: 1440px;
+  text-align: left;
+  line-height: 1.6;
+  margin: 0 auto;
+  box-sizing: border-box;
+  display: none;
+}
+
+.event-notice .event-notice__inner dt {
+  font-weight: bold;
+  margin-bottom: 24px;
+  font-size: 14px;
+  color: #222;
+}
+
+.event-notice .event-notice__inner dd {
+  display: flex;
+  padding-left: 12px;
+  color: #333333;
+  font-size: 14px;
+  letter-spacing: -0.05em;
+}
+
+.event-notice .event-notice__inner dd:not(:last-child) {
+  margin-bottom: 8px;
+}
+
+.event-notice .event-notice__inner dd:before {
+  content: "•";
+  margin-left: -10px;
+  margin-right: 18px;
+  color: #333;
+}
+
+.event-notice .notice-box {
+  margin-top: 24px;
+}
+
+.event-notice .notice-box:nth-child(2) {
+  margin-top: 60px;
+}
+
+.event-notice3 .event-notice__inner dd,
+.event-notice3 .event-notice__btn button,
+.event-notice3 .event-notice__inner dd:before {
+  color: #fff;
+}
+
+.notice-box2 dd:before {
+  content: "-" !important;
+}
+
+.event-notice3 .event-notice__btn {
+  border-bottom: 1px solid #fff;
+}
+
+.event_notice_board1 {
+  background: url("//images.samsung.com/kdp/editor/common/202402/bb69a6ec-cda5-4038-ab2d-093d183d7d85.jpg");
+}
+
+.event_notice_board3 {
+  background: url("//images.samsung.com/kdp/editor/common/202402/c4f45073-e596-45df-a728-b1e7d4ba2f17.jpg");
+}
+
+/* common event text start */
+.event_text {
+  width: 100%;
+  margin: 50px 0 0;
+}
+
+.event_text h4 {
+  width: 100%;
+  text-align: center;
+  font-size: 34px;
+  font-weight: 400;
+  color: #000;
+  letter-spacing: -1px;
+}
+
+.event_text h1 {
+  width: 100%;
+  text-align: center;
+  font-size: 86px;
+  font-weight: 700;
+  color: #000;
+  letter-spacing: -5px;
+  margin: 30px 0 40px;
+}
+
+.event_text p {
+  width: 100%;
+  text-align: center;
+  font-size: 26px;
+  font-weight: 500;
+  color: #000;
+  letter-spacing: -1px;
+  line-height: 40px;
+}
+
+
+.event_info_boxes {
+  width: 70%;
+  margin: 60px auto 115px;
+}
+.event02 .event_info_boxes {
+  width: 60%;
+}
+
+.event_info_box {
+  width: 100%;
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  margin: 0 0 22px;
+}
+
+.event_info_box > div {
+  width: 50%;
+}
+
+.event_info_box p {
+  width: 100%;
+  font-weight: 500;
+  font-size: 20px;
+  color: #000;
+  letter-spacing: -1px;
+}
+
+.event_info_box p span.evnt_txt_box {
+  float: left;
+  border: solid 2px #000;
+  display: inline-block;
+  font-weight: 700;
+  font-size: 18px;
+  margin-right: 15px;
+  padding: 10px 2px;
+  border-radius: 100px;
+  width: 200px;
+  text-align: center;
+  line-height: 22px;
+}
+
+.event_info_box span.flt_left {
+  float: left;
+  display: inline;
+  width: 63%;
+  padding-top: 10px;
+}
+
+.font_18 {
+  font-size: 18px;
+  margin-top: 3px;
+  display: block;
+}
+
+/* common event text end */
+
+.alert-msg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 40px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #000;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.alert-msg.on {
+  opacity: 1;
+  visibility: visible;
+  transition: 0.75s;
+}
+
+
+.blind {
+  position: absolute !important;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+}
+
+
+/*page opening time start */
+
+.opening_timer {
+  width: 100%;
+  display: inline-block;
+  background: #11111b;
+  padding: 34px 0;
+  color: #fff;
+}
+
+.opening_timing {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.opening_timing .opening_timing_left {}
+
+.opening_timing p {
+  color: #fff;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.opening_timing_right .countdown_box,
+.buy_btn {
+  position: relative;
+  display: inline-block;
+}
+
+.opening_timing_right .countdown_box p {
+  position: absolute;
+  top: 16px;
+  right: -24px;
+  letter-spacing: 46px;
+  font-size: 38px;
+  font-weight: 900;
+  color: #000;
+  font-family: 'SamsungSharpSans';
+}
+
+.buy_btn {
+  top: -25px;
+  margin-left: 50px;
+}
+
+.buy_btn a {
+  font-size: 18px;
+  font-weight: 700;
+  background: #fff;
+  color: #000;
+  padding: 20px 60px;
+  border-radius: 30px;
+}
+
+/* page opening time end */
+
+
+/* KV banner start */
+.header_banner {
+  position: relative;
+  background: url("https://images.samsung.com/kdp/editor/common/202403/87f5638d-acfa-466d-99ef-b7f804e717a7.jpg") no-repeat center center;
+  background-size: cover;
+  height: 690px;
+}
+
+.header_banner img {
+  width: 100%;
+  display: block;
+}
+
+/* KV banner end */
+
+
+/* Event nav start */
+
+.event_navigation {
+  background-color: #11111b;
+  padding: 22px 0;
+}
+
+.event_navigation ul {
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+}
+
+.event_navigation ul li {
+  padding: 0 18px;
+  border-right: solid 2px #555555;
+}
+
+.event_navigation ul li:last-child {
+  border-right: none;
+}
+
+.event_navigation ul li a {
+  color: #fff;
+  font-weight: 700;
+  font-size: 22px;
+}
+
+/* Event nav end */
+
+
+/* purchase banner start */
+.purchase_banner {
+  background-color: #97ba5c;
+  padding: 0px 0;
+  position: relative;
+}
+.purchase_banner img {
+  display: block;
+  width: 100%;
+}
+
+.purchase_banner .purchase_banner_box {
+  background-color: #fff;
+  border-radius: 20px;
+  text-align: center;
+  padding: 100px 0;
+}
+
+.purchase_banner p {
+  font-size: 46px;
+  font-weight: 700;
+  color: #000;
+}
+.link01 {
+  position: absolute;
+  left: 22%;
+  width: 9%;
+  height: 18%;
+  bottom: 30%;
+  font-size: 0;
+  text-indent: -9999px;
+  overflow: hidden;
+}
+
+/* purchase banner end */
+
+
+.events_box {
+  padding: 160px 0 80px;
+}
+
+/* Event 01 start */
+.event01 {
+  background: url("//images.samsung.com/kdp/editor/common/202402/311ae159-1d92-4b21-87fa-191a328a5ccc.jpg") no-repeat top center;
+  background-size: cover;
+}
+
+.main_event01 {
+  width: 100%;
+  display: block;
+}
+
+.main_event01 .event01_flag {
+  width: 190px;
+  display: block;
+  background: url("//images.samsung.com/kdp/editor/common/202402/22b936bd-5437-4531-b53e-6b2037fbc6d2.png") no-repeat center center;
+  background-size: 100% auto;
+  height: 65px;
+  margin: 0 auto;
+}
+
+.event_progress_bar {
+  width: 100%;
+  background-color: #fff;
+  border-radius: 20px;
+  padding:0;
+}
+
+.event_progress_bar h3 {
+  text-align: center;
+  width: 100%;
+  color: #000;
+  font-size: 42px;
+  font-weight: 700;
+  letter-spacing: -1px;
+  margin: 0 0 30px;
+}
+
+.event_progress_bar h3 span {
+  float: right;
+  display: inline;
+  color: #65b41f;
+  font-size: 20px;
+  padding-top: 20px;
+}
+
+.event_progress_bar img {
+  width: 100%;
+}
+
+.product_img {
+  width: 100%;
+  margin: 100px 0 150px;
+  text-align: center;
+}
+
+.product_img img {
+  width: 80%;
+}
+.event04 .product_img img {
+  width: 100%;
+}
+
+.event_product_info {
+  width: 100%;
+  background: url("//images.samsung.com/kdp/editor/common/202403/a909b95d-f25d-46c2-865c-a34aca89b7d3.png") no-repeat top center;
+  background-size: 100% auto;
+  height: 635px;
+}
+
+.event_product_info_btn {
+  width: 100%;
+  text-align: center;
+  margin: 70px 0 160px;
+}
+
+.event_product_info_btn .comn_btn_link {
+  width: auto;
+  color: #fff;
+  background-color: #8a6800;
+  height: 80px;
+  width: 300px;
+  font-size: 26px;
+  font-weight: 600;
+  border-radius: 40px;
+  display: inline-block;
+  line-height: 80px;
+}
+
+/* Event 01 ened */
+
+.event01 .event_product_info_btn,
+.event03 .event_product_info_btn {
+  margin-bottom: 60px;
+}
+
+/* event02 start */
+
+.event02 {
+  background: url("//images.samsung.com/kdp/editor/common/202402/988005d9-a90e-4198-9753-ace271fd31fa.jpg") no-repeat top center;
+  background-size: cover;
+}
+
+.main_event01 .event02_flag {
+  width: 190px;
+  display: block;
+  background: url("//images.samsung.com/kdp/editor/common/202402/a400eff5-b2be-46d0-842f-0d73e8005632.png") no-repeat center center;
+  background-size: 100% auto;
+  height: 65px;
+  margin: 0 auto;
+}
+
+.event_product_info2 {
+  width: 100%;
+  background: url("//images.samsung.com/kdp/editor/common/202403/536b947a-95fa-407f-9458-547de950c4ff.png") no-repeat top center;
+  background-size: 100% auto;
+  height: 635px;
+}
+
+.event_product_info_btn2 .comn_btn_link {
+  background-color: #79a346;
+}
+
+.event_info_box .w100 span.flt_left {
+  width: 72%;
+  line-height: 30px;
+  padding-top: 6px;
+}
+
+/* event02 end */
+
+
+/* event03 start */
+
+.event03 {
+  background: url("//images.samsung.com/kdp/editor/common/202403/ff20abbd-ae1a-49ad-9727-039eba53447d.jpg") no-repeat top center;
+  background-size: cover;
+}
+
+.main_event01 .event03_flag {
+  width: 190px;
+  display: block;
+  background: url("//images.samsung.com/kdp/editor/common/202402/594dca52-db4e-40aa-9d0d-0f3156e63d10.png") no-repeat center center;
+  background-size: 100% auto;
+  height: 65px;
+  margin: 0 auto;
+}
+
+.event_product_info2 {
+  width: 100%;
+  background: url("//images.samsung.com/kdp/editor/common/202403/536b947a-95fa-407f-9458-547de950c4ff.png") no-repeat top center;
+  background-size: 100% auto;
+  height: 635px;
+}
+
+.event_product_info_btn3 .comn_btn_link {
+  background-color: #426a04;
+}
+
+.product_img3 img {
+  width: 60%;
+}
+.product_img3_3.product_img3 img {
+  width: 100%;
+}
+
+.product_img3_3 {
+  position: relative;
+}
+.product_img3_3 .link02 {
+  display: block;
+  font-size: 0;
+  text-indent: -9999px;
+  background: rgba(0, 0, 255, 0);
+  position: absolute;
+  overflow: hidden;
+  width: 24%;
+  height: 34%;
+  bottom: 0%;
+}
+
+.product_img3_3 .link03 {
+  display: block;
+  font-size: 0;
+  text-indent: -9999px;
+  background: rgba(0, 0, 255, 0);
+  position: absolute;
+  overflow: hidden;
+  width: 25%;
+  height: 34%;
+  bottom: 0%;
+  left: 25%;
+}
+
+.product_img3_3 .link04 {
+  display: block;
+  font-size: 0;
+  text-indent: -9999px;
+  background: rgba(0, 0, 255, 0);
+  position: absolute;
+  overflow: hidden;
+  width: 25%;
+  height: 34%;
+  bottom: 0%;
+  left: 50%;
+}
+
+.product_img3_3 .link05 {
+  display: block;
+  font-size: 0;
+  text-indent: -9999px;
+  background: rgba(0, 0, 255, 0);
+  position: absolute;
+  overflow: hidden;
+  width: 24%;
+  height: 34%;
+  bottom: 0%;
+  right: 0;
+}
+
+.close_btn {
+  display: block;
+  font-size: 0;
+  text-indent: -9999px;
+  background: rgba(0, 0, 255, 0);
+  position: absolute;
+  overflow: hidden;
+  width: 6%;
+  height: 23%;
+  left: 47%;
+  top: 58%;
+}
+
+.close_btn2 {
+  top: 0;
+  right: 33%;
+  left: auto;
+  width: 2%;
+  height: 5%;
+}
+
+.product_img4 {
+  margin-bottom: 70px;
+}
+
+.mt60 {
+  margin-top: -60px;
+}
+.event03 p > button {
+  font-size: 20px;
+}
+
+#openModal6 img,
+#openModal7 img {
+  width: 60%;
+}
+/* event03 end */
+
+
+/* event04 start */
+
+.event04 {
+  background: url("//images.samsung.com/kdp/editor/common/202402/fb8e4459-ff50-4e32-a76a-1e177f57595b.jpg") no-repeat top center;
+  background-size: cover;
+}
+
+.main_event01 .event04_flag {
+  width: 190px;
+  display: block;
+  background: url("//images.samsung.com/kdp/editor/common/202402/daa59698-c0c1-45f0-bda7-d2b52ef2b7d5.png") no-repeat center center;
+  background-size: 100% auto;
+  height: 65px;
+  margin: 0 auto;
+}
+
+.event_product_info2 {
+  width: 100%;
+  background: url("//images.samsung.com/kdp/editor/common/202403/536b947a-95fa-407f-9458-547de950c4ff.png") no-repeat top center;
+  background-size: 100% auto;
+  height: 635px;
+}
+
+.event_product_info_btn3 .comn_btn_link {
+  background-color: #426a04;
+}
+
+.product_img3 img {
+  width: 60%;
+}
+.event_product_info3 {
+  width: 100%;
+  background: url("https://images.samsung.com/kdp/editor/common/202403/9fcd510e-61f5-4aa3-aaa3-c9069a40659c.png") no-repeat top center;
+  background-size: 100% auto;
+  height: 720px;
+}
+
+
+.image-radio {
+  cursor: pointer;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  border: 7px solid #fff;
+  margin-bottom: 0;
+  outline: 0;
+  border-radius: 20px;
+  width: 98%;
+  display: inline-block;
+  background: #d7d1c9;
+}
+
+.image-radio input[type="radio"] {
+  display: none;
+}
+
+.image-radio-checked {
+  border-color: #317485;
+}
+
+.image-radio .glyphicon {
+  position: absolute;
+  color: #4a79a3;
+  background-color: #fff;
+  padding: 26px;
+  top: 3.6%;
+  left: 41%;
+  border-radius: 100%;
+}
+
+.image-radio-checked .glyphicon {
+  display: block !important;
+  background: url("//images.samsung.com/kdp/editor/common/202402/cd5aee80-4c6d-4dc9-b8c7-1d2c4244b700.png") no-repeat center;
+  background-color: #317485;
+  background-size: 28px auto;
+}
+
+.image-radio img {
+  width: 100%
+}
+
+.download_prodt_img {
+  width: 100%;
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+}
+
+.download_prodt_img_box {
+  position: relative;
+}
+
+.event4_prize,
+.event4_box1 {
+  width: 100%;
+  position: relative;
+}
+
+.event4_prize img {
+  width: 100%;
+}
+
+.event_product_info_btn4.downdoad_box {
+  margin-bottom: 50px;
+}
+
+.event_product_info4 {
+  position: relative;
+  margin-top: -115px;
+  background: url("//images.samsung.com/kdp/editor/common/202403/52589c94-b621-4f67-9bf7-07c058f42bc0.png") no-repeat top center;
+  background-size: 100% auto;
+}
+
+.event_product_info_btn4 .comn_btn_link {
+  background-color: #317485;
+}
+
+/* event04 end */
+
+
+
+
+
+.disply_blk {
+  display: block
+}
+
+.w100 {
+  width: 100% !important;
+}
+
+#download_button img {
+  width: 10%;
+}
+
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 100%;
+  background-color: #5094a5;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px;
+  position: absolute;
+  z-index: 1;
+  bottom: 111%;
+  left: 0%;
+  margin-left: 0px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+
+.copyHashtags {
+  position: absolute;
+  bottom: 9%;
+  left: 37%;
+  height: 8%;
+  width: 15%;
+  cursor: pointer;
+}
+
+.copyHashtags .tooltip,
+.copyHashtags .tooltip button {
+  width: 100%;
+}
+
+.copyHashtags .tooltip button .button_text {
+  width: 100%;
+  display: block;
+  float: left;
+  padding: 10%;
+  font-size: 0;
+}
+
+.tooltiptext {
+  font-size: 14px;
+}
+
+.copyHashtags.copyHashtags3 {
+  left: 52%;
+  bottom: 10.5%;
+  height: 1.5%;
+  width: 12%;
+}
+
+.copyHashtags.copyHashtags3 .tooltip .tooltiptext {
+  background: #426a04;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.soldout {
+  position: absolute;
+  background: url("https://images.samsung.com/kdp/editor/common/202403/c822ea8e-a6b6-419f-b5e4-1e9f616e7ecd.png") no-repeat center top 25%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: none;
+}
+.event_notice_board1 {
+  position: relative;
+}
+.soldout2 {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  display: none;
+}
+.soldout.active,
+.soldout2.active {
+  display: block;
+}
+
+.custom_popup {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 999;
+  display: none;
+}
+
+.custom_popup > div {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+}
+
+.custom_popup > div {
+}
+
+body.scrollHide {
+  overflow-y: hidden;
+}
+
+.upstyle {
+  text-transform: uppercase;
+}
+
+#openModal2 > div {
+  width: 30%;
+  margin: 0 auto;
+}
+#openModal2 > div img {
+  width: 100%;
+}
+#openModal2 > div .close_btn2 {
+  right: 2%;
+  width: 4%;
+  left: auto;
+}
+
+.pc_display {display: block  !important;}
+.mo_display {display: none !important;}
+
+@media (max-width: 1488px) {
+  .section .section__inner {
+    padding-left: 1.6129032258vw;
+    padding-right: 1.6129032258vw;
+  }
+
+  .anchor-navigation {
+    height: 8.3333333333vw;
+    margin-top: -0.9408602151vw;
+  }
+
+  .anchor-navigation .an__item {
+    margin-left: 0.2688172043vw;
+    margin-right: 0.2688172043vw;
+  }
+
+  .anchor-navigation .an__item a {
+    width: 18.2795698925vw;
+    height: 8.3333333333vw;
+  }
+
+  .opening_timer {
+    padding: 2.285vw 0;
+  }
+
+  .opening_timing p {
+    font-size: 2.016vw;
+  }
+
+  .opening_timing_right .countdown_box p {
+    top: 0.941vw;
+    right: -1.5vw;
+    letter-spacing: 2.78vw;
+    font-size: 2.419vw;
+  }
+
+  .buy_btn {
+    top: -1.68vw;
+    margin-left: 3.36vw;
+  }
+
+  .buy_btn a {
+    padding: 1.344vw 4.032vw;
+    font-size: 1.21vw;
+    border-radius: 2.016vw;
+  }
+
+  .opening_timing_right .countdown_box img {
+    width: 16.801vw;
+  }
+
+
+  .header_banner {
+    height: 32.903vw;
+  }
+
+
+
+  .event_navigation {
+    padding: 1.478vw 0;
+  }
+
+  .event_navigation ul li {
+    padding: 0 1.21vw;
+  }
+
+  .event_navigation ul li a {
+    font-size: 1.3vw;
+  }
+
+
+  .purchase_banner {
+    padding: 0;
+  }
+
+  .purchase_banner .purchase_banner_box {
+    border-radius: 1.344vw;
+    padding: 6.72vw 0;
+  }
+
+  .purchase_banner p {
+    font-size: 3.091vw;
+  }
+
+
+  .events_box {
+    padding: 10.753vw 0 5.376vw;
+  }
+
+  .main_event01 .event01_flag,
+  .main_event01 .event02_flag,
+  .main_event01 .event03_flag,
+  .main_event01 .event04_flag {
+    width: 12.769vw;
+    height: 4.368vw;
+  }
+
+  .event_text {
+    margin: 3.36vw 0 0;
+  }
+
+  .event_text h4 {
+    font-size: 2.285vw;
+  }
+
+  .event_text h1 {
+    font-size: 5vw;
+    margin: 2.016vw 0 2.688vw;
+  }
+
+  .event_text p {
+    font-size: 1.747vw;
+    line-height: 2.688vw;
+  }
+
+  .event_info_boxes {
+    margin: 4.032vw auto 7.728vw;
+  }
+
+  .event_info_box {
+    margin: 0 0 1.478vw;
+  }
+
+  .event_info_box p {
+    font-size: 1.344vw;
+  }
+
+  .event_info_box p span.evnt_txt_box {
+    font-size: 1.21vw;
+    margin-right: 1.008vw;
+    padding: 0.672vw 0.134vw;
+    border-radius: 6.72vw;
+    width: 13.441vw;
+    border: solid 1px #000;
+  }
+
+  .event_info_box span.flt_left {
+    padding-top: 0.672vw;
+  }
+
+  .font_18 {
+    font-size: 1.21vw;
+    margin-top: 0.202vw;
+  }
+
+  .event_progress_bar {
+    border-radius: 1.344vw;
+    padding: 0;
+  }
+
+  .event_progress_bar h3 {
+    margin: 0 0 2.016vw;
+    font-size: 2.823vw;
+  }
+
+  .event_progress_bar h3 span {
+    font-size: 1.344vw;
+    padding-top: 1.344vw;
+  }
+
+  .product_img {
+    margin: 6.72vw 0 10.081vw;
+  }
+
+  .event_product_info {
+    height: 47.675vw;
+  }
+
+  .event_product_info_btn {
+    margin: 4.704vw 0 3.753vw;
+  }
+
+  .event_product_info_btn .comn_btn_link {
+    height: 5.376vw;
+    width: 20.161vw;
+    font-size: 1.747vw;
+    border-radius: 2.688vw;
+    line-height: 6vw;
+  }
+
+  .event-notice {
+    padding: 0 0 5.376vw;
+  }
+
+  .event-notice .event-notice__btn button {
+    padding: 0.538vw 0;
+    font-size: 1.2vw;
+  }
+
+  .event-notice .notice-box {
+    margin-top: 1.613vw;
+  }
+
+  .event-notice .event-notice__inner dd:not(:last-child) {
+    margin-bottom: 0.538vw;
+  }
+
+  .event-notice .event-notice__inner dd {
+    font-size: 1.075vw;
+    padding-left: 2.806vw;
+  }
+
+  .events_box.event02 .event_product_info_btn {
+    margin-bottom: 10vw;
+  }
+
+
+  .image-radio {
+    border: 0.47vw solid #fff;
+    border-radius: 1.344vw;
+  }
+
+  .image-radio-checked .glyphicon {
+    background-size: 1.882vw auto;
+  }
+
+  .image-radio .glyphicon {
+    padding: 1.747vw;
+    top: 4.6%;
+    left: 42%;
+  }
+
+  .image-radio-checked {
+    border-color: #317485;
+  }
+
+
+
+  .event_product_info_btn4.downdoad_box {
+    margin-bottom: 3.36vw;
+  }
+
+  .event_product_info4 {
+    margin-top: -7.728vw;
+  }
+  
+  #openModal2 > div {
+    width: 50%;
+}
+}
+
+
+
+@media (max-width: 767px) {
+  .pc_display {display: none  !important;}
+  .mo_display {display: block  !important;}
+  .section .section__inner {
+    width: 95%;
+  }
+
+  .wrapper .pc {
+    display: none !important;
+  }
+
+  .wrapper .mobile {
+    display: block !important;
+  }
+
+  .section .section__inner {
+    padding: 0;
+  }
+
+  .event_navigation {
+    padding: 2.604vw 0;
+  }
+
+  .event_navigation ul li {
+    padding: 0 2.344vw;
+  }
+
+  .opening_timing {
+    display: block;
+  }
+
+  .opening_timing .opening_timing_left {
+    width: 100%;
+    display: block;
+    text-align: center;
+    margin: 0 0 10px;
+  }
+
+  .opening_timing_right {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+
+  .opening_timer {
+    padding: 4.427vw 0;
+  }
+
+
+  .opening_timing p {
+    font-size: 3.5vw;
+  }
+  .opening_timing .opening_timing_left  {display: none;}
+  .opening_timing_right .countdown_box p {
+    top: 1.7vw;
+    right: -2.4vw;
+    letter-spacing: 6.6vw;
+    font-size: 6.9vw;
+  }
+
+  .buy_btn {
+    top: -3.255vw;
+    margin-left: 6.51vw;
+  }
+
+  .buy_btn a {
+    padding: 2.604vw 7.813vw;
+    font-size: 4.344vw;
+    border-radius: 6.906vw;
+  }
+
+  .opening_timing_right .countdown_box img {
+    width: 45vw;
+  }
+
+  .header_banner {
+    height: 140vw;
+    position: relative;
+background: url(https://images.samsung.com/kdp/editor/common/202403/fe6bc821-a77f-4717-8721-bd1cfccaa1db.jpg) no-repeat center center;
+background-size: cover;
+  }
+  .event_navigation ul li {text-align: center;}
+
+  .event_navigation ul li a {
+    font-size: 2.5vw;
+  }
+
+  .purchase_banner {
+    padding: 0;
+  }
+
+  .purchase_banner .purchase_banner_box {
+    padding: 13.021vw 0;
+  }
+
+  .purchase_banner p {
+    font-size: 5.99vw;
+  }
+  .link01 {    width: 30%;
+    left: 13%;}
+
+  .events_box {
+    padding: 20.833vw 0 0.417vw;
+  }
+
+  .main_event01 .event01_flag,
+  .main_event01 .event02_flag,
+  .main_event01 .event03_flag,
+  .main_event01 .event04_flag {
+    width: 24.74vw;
+    height: 8.464vw;
+  }
+
+  .event_text {
+    margin: 6.51vw 0 0;
+  }
+
+  .event_text h4 {
+    font-size: 3.427vw;
+  }
+
+  .event_text h1 {
+    font-size: 7vw;
+    margin: 3.906vw 0 5.208vw;
+    letter-spacing: -2px;
+  }
+
+  .event_text p {
+    font-size: 3.385vw;
+    line-height: 5.208vw;
+  }
+
+
+  .event_info_box {
+    flex-wrap: wrap;
+  }
+
+  .event_info_box>div {
+    width: 100%;
+    margin: 0 0 2.865vw;
+  }
+
+  .event01 {
+    background: url(https://images.samsung.com/kdp/editor/common/202403/0ed0fd35-0fd4-449c-9adc-ea91d9392d42.jpg) no-repeat top center;
+    background-size:cover;
+  }
+
+  .product_img img {
+    width: 95%;
+  }
+  .event04 .product_img img {
+    width: 100%;
+}
+
+.disply_b_mo {display: block;}
+  .event02 .event_info_boxes {
+    width: 100%;
+}
+
+  .event_info_boxes {
+    margin: 7.813vw auto 14.974vw;
+    width: 100%;
+  }
+
+  .event_info_box {
+    margin: 0;
+  }
+
+  .event_info_box p,
+    .event03 p > button {
+    font-size: 2.604vw;
+  }
+
+  .event_info_box p span.evnt_txt_box {
+    line-height: 2.865vw;
+    font-size: 2.344vw;
+    margin-right: 1.953vw;
+    padding: 1.302vw 0.26vw;
+    border-radius: 13.021vw;
+    width: 26.042vw;
+  }
+
+  .event_info_box span.flt_left {
+    padding-top: 1.302vw;
+  }
+
+  .font_18 {
+    font-size: 2.344vw;
+    margin-top: 0.391vw;
+  }
+
+  .event_progress_bar {
+    border-radius: 2.604vw;
+        margin: 0 0 6vw;
+        padding: 0;
+  }
+
+  .event_progress_bar h3 {
+    margin: 0 0 3.906vw;
+    font-size: 5.469vw;
+  }
+
+  .event_progress_bar h3 span {
+    font-size: 2.604vw;
+    padding-top: 2.604vw;
+  }
+
+  .product_img {
+    margin: 0 0 6vw;
+  }
+
+  .event_product_info {
+    height: 222vw;
+    background: url(https://images.samsung.com/kdp/editor/common/202403/898e9ea6-b4c9-492e-b4b1-bd639521a061.png) no-repeat top center;
+background-size: 100% auto;
+}
+
+.event_product_info2 {
+    height: 222vw;
+    background: url(https://images.samsung.com/kdp/editor/common/202403/b6b60e68-9f52-45b7-bb4e-337eff7a6a80.png) no-repeat top center;
+background-size: 100% auto;
+}
+
+.event_product_info3 {
+    height: 245vw;
+    background: url(https://images.samsung.com/kdp/editor/common/202403/0b94c266-7cd7-4b1b-a10c-2ff83b50d1f7.png) no-repeat top center;
+background-size: 100% auto;
+}
+
+.event_product_info4 {
+    height: 230vw;
+    background: url(https://images.samsung.com/kdp/editor/common/202403/f2356e42-aea9-4e41-b139-832ba7e64e12.png) no-repeat top center;
+background-size: 100% auto;
+}
+
+.event_product_info4 .copyHashtags {
+    bottom: 29%;
+    left: 5%;
+    height: 4%;
+    width: 45%;
+}
+
+.copyHashtags.copyHashtags3 {
+    left: 8%;
+    bottom: 16.5%;
+    height: 1.8%;
+    width: 42%;
+  }
+
+  .event_product_info_btn {
+    margin: 9.115vw 0;
+  }
+
+  .event_product_info_btn .comn_btn_link {
+    height: 10.417vw;
+    width: 39.063vw;
+    font-size: 3.385vw;
+    border-radius: 5.208vw;
+    line-height: 10vw;
+  }
+
+
+  .event-notice {
+    padding: 0 0 10.417vw;
+  }
+
+  .event-notice .event-notice__btn button {
+    padding: 1.042vw 0;
+    font-size: 2.823vw;
+  }
+
+  .event-notice .notice-box {
+    margin-top: 3.125vw;
+  }
+
+  .event-notice .event-notice__inner dd:not(:last-child) {
+    margin-bottom: 1.042vw;
+  }
+
+  .event-notice .event-notice__inner dd {
+    font-size: 2.083vw;
+    padding-left: 1.563vw;
+  }
+
+  .image-radio {
+    border: 0.911vw solid #fff;
+    border-radius: 2.604vw;
+  }
+
+  .image-radio-checked .glyphicon {
+    background-size: 3.646vw auto;
+  }
+
+  .image-radio .glyphicon {
+    padding: 3.385vw;
+  }
+
+  .image-radio-checked {
+    border-color: #317485;
+  }
+
+  .event_product_info_btn4.downdoad_box {
+    margin-bottom: 6.51vw;
+  }
+
+  .event_product_info4 {
+    margin-top: -5.974vw;
+  }
+
+  .event-notice .event-notice__inner dd:before {
+    margin-left: 4px;
+    margin-right: 10px
+  }
+
+  .event_info_box .w100 span.flt_left {
+    width: 63%;
+    line-height: 3.906vw;
+    padding-top: 0.781vw;
+  }
+
+  .event03 {
+    background-size: 300% auto;
+  }
+
+  .download_prodt_img {
+    flex-wrap: wrap;
+  }
+
+  .download_prodt_img_box {
+    width: 50%;
+    margin: 0 0 4px;
+  }
+  .custom_popup img,
+    #openModal6 img,
+    #openModal7 img {
+        width: 90%;
+    }
+    .close_btn {
+        left: 39%;
+        width: 22%;
+    }
+    #openModal2 > div {
+        width: 80%;
+    }
+
+    .copyHashtags.copyHashtags3 .tooltip .tooltiptext {
+        font-size: 2vw;
+    }
+
+    .mdisplay {
+        display: block;
+        width: 100%;
+        float: left;
+        margin-top: 4vw;
+    }
+    .product_img3_3 .link02 {
+      width: 50%;
+      height: 20%;
+      bottom: 18%;
+  }
+  .product_img3_3 .link03 {
+      width: 50%;
+      height: 20%;
+      bottom: 18%;
+      left: 50%;
+  }
+  .product_img3_3 .link04 {
+      width: 50%;
+      height: 20%;
+      bottom: 0%;
+      left: 0;
+  }
+  .product_img3_3 .link05 {
+      width: 50%;
+      height: 20%;
+      bottom: 0%;
+      left: 50%;
+  }
+  /* .opening_timing p {    font-size: 30px;}
+  .opening_timing_right .countdown_box p {    top: 14px;
+    right: -16px;
+    letter-spacing: 42px;
+    font-size: 36px;}
+
+    .buy_btn {
+      top: -25px;
+      margin-left: 50px;
+  }
+  .buy_btn a {    padding: 20px 60px;    font-size: 18px;
+    border-radius: 30px}
+
+    .header_banner {height: 425px;}
+
+  .event_navigation ul li a {    font-size: 22px;}
+
+  .events_box {padding: 160px 0 80px;}
+  .main_event01 .event01_flag, .main_event01 .event02_flag, .main_event01 .event03_flag, .main_event01 .event04_flag {    width: 190px;height: 65px;}
+  .event_text {margin: 50px 0 0;}
+  .event_text h4 {    font-size: 34px;}
+  .event_text h1 {font-size: 86px;    margin: 30px 0 40px;}
+  .event_text p {    font-size: 26px;line-height: 40px;}
+
+  .event_info_boxes {    margin: 60px auto 115px;}
+  .event_info_box {    margin: 0 0 22px;}
+  .event_info_box p {    font-size: 20px;}
+  .event_info_box p span.evnt_txt_box {    font-size: 18px;
+    margin-right: 15px;
+    padding: 10px 2px;
+    border-radius: 100px;
+    width: 200px;}
+    .event_info_box span.flt_left {    padding-top: 10px;}
+    .font_18 {    font-size: 18px;
+      margin-top: 3px;}
+      .event_progress_bar {border-radius: 20px;
+        padding: 40px 45px;}
+        .event_progress_bar h3 {margin: 0 0 30px;    font-size: 42px;}
+        .event_progress_bar h3 span {    font-size: 20px;
+          padding-top: 20px;}
+        .product_img {    margin: 100px 0 150px;}
+
+        .event_product_info {height: 635px;}
+
+        .event_product_info_btn {margin: 70px 0 160px;}
+        .event_product_info_btn .comn_btn_link {height: 80px;
+          width: 300px;
+          font-size: 26px;
+          border-radius: 40px;}
+
+
+          .event-notice {padding: 0 0 80px;}
+            .event-notice .event-notice__btn button {    padding: 8px 0;    font-size: 14px;}
+            .event-notice .notice-box {
+              margin-top: 24px;
+          }
+          .event-notice .event-notice__inner dd:not(:last-child) {
+            margin-bottom: 8px;
+        }
+        .event-notice .event-notice__inner dd {    font-size: 16px;    padding-left: 12px;}
+
+        .image-radio {    border: 7px solid #fff;border-radius: 20px;}
+        .image-radio-checked .glyphicon {background-size: 28px auto;}
+        .image-radio .glyphicon {    padding: 26px;}
+        .image-radio-checked {
+          border-color: #317485;
+      }
+
+      .event_product_info_btn4.downdoad_box {    margin-bottom: 50px;}
+
+      .event_product_info4 {    margin-top: 115px;}*/
+
+}
+
+
+</style>
+
+<div id="container" class='' >
+
+  <!-- s : 페이지 로케이션 영역 -->
+  <script type="text/javascript">
+    getDispPathByUrl();
+
+    function getDispPathByUrl() {
+
+      let stId = "1";
+      let reqUri = "/sec/display/preview/352250/";
+      reqUri = reqUri.replace("/sec/", "");
+      if (reqUri.length == 0) return;
+
+      let tmp = "";
+
+      if("" === "Y") return;
+
+      if(reqUri.indexOf('homefitness') > -1) {
+        return;
+      }
+
+      $.ajax({
+        url : "/sec/xhr/display/getGnbByUrl"
+        ,type : "POST"
+        ,data : {stId:stId, linkUrl:reqUri}
+        ,success : function(data) {
+          list = data.list;
+          if (list == null) return;
+
+          $.each(list, function(idx, obj) {
+            if (obj.linkUrl.length > 0) {
+              tmp += '<a href="/sec/'+obj.linkUrl+'">'+obj.dispClsfNm+'</a>';
+            } else if(obj.dispClsfNm != obj.upDispClsfNm){	//동일명칭 Depth Skip 2020.09.14 YJU
+              tmp += "<span>"+obj.dispClsfNm+"</span>";
+            }
+          });
+
+          if (tmp == '') return;
+          let html = "";
+          html += "<div class=\"pg-location-inner locationDiv\">";
+          html += "<a href='/sec/'>HOME</a>";
+          html += tmp;
+          html += "</div>";
+          $(".pg-location").html(html);
+        }
+      });
+    }
+  </script>
+
+  <div class="pg-location">
+  </div><!-- e : 페이지 로케이션 영역 -->
+
+  <!-- s : 최근 본 제품 -->
+  <div id='latestItemLayer' class='layer-pop layer-normal floatingStyle'>
+    <div class='layer-header'>
+      <h2>최근 본 제품</h2>
+    </div>
+    <button type='button' class='pop-close' onclick = "closePop(latestItemLayer)" data-focus-next="latestItemLayer"><span class='blind'>최근 본 제품 닫기</span></button>
+    <div class="LatestItm-result">
+      <p class="result-tit">
+        <span>검색 결과</span><strong class="num">0</strong> 개
+      </p>
+      <button type="button" class="btn btn-d btn-allListClear" onclick = "deleteRecentGoods('Y')" data-st-path ="/sec/" data-focus-next="latestItemLayer">전체삭제</button>
+    </div>
+    <div class="caution-note">※ 최근 본 제품은 30일간 보관됩니다.</div>
+  </div><!-- e : 최근 본 제품 -->
+
+  <scetion class="section  opening_timer">
+    <div class="section__inner">
+      <div class="opening_timing">
+        <div class="opening_timing_left"><p><span class="font_en">24</span>년 <span>BESPOKE</span> 냉장고 신제품 구매하기</p></div>
+        <div class="opening_timing_right ">
+          <div class="countdown_box">
+            <img src="https://images.samsung.com/kdp/editor/common/202403/7a6ac8c1-ff39-4acb-8570-f698c7b9665e.jpg" class="pc_display" alt="">
+            <img src="https://images.samsung.com/kdp/editor/common/202403/db98ce01-0294-4bed-a976-f943f518c2fb.jpg" class="mo_display" alt="">
+            <p id="demo">&nbsp;</p>
+          </div>
+
+          <div class="buy_btn"><a href="https://www.samsung.com/sec/event/bespoke-refrigerator/">구매하기</a></div>
+
+        </div>
+
+
+      </div>
+    </div>
+  </scetion>
+
+  <section class="section header_banner">
+    <div class="blind">
+      <p><span>24년 BESPOKE 냉장고 신제품 런칭 이벤트</span></p>
+      <h1>All NEW BESPOKE festa
+        이런 냉장고와 혜택은 처음이지?
+      </h1>
+      <p>첫 만남, 첫 사랑처럼  주방에 가는 순간을 설레게 하는 비스포크 냉장고를 만나보세요.
+        새로운 냉장고를 만나보는 최초의 순간!
+        순금 금수저를 드리는 선착순 구매 이벤트와 총 4개의 이벤트에 모두 참여해 보세요.</p>
+      <p><b>2024.03.14 ~ 2024.05.31</b></p>
+    </div>
+  </section>
+
+  <section class="section event_navigation">
+    <div class="section__inner">
+      <ul>
+        <li><a href="#sec01">첫 구매 <span class="font_en">65</span>인, 행운의 금수저</a></li>
+        <li><a href="#sec02">첫 눈에 반한 <span class="font_en">BESPOKE</span></a></li>
+        <li><a href="#sec03">첫 만남의 설렘을 가득 담은 후기</a></li>
+        <li><a href="#sec04">첫 인상 이미지 공유하기</a></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="section purchase_banner">
+    <div class="section__inner blind">
+      <div class="purchase_banner_box">
+        <p>비스포크 냉장고</p>
+      </div>
+    </div>
+    <img src="https://images.samsung.com/kdp/editor/common/202403/ef59a7b0-6742-4cdd-9020-11eaef2dc370.jpg" class="pc_display" alt="purchase_link">
+    <img src="https://images.samsung.com/kdp/editor/common/202403/367ddc55-eb92-4b60-9c1a-e47254fe0485.jpg" class="mo_display" alt="purchase_link">
+    <a href="https://www.Samsung.com/sec/event/bespoke-refrigerator/" class="link01">구매하기</a>
+  </section>
+
+  <section id="sec01" class="section events_box event01">
+    <div class="section__inner">
+      <div class="main_event01">
+
+        <div class="event01_flag">
+          <sapn class="blind">Event 1
+          </sapn></div>
+
+        <div class="event_text">
+          <h4><span class="font_w_b"><span class="font_en">24</span>년 <span class="font_en">BESPOKE</span> 신제품</span>  선착순 구매 이벤트</h4>
+          <h1>첫 구매 <span class="font_en">65</span>인, 행운의 금수저</h1>
+          <p>새로운 냉장고를 만나보는 최초의 순간!
+            <span class="font_w_b disply_blk">선착순 총 <span class="font_en">65</span>명에게 순금 금수저(<span class="font_en">2</span>돈)를 드립니다!</span>
+          </p>
+        </div>
+
+        <div class="event_info_boxes">
+          <div class="event_info_box">
+            <div class="w100">
+              <p>
+                <span class="evnt_txt_box">이벤트 대상모델 <br>및 당첨인원</span>
+                <span class="flt_left"><span class="font_en">RF91DB98J1AP</span> (냉장고)
+                  <span class="font_en"> / 60</span>명</span>
+                <span class="flt_left"><span class="font_en">RQ58C949EAP</span> (김치플러스)
+                  <span class="font_en"> / 5</span>명</span>
+              </p>
+            </div>
+            <!--<div>
+                 <p>
+                   <span class="evnt_txt_box">이벤트 참여 대상</span>
+                   <span class="flt_left">삼성닷컴 가입고객 및 구매 인증 고객</span>
+                 </p>
+               </div>-->
+          </div>
+          <div class="event_info_box">
+            <div class="w100">
+              <p>
+                <span class="evnt_txt_box">이벤트 참여 대상</span>
+                <span class="flt_left"><span>이벤트 대상 모델을 구매한 뒤 구매 인증을 통해 응모한 고객 중 선착순 총 </span><span class="font_en">65</span>명
+                      <span class="font_18">*선착순 : 이벤트 응모순으로 선별</span></span>
+              </p>
+            </div>
+          </div>
+          <div class="event_info_box">
+            <div class="w100">
+              <p>
+                <span class="evnt_txt_box">이벤트 참여 기간</span>
+                <span class="flt_left"><span class="font_en">2024.03.14 ~ 2024. 05.31</span>
+                  <span class="font_18">*기간 내, 제품 구매 및 배송 완료 후 구매인증 필요<br>
+                    *구매인증방법 : 구매영수증 &amp; 시리얼번호 라벨 촬영 → 응모시 제출 → 증빙검증<br>
+                    *2024.03.14일 이전 구매 건 참여 불가
+                  </span></span>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="event_progress_bar">
+          <div class="blind">판매량 추이 노출 <span>현재 판매량: 0대</span></div>
+          <img src="https://images.samsung.com/kdp/editor/common/202403/3fa62c2a-bc0d-467f-a766-c5a9cc90c64e.png" class="pc_display" alt="progress bar">
+          <img src="https://images.samsung.com/kdp/editor/common/202403/446e195f-0159-4d8d-ab1c-b2d5917c05c1.png" class="mo_display" alt="progress bar">
+        </div>
+
+        <div class="product_img">
+          <img src="https://images.samsung.com/kdp/editor/common/202403/64a6c76f-c143-4984-8e54-5a4215d46acf.png" alt="event1_img">
+        </div>
+
+        <div class="event_product_info">
+          <div class="blind">
+            <h3>참여방법</h3>
+            <div>
+              <h4>① 구매 및 배송 완료</h4>
+              <p>이벤트 대상 모델<br>
+                구매 및 배송 설치 완료</p>
+              <img src="//images.samsung.com/kdp/editor/common/202402/f5bfa228-d13c-4066-866e-49855e03b6de.png" alt="refigrator">
+            </div>
+            <div>
+              <h4>② 구매영수증 촬영 (구매인증용)</h4>
+              <p>구매처 및<br>
+                구매모델 확인을 위한<br>
+                구매영수증 촬영
+              </p>
+              <img src="//images.samsung.com/kdp/editor/common/202402/e5fdffb2-2705-483b-9ea7-b430cfce2f2f.png" alt="receipt">
+            </div>
+            <div>
+              <h4>③ 시리얼 넘버 촬영 (구매인증용)</h4>
+              <p>냉장고 외부 측면 혹은
+                냉장고 내부 라벨의
+                시리얼 넘버 촬영<br>
+                *시리얼 넘버는 SERIAL NO. 혹은 S/N으로 기재된 번호로 확인하실 수 있습니다. </p>
+              <img src="//images.samsung.com/kdp/editor/common/202402/33596427-12b7-47ec-b731-47cd9facb148.png" alt="phonecheck">
+            </div>
+            <div>
+              <h4>④ 응모하기</h4>
+              <p>하단의 ‘응모하기’
+                버튼으로 개인정보 및
+                ②, ③ 이미지 첨부</p>
+              <img src="//images.samsung.com/kdp/editor/common/202402/b25ba2de-373d-4e6a-abf8-54191cc19578.png" alt="kakaophone">
+            </div>
+          </div>
+        </div>
+
+        <div class="event_product_info_btn">
+          <a href="javascript:vouid(0);" onclick="fnCallPop2(32881)" data-popup-target="popupExhibitionEnter" data-di-id="di-id-a1661b6a-54e12a6c" aria-haspopup="false" class="comn_btn_link">응모하기</a>
+
+
+          <!--<button type="button" class="btn btn-type1 clicked" onclick="fnCallPop2(32881)" data-popup-target="popupExhibitionEnter" data-di-id="di-id-a1661b6a-54e12a6c" aria-haspopup="false">이벤트응모 테스트</button>-->
+        </div>
+
+      </div>
+
+
+    </div>
+
+    <div class="soldout"></div>
+  </section>
+
+  <section class="event_notice_board event_notice_board1">
+    <div class="section__inner">
+      <div class="event-notice">
+      <span class="event-notice__btn"><button>
+        유의 사항
+        <span class="icons down-bracket"><img src="https://images.samsung.com/kdp/editor/common/202304/c4d3aff3-25f6-4927-92f5-61f1e05ceac9.png" alt=""></span></button></span>
+        <div class="event-notice__inner">
+          <dl>
+            <div class="notice-box">
+              <!--<dt>[삼성TV 슈퍼빅세일 빈칸 QUIZ 이벤트 유의사항]</dt>-->
+              <dd>본 이벤트의 응모를 위해서는 삼성닷컴 회원가입 및 계정 정보가 필요합니다</dd>
+              <dd>이벤트 응모 기간 : 2024.03.14 – 2024.05.31</dd>
+              <dd>이벤트 신청 대상 : 이벤트 대상 모델을 구매한 뒤 구매 인증을 통해 응모한 고객 중 선착순 총 65명 (냉장고 60명 / 김치플러스 5명)</dd>
+              <dd>당첨자 발표 : 응모자별 구매인증 여부 확인 후 당첨자 개별 안내 (응모 후 14일 이내 발표)</dd>
+              <dd>만 14세 미만은 이벤트 참여가 불가능합니다.</dd>
+              <dd>이벤트 혜택은 본 이벤트 신청 시 입력한 주소 혹은 핸드폰 번호로 발송됩니다.</dd>
+              <dd>이벤트 신청 시 잘못 입력한 개인정보로 인해 오발송 또는 반송될 경우 재발송은 불가하오니 신청 전 반드시 입력 정보를 확인해 주시기 바랍니다.</dd>
+              <dd>고객이 잘못 입력한 정보로 인한 혜택 미제공은 당사가 책임지지 않습니다.</dd>
+              <dd>구매 취소 시 제공받은 혜택은 반납하여야 합니다.</dd>
+              <dd>입력하신 주소로 배송이 불가능할 경우(도서 산간지역, 해외 등) 혜택 제공이 제한될 수 있습니다.</dd>
+              <dd>BESPOKE 금수저 상패는 당첨자별 1개씩 지급됩니다.</dd>
+              <dd>BESPOKE 금수저 상패는 금수저 2돈(7.5g)과 우드 상패로 제공됩니다.</dd>
+              <dd>본 행사의 상품은 당사 사정에 따라 예고없이 변경될 수 있으며, 당첨자에게는 변경 내용이 개별 안내될 예정입니다.</dd>
+              <dd>본 혜택은 현금 및 타 상품으로 교환되지 않습니다.</dd>
+              <dd>실제 상품은 상기 이미지와 다를 수 있습니다.</dd>
+              <dd>본 행사는 당사 사정에 따라 선착순 인원 소진 시 예고 없이 변경되거나 중단될 수 있습니다.</dd>
+              <dd>제세공과금 대납 업무를 위해 운영 관리 대행사에서 연락이 갈 수 있으며, 신분증 사본 등 개인정보를 요청할 수 있습니다.</dd>
+              <dd>BESPOKE 금수저 상패의 제세공과금은 삼성전자에서 부담합니다.</dd>
+              <dd>혜택 발송을 위해 당사 혜택 운영 관리 대행사에 배송정보가 제공되며 행사 종료일 기준 3개월 후 파기됩니다.</dd>
+              <dd>당첨자별 배송 시점은 다를 수 있습니다.</dd>
+              <dd>당첨자는 삼성닷컴을 통해 응모하신 분들을 대상으로 선정됩니다.</dd>
+              <dd>경품 증정 일자, 증정 방법 등은 당첨자에게 개별 연락드릴 예정이며, 당첨 발표 기간 내 문자 및 전화 등 연락이 닿지 않을 시 당첨이 취소됩니다.</dd>
+              <dd>본 이벤트는 중복 참여 및 중복 당첨이 불가능합니다.</dd>
+              <dd>본 행사는 매장에서 구입 시, 행사 매장 내 행사 모델에 한합니다.</dd>
+              <dd>비 정상적인 방법으로 참여 시 당첨이 제한, 취소될 수 있습니다. (타인 명의 이미지 도용, 가짜 명의 생성, 반복 참여 프로그램 이용, 단순 복사 등)</dd>
+              <dd>혜택 운영 관리: ㈜이든앤앨리스마케팅 1577-2680 (평일 10-17시, 점심시간 12-13시 30분, 주말 및 공휴일 미운영)</dd>
+            </div>
+          </dl>
+        </div>
+      </div>
+    </div>
+    <div class="soldout2"></div>
+  </section>
+
+
+
+  <section id="sec02" class="section events_box event02">
+    <div class="section__inner">
+      <div class="main_event01">
+
+        <div class="event02_flag">
+          <span class="blind">Event 2</span>
+        </div>
+
+        <div class="event_text">
+          <h4><span class="font_w_b"><span class="font_en">24</span>년 <span class="font_en">BESPOKE</span> 신제품</span>  구매 혜택 이벤트</h4>
+          <h1>첫 눈에 반한 <span class="font_en">BESPOKE</span></h1>
+          <p>첫 눈에 반해 구매한 <span class="font_en">BESPOKE</span> 냉장고!
+            <span class="font_w_b disply_blk">구매 인증을 해 주신 분들에게 총 <span class="font_en">10</span>만원의 상당의 상품권을 드립니다.</span>
+            <span class="font_18">*5만원 상당의 모바일 상품권  (중복 선택 가능)</span>
+          </p>
+
+        </div>
+
+        <div class="event_info_boxes">
+          <div class="event_info_box">
+            <div class="w100">
+              <p>
+                <span class="evnt_txt_box">이벤트 대상 모델</span>
+                <span class="flt_left"> <a id="button7" class="link06" href="javascript:void(0)" style="color:#79a346; text-decoration: underline;">대상 모델 확인하기 &gt;</a>
+                  </span>
+              </p>
+            </div>
+
+          </div>
+
+          <div class="event_info_box">
+            <div class="w100">
+              <p>
+                <span class="evnt_txt_box">이벤트 당첨 인원</span>
+                <span class="flt_left">대상모델 구매 인증 고객 전원 <span class="font_18" style="display: inline-block; margin-left: 10px;">  *예산 소진 시 조기 종료 가능</span>
+                </span>
+              </p>
+            </div>
+
+          </div>
+          <div class="event_info_box">
+            <div class="w100">
+              <p>
+                <span class="evnt_txt_box">이벤트 참여 대상</span>
+                <span class="flt_left">오프라인 매장, 네이버, 삼성닷컴을 통해 구매한 고객 한정 <span class="font_18">*오프라인 매장 : 삼성스토어/하이마트/이마트/전자랜드/코스트코</span></span>
+              </p>
+            </div>
+          </div>
+          <div class="event_info_box">
+            <div class="w100">
+              <p>
+                <span class="evnt_txt_box">이벤트 참여 기간</span>
+                <span class="flt_left"><span class="font_en">2024.03.14 ~ 2024. 05.31</span>
+                <span class="font_18">*기간 내, 제품 구매 및 배송 완료 후 구매인증 필요<br>
+                  *구매인증방법 : 구매영수증 &amp; 시리얼번호 라벨 촬영 → 응모시 제출 → 증빙검증<br>
+                  *2024.03.14일 이전 구매 건 참여 불가</span></span>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="event_progress_bar">
+          <div class="blind">응모 현황 <span>응모자 수 : 0명</span></div>
+          <img src="https://images.samsung.com/kdp/editor/common/202403/410139be-b8ad-4b37-a75b-c71efc222131.png" class="pc_display" alt="progress bar">
+          <img src="https://images.samsung.com/kdp/editor/common/202403/7fcc7212-e64a-4fef-aa1b-e7382c7b058f.png" class="mo_display" alt="progress bar">
+        </div>
+
+        <div class="product_img">
+          <img src="https://images.samsung.com/kdp/editor/common/202403/dad3c5b0-b85f-47f7-8e45-a097c838525a.png" alt="Event 2">
+        </div>
+
+        <div class="event_product_info event_product_info2">
+          <div class="blind">
+            <h3>참여방법</h3>
+            <div>
+              <h4>① 구매 및 배송 완료</h4>
+              <p>이벤트 대상 모델<br>
+                구매 및 배송 설치 완료</p>
+              <img src="//images.samsung.com/kdp/editor/common/202402/f5bfa228-d13c-4066-866e-49855e03b6de.png" alt="refigrator">
+            </div>
+            <div>
+              <h4>② 구매영수증 촬영 (구매인증용)</h4>
+              <p>구매처 및<br>
+                구매모델 확인을 위한<br>
+                구매영수증 촬영
+              </p>
+              <img src="//images.samsung.com/kdp/editor/common/202402/e5fdffb2-2705-483b-9ea7-b430cfce2f2f.png" alt="receipt">
+            </div>
+            <div>
+              <h4>③ 시리얼 넘버 촬영 (구매인증용)</h4>
+              <p>냉장고 외부 측면 혹은
+                냉장고 내부 라벨의
+                시리얼 넘버 촬영<br>
+                *시리얼 넘버는 SERIAL NO. 혹은 S/N으로 기재된 번호로 확인하실 수 있습니다.</p>
+              <img src="//images.samsung.com/kdp/editor/common/202402/33596427-12b7-47ec-b731-47cd9facb148.png" alt="phonecheck">
+            </div>
+            <div>
+              <h4>④ 응모하기</h4>
+              <p>하단의 ‘응모하기’
+                버튼으로 개인정보 및
+                ②, ③ 이미지 첨부</p>
+              <img src="//images.samsung.com/kdp/editor/common/202402/b25ba2de-373d-4e6a-abf8-54191cc19578.png" alt="kakaophone">
+            </div>
+          </div>
+        </div>
+
+        <div class="event_product_info_btn event_product_info_btn2">
+          <button class="comn_btn_link" type="button" onclick="fnCallPop2(32882)" data-popup-target="popupExhibitionEnter">응모하기</button>
+        </div>
+
+      </div>
+
+      <div class="event-notice">
+      <span class="event-notice__btn"><button>
+        유의 사항
+        <span class="icons down-bracket"><img src="//images.samsung.com/kdp/editor/common/202304/c4d3aff3-25f6-4927-92f5-61f1e05ceac9.png" alt=""></span></button></span>
+        <div class="event-notice__inner">
+          <dl>
+            <div class="notice-box">
+              <dd>본 이벤트의 응모를 위해서는 삼성닷컴 회원가입 및 계정 정보가 필요합니다. </dd>
+              <dd>이벤트 응모 기간 : 2024.03.14 – 2024.05.31</dd>
+              <dd>이벤트 신청 대상 : 오프라인 매장, 네이버, 삼성닷컴을 통해 구매한 고객 중 구매인증고객 한정 (오프라인 매장 : 삼성스토어/하이마트/이마트/전자랜드/코스트코)</dd>
+              <dd>당첨자 발표 : 응모자별 구매인증 여부 확인 후 당첨자 개별 안내 (응모 후 14일 이내 발표) </dd>
+              <dd>만 14세 미만은 이벤트 참여가 불가능합니다.</dd>
+              <dd>이벤트 혜택은 본 이벤트 신청 시 입력한 주소 혹은 핸드폰 번호로 발송됩니다.</dd>
+              <dd>이벤트 신청 시 잘못 입력한 개인정보로 인해 오발송 또는 반송될 경우 재발송은 불가하오니 신청 전 반드시 입력 정보를 확인해 주시기 바랍니다.</dd>
+              <dd>고객이 잘못 입력한 정보로 인한 혜택 미제공은 당사가 책임지지 않습니다.</dd>
+              <dd>구매 취소 시 제공받은 혜택은 반납하여야 합니다.</dd>
+              <dd>아웃백, 올리브영, SK 주유소, 뚜레쥬르 중 선택하신 1개 혹은 2개의 브랜드에 한하여 지급되며, 5만원 상품권은 당첨자별 2개씩 지급됩니다.</dd>
+              <dd>본 행사의 상품은 당사 사정에 따라 예고없이 변경될 수 있으며, 당첨자에게는 변경 내용이 개별 안내될 예정입니다.</dd>
+              <dd>본 혜택은 현금 및 타 상품으로 교환되지 않습니다.</dd>
+              <dd>실제 상품은 상기 이미지와 다를 수 있습니다.</dd>
+              <dd>본 행사는 당사 사정에 따라 예산 소진 시 예고 없이 변경되거나 중단될 수 있습니다.</dd>
+              <dd>혜택 발송을 위해 당사 혜택 운영 관리 대행사에 배송정보가 제공되며 행사 종료일 기준 3개월 후 파기됩니다.</dd>
+              <dd>당첨자별 배송 시점은 다를 수 있습니다.</dd>
+              <dd>당첨자는 삼성닷컴을 통해 응모하신 분들을 대상으로 선정됩니다.</dd>
+              <dd>경품 증정 일자, 증정 방법 등은 당첨자에게 개별 연락드릴 예정이며, 당첨 발표 기간 내 문자 및 전화 등 연락이 닿지 않을 시 당첨이 취소됩니다.</dd>
+              <dd>본 이벤트는 중복 참여 및 중복 당첨이 불가능합니다.</dd>
+              <dd>본 행사는 매장에서 구입 시, 행사 매장 내 행사 모델에 한합니다.</dd>
+              <dd>비 정상적인 방법으로 참여 시 당첨이 제한, 취소될 수 있습니다. (타인 명의 이미지 도용, 가짜 명의 생성, 반복 참여 프로그램 이용, 단순 복사 등)</dd>
+              <dd>당첨자는 삼성닷컴을 통해 응모하신 분들을 대상으로 응모순 선착순으로 선정됩니다.</dd>
+              <dd>혜택 운영 관리: ㈜이든앤앨리스마케팅 1577-2680 (평일 10-17시, 점심시간 12-13시 30분, 주말 및 공휴일 미운영)</dd>
+              <br>
+              <div class="notice-box2">
+                <dt style="list-style: none; margin:0; font-weight: normal;">[ 아웃백 스테이크 하우스 디지털 기프트 카드 ]</dt>
+                <dd>유효기간 : 발행일로부터 30일</dd>
+                <dd>본 디지털 기프트 카드는 부메랑 멤버십 할인 및 제휴 할인(통신사 등) 적용 전 사용 가능합니다.</dd>
+                <dd>본 디지털 기프트 카드로 아웃백 상품권을 구매/교환하실 수 없습니다.</dd>
+                <dd>아웃백 매장에서 본 디지털 기프트 카드를 사용하는 경우, 결제 시 직원에게 제시하면 잔액 확인 후 사용 가능합니다.</dd>
+                <dd>사용 후 잔액은 상품권 유효기간 내에 다시 사용하실 수 있도록 재저장 됩니다.</dd>
+                <dd>본 디지털 기프트 카드는 정상적인 바코드 화면 제시시에만 사용 가능합니다. 인증번호만 제시하는 경우 사용이 불가한 점 사용에 참고 부탁드립니다. </dd>
+              </div>
+              <br>
+              <div class="notice-box2">
+                <dt style="list-style: none; margin:0; font-weight: normal;">[ 올리브영 기프트 카드 ]</dt>
+                <dd>유효기간 : 발행일로부터 30일</dd>
+                <dd>매장에서 결제시 선물받은 MMS 바코드를 제시해 주세요.</dd>
+                <dd>기업 경품/사은품 등으로 받은 CJ기프트카드는 현금반환 및 기간연장이 불가합니다.</dd>
+                <dd>카드번호 도난, 분실 등의 고객 부주의로 발생한 사고에 대해서는 보상이 불가합니다.</dd>
+                <dd>발송 내역 삭제 후에는 기프트카드 삭제, 분실 등에 따른 재발송이 불가하니 유의 바랍니다.</dd>
+              </div>
+              <br>
+              <div class="notice-box2">
+                <dt style="list-style: none; margin:0; font-weight: normal;">[ 뚜레쥬르 모바일 제품교환권 ] </dt>
+                <dd>유효기간 : 발행일로부터 30일</dd>
+                <dd>해당 금액 안에서 뚜레쥬르 전 상품으로 교환 가능합니다.</dd>
+                <dd>사용금액 제외 후 추가 결제분에 한해 제휴할인 및 포인트 적립 가능합니다.</dd>
+                <dd>포인트 적립 및 제휴할인 불가</dd>
+                <dd>1회 사용 이후 재사용 및 잔액환불 불가</dd>
+                <dd>뚜레쥬르 전 매장(단, 휴게소에 입점되어 있는 일부 매장은 사용 불가합니다.)</dd>
+              </div>
+              <br>
+              <div class="notice-box2">
+                <dt style="list-style: none; margin:0; font-weight: normal;">[SK 모바일 주유권 ]</dt>
+                <dd>유효기간: 발행일로부터 30일</dd>
+                <dd>개인간 양도 불가합니다.</dd>
+                <dd>일부 주유소 및 충전소 사용 제외</dd>
+                <dd>본상품은 프로모션상품으로 기간연장 불가합니다.</dd>
+                <dd>주유소 및 충전소당 1인 1회 사용 가능(일부 주유소 및 일부 충전소 제외)</dd>
+                <dd>SK주유소 및 충전소에서 결제 전 주유원에게 보여 주시기 바랍니다.</dd>
+              </div>
+
+            </div>
+          </dl>
+        </div>
+      </div>
+    </div>
+
+    <div class="soldout"></div>
+  </section>
+
+  <section id="sec03" class="section events_box event03">
+    <div class="section__inner">
+      <div class="main_event01">
+
+        <div class="event03_flag">
+          <span class="blind">Event 3</span>
+        </div>
+
+        <div class="event_text">
+          <h4><span class="font_w_b"><span class="font_en">24</span>년 <span class="font_en">BESPOKE</span> 신제품</span>  구매 후기 이벤트</h4>
+          <h1>첫 만남의 설렘을 가득 담은 후기</h1>
+          <p><span class="font_en">BESPOKE</span> 냉장고와의 첫 만남!<br>
+            후기를 작성해주신 분들 중 BEST 후기 선정을 통해
+            <span class="font_w_b disply_blk">매월 <span class="font_en">10</span>명에게 에르메스 테이블웨어 접시를 드립니다!</span>
+          </p>
+        </div>
+
+        <div class="event_info_boxes">
+          <div class="event_info_box">
+            <div class="w100">
+              <p>
+                <span class="evnt_txt_box">이벤트 대상 모델</span>
+                <span class="flt_left"> </span></p><p><button id="button6" class="link06" style="color:#79a346; text-decoration: underline;">대상 모델 확인하기 &gt;</button></p>
+
+
+              <p>&nbsp;</p>
+            </div>
+
+          </div>
+
+
+          <div class="event_info_box">
+            <div class="w100">
+              <p>
+                <span class="evnt_txt_box">이벤트 당첨 인원</span>
+                <span class="flt_left">30명 (3개월간 매달 10명 추첨) <span class="font_18" style="display: inline-block; margin-left: 10px;">  *매월 10일에 당첨자 발표 (3/20일 응모 → 4/10일 발표)</span>
+              </span>
+              </p>
+            </div>
+
+          </div>
+          <div class="event_info_box">
+            <div class="w100">
+              <p>
+                <span class="evnt_txt_box">이벤트 참여 대상</span>
+                <span class="flt_left">이벤트 대상모델 구매 인증 및 후기 작성 고객 <span class="font_18">*SNS/블로그/카페 등<br>
+                *필수 해시태그 및 URL 포함</span></span>
+              </p>
+            </div>
+          </div>
+
+          <div class="event_info_box">
+            <div class="w100">
+              <p>
+                <span class="evnt_txt_box">이벤트 참여 기간</span>
+                <span class="flt_left"><span class="font_en">2024.03.14 ~ 2024. 05.31</span>
+            <span class="font_18">*기간 내, 구매인증 및 SNS/블로그/카페 등에 공개게시물 작성 필요<br>
+              *2024.07.01까지 게시물 유지 필요<br>
+              *구매인증방법 : 구매영수증 &amp; 시리얼번호 라벨 촬영 → 응모시 제출 → 증빙검증<br>
+              *2024.03.14일 이전 구매 건 참여 불가</span></span>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="product_img product_img3 product_img3_3">
+          <img src="https://images.samsung.com/kdp/editor/common/202403/79144f41-ab51-4167-9969-eba89670ad15.png" class="pc_display" alt="product3_img">
+          <img src="https://images.samsung.com/kdp/editor/common/202403/ee6eab8a-ba50-4502-b094-68ef3b44fce7.png" class="mo_display" alt="product3_img">
+          <button id="button2" class="link02">더 알아보기</button>
+          <button id="button3" class="link03">더 알아보기</button>
+          <button id="button4" class="link04">더 알아보기</button>
+          <button id="button5" class="link05">더 알아보기</button>
+        </div>
+
+        <div class="product_img product_img3 mt60">
+          <img src="//images.samsung.com/kdp/editor/common/202403/6592bc83-446e-49ce-b4a8-a5dfb641735e.png" alt="Event 3">
+        </div>
+
+        <div class="event_product_info event_product_info3">
+          <div class="copyHashtags copyHashtags3">
+            <input type="text" value="#삼성전자이벤트 #AllNEWBESPOKE #삼성하이브리드냉장고 #BESPOKE냉장고 #BESPOKE김치플러스 #AI하이브리드쿨링 #AI비전인사이드 #오토오픈도어 #맞춤숙성실" id="myInput3" class="blind">
+            <div class="tooltip">
+              <button onclick="myFunction3()" onmouseout="outFunc3()">
+                <span class="tooltiptext" id="myTooltip3">Copy Hashtags</span>
+                <span class="button_text">asdas</span>
+              </button>
+            </div>
+
+          </div>
+          <div class="blind">
+            <h3>참여방법</h3>
+            <div>
+              <h4>① 구매영수증 촬영 (구매인증용)</h4>
+              <p>구매처 및
+                구매모델 확인을 위한
+                구매영수증 촬영</p>
+              <img src="//images.samsung.com/kdp/editor/common/202402/f5bfa228-d13c-4066-866e-49855e03b6de.png" alt="refigrator">
+            </div>
+            <div>
+              <h4>② 시리얼 넘버 촬영 (구매인증용)</h4>
+              <p>냉장고 외부 측면 혹은
+                냉장고 내부 라벨의
+                시리얼 넘버 촬영<br>
+                *시리얼 넘버는 SERIAL NO. 혹은 S/N으로 기재된 번호로 확인하실 수 있습니다.</p>
+              <img src="//images.samsung.com/kdp/editor/common/202402/e5fdffb2-2705-483b-9ea7-b430cfce2f2f.png" alt="receipt">
+            </div>
+            <div>
+              <h4>③ SNS에 후기 작성</h4>
+              <p>인스타그램, 블로그 등
+                SNS에 필수 해시태그 포함
+                하여 공개 계정으로 작성
+                *회원제, 비공개카페 등 작성 시 미인정
+              </p>
+              <img src="//images.samsung.com/kdp/editor/common/202402/33596427-12b7-47ec-b731-47cd9facb148.png" alt="phonecheck">
+            </div>
+            <div>
+              <h4>④ 응모하기</h4>
+              <p>하단의 ‘응모하기’
+                버튼으로 개인정보 및
+                ①, ②, ③ 이미지 첨부</p>
+              <img src="//images.samsung.com/kdp/editor/common/202402/b25ba2de-373d-4e6a-abf8-54191cc19578.png" alt="kakaophone">
+            </div>
+          </div>
+        </div>
+
+
+
+        <!--<div class="w100">
+          <br>EVENT1<br>
+          <input type="text" name="e1_model" id="e1_model" neOnly='true' maxlength="13" class="upstyle">
+          <input type="text" name="e1_serial" id="e1_serial" maxlength="15"  neOnly='true'  class="upstyle">
+          <input type="button" value="event1" onclick="fnSerialCall('e1');" />
+          </div>-->
+
+
+        <div class="event_product_info_btn event_product_info_btn3">
+          <button class="comn_btn_link" type="button" onclick="fnCallPop2(32883)" data-popup-target="popupExhibitionEnter">응모하기</button>
+        </div>
+
+      </div>
+
+
+    </div>
+
+
+
+
+  </section>
+
+  <div class="event_notice_board event_notice_board3">
+    <div class="section__inner">
+      <div class="event-notice event-notice3">
+      <span class="event-notice__btn"><button>
+        유의 사항
+        <span class="icons down-bracket"><img src="https://images.samsung.com/kdp/editor/common/202402/23ef48c0-7a2a-4e3a-817f-5b590b8980a1.png" alt=""></span></button></span>
+        <div class="event-notice__inner">
+          <dl>
+            <div class="notice-box">
+              <dd>본 이벤트의 응모를 위해서는 삼성닷컴 회원가입 및 계정 정보가 필요합니다. </dd>
+              <dd>이벤트 응모 기간 : 2024.03.14 – 2024.05.31</dd>
+              <dd>이벤트 신청 대상 : 이벤트 대상모델 구매 인증 및 후기 작성 고객 (SNS/블로그/카페 등 공개게시물로 작성, 필수 해시태그 포함)</dd>
+              <dd>당첨자 발표 : 3/14 ~ 3/31일 응모 → 4/10일 발표,  4/1 ~ 4/30일 접수 → 5/10일 발표, 5/1 ~ 31일 접수 → 6/10일 발표. 당첨자 개별 안내.</dd>
+              <dd>만 14세 미만은 이벤트 참여가 불가능합니다.</dd>
+              <dd>이벤트 혜택은 본 이벤트 신청 시 입력한 주소 혹은 핸드폰 번호로 발송됩니다.</dd>
+              <dd>이벤트 신청 시 잘못 입력한 개인정보로 인해 오발송 또는 반송될 경우 재발송은 불가하오니 신청 전 반드시 입력 정보를 확인해 주시기 바랍니다.</dd>
+              <dd>고객이 잘못 입력한 정보로 인한 혜택 미제공은 당사가 책임지지 않습니다.</dd>
+              <dd>구매 취소 시 제공받은 혜택은 반납하여야 합니다.</dd>
+              <dd>입력하신 주소로 배송이 불가능할 경우(도서 산간지역, 해외 등) 혜택 제공이 제한될 수 있습니다.</dd>
+              <dd>에르메스 테이블웨어 접시는 당첨자별 2개씩 지급됩니다.</dd>
+              <dd>에르메스 테이블웨어 접시는 모자이크 24 플래티넘 디저트 플레이트 (21cm) 제품으로 제공됩니다.</dd>
+              <dd>본 행사의 상품은 당사 사정에 따라 예고없이 변경될 수 있으며, 당첨자에게는 변경 내용이 개별 안내될 예정입니다.</dd>
+              <dd>본 혜택은 현금 및 타 상품으로 교환되지 않습니다.</dd>
+              <dd>실제 상품은 상기 이미지와 다를 수 있습니다.</dd>
+              <dd>본 행사는 당사 사정에 따라 예고 없이 변경되거나 중단될 수 있습니다.</dd>
+              <dd>제세공과금 대납 업무를 위해 운영 관리 대행사에서 연락이 갈 수 있으며, 신분증 사본 등 개인정보를 요청할 수 있습니다.</dd>
+              <dd>에르메스 테이블웨어 접시의 제세공과금은 삼성전자에서 부담합니다.</dd>
+              <dd>혜택 발송을 위해 당사 혜택 운영 관리 대행사에 배송정보가 제공되며 행사 종료일 기준 3개월 후 파기됩니다.</dd>
+              <dd>당첨자별 배송 시점은 다를 수 있습니다.</dd>
+              <dd>당첨자는 삼성닷컴을 통해 응모하신 분들을 대상으로 선정됩니다.</dd>
+              <dd>경품 증정 일자, 증정 방법 등은 당첨자에게 개별 연락드릴 예정이며, 당첨 발표 기간 내 문자 및 전화 등 연락이 닿지 않을 시 당첨이 취소됩니다.</dd>
+              <dd>본 이벤트는 중복 참여 및 중복 당첨이 불가능합니다.</dd>
+              <dd>본 행사는 매장에서 구입 시, 행사 매장 내 행사 모델에 한합니다.</dd>
+              <dd>비 정상적인 방법으로 참여 시 당첨이 제한, 취소될 수 있습니다. (타인 명의 이미지 도용, 가짜 명의 생성, 반복 참여 프로그램 이용, 단순 복사 등)</dd>
+              <dd>혜택 운영 관리: ㈜이든앤앨리스마케팅 1577-2680 (평일 10-17시, 점심시간 12-13시 30분, 주말 및 공휴일 미운영)</dd>
+            </div>
+          </dl>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section id="sec04" class="section events_box event04">
+    <div class="event4_box1">
+      <div class="section__inner">
+        <div class="main_event01">
+
+          <div class="event04_flag">
+            <span class="blind">Event 4</span>
+          </div>
+
+          <div class="event_text">
+            <h4><span class="font_w_b"><span class="font_en">24</span>년 <span class="font_en">BESPOKE</span> 신제품</span>  랜덤 추첨 이벤트</h4>
+            <h1>첫 인상 이미지 공유하기</h1>
+            <p><span class="font_en">BESPOKE</span> 냉장고의 첫 인상 이미지!<br>
+              마음에 드는 신규 기능을 선택하여 <span class="font_en">SNS</span>에 공유해주신 분들 중
+              <span class="font_w_b disply_blk">추첨으로 <span class="font_en">1,000</span>명에게 달콤한 선물을 드립니다!</span>
+            </p>
+          </div>
+
+          <div class="event_info_boxes event_info_boxes4">
+
+
+            <div class="event_info_box">
+              <div class="w100">
+                <p>
+                  <span class="evnt_txt_box">이벤트 당첨 인원</span>
+                  <span class="flt_left" style="width: auto; margin-right: 50px;"><span class="font_en">1,000</span>명</span>
+
+                  <span class="mdisplay"><span class="evnt_txt_box">이벤트 참여 대상</span>
+              <span class="flt_left" style="width: auto;">삼성닷컴 가입고객 및 <span class="font_en">SNS</span> 공유 인증 고객 <span class="font_18">*필수 해시태그 및 URL 포함</span></span>
+            </span>  </p>
+              </div>
+              <!--<div>
+                    <p>
+                      <span class="evnt_txt_box">이벤트 참여 대상</span>
+                      <span class="flt_left">삼성닷컴 가입고객 및 <span class="font_en">>SNS</span> 공유 인증 고객</span>
+                    </p>
+                  </div>-->
+            </div>
+
+            <div class="event_info_box">
+              <div class="w100">
+                <p>
+                  <span class="evnt_txt_box">이벤트 참여 기간</span>
+                  <span class="flt_left"><span class="font_en">2024.03.14 ~ 2024. 05.31</span>
+            <span class="font_18" style="display: inline-block;"><span class="font_en">  *2024.07.01</span>까지 게시물 유지 필요</span>
+          </span></p>
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="product_img product_img4 product_img3_3">
+            <img src="https://images.samsung.com/kdp/editor/common/202403/6857e782-9a9c-4234-b779-4c038dc7f9b9.png" class="pc_display" alt="product4_img">
+            <img src="https://images.samsung.com/kdp/editor/common/202403/c48d0a6e-965c-4a10-9ee6-195f8260ed60.png" class="mo_display" alt="product4_img">
+          </div>
+
+          <div class="download_prodt_img">
+            <div class="download_prodt_img_box">
+              <label class="image-radio">
+                <img class="img-responsive" src="//images.samsung.com/kdp/editor/common/202403/6ff5785a-3206-4723-87b7-2842d72d697c.png">
+                <input type="radio" name="image_radio" value="1" id="event1" checked="">
+                <i class="glyphicon glyphicon-ok hidden"></i>
+              </label>
+            </div>
+
+            <div class="download_prodt_img_box">
+              <label class="image-radio">
+                <img class="img-responsive" src="//images.samsung.com/kdp/editor/common/202403/a816d887-cebe-4ace-a2e6-2087f0b6c789.png">
+                <input type="radio" name="image_radio" value="2" id="event2">
+                <i class="glyphicon glyphicon-ok hidden"></i>
+              </label>
+            </div>
+            <div class="download_prodt_img_box">
+              <label class="image-radio">
+                <img class="img-responsive" src="//images.samsung.com/kdp/editor/common/202403/0b87922b-de0c-4940-afda-b459d6bd4bdd.png">
+                <input type="radio" name="image_radio" value="3" id="event3">
+                <i class="glyphicon glyphicon-ok hidden"></i>
+              </label>
+            </div>
+            <div class="download_prodt_img_box">
+              <label class="image-radio">
+                <img class="img-responsive" src="//images.samsung.com/kdp/editor/common/202403/4ff13512-9097-443b-a125-48990aa9f1d0.png">
+                <input type="radio" name="image_radio" value="4" id="event4">
+                <i class="glyphicon glyphicon-ok hidden"></i>
+              </label>
+            </div>
+
+          </div>
+
+          <div class="event_product_info_btn event_product_info_btn4 downdoad_box">
+            <button id="download_button" class="comn_btn_link" onclick="downloadAddin()">다운로드 <img src="//images.samsung.com/kdp/editor/common/202402/a7e3a7a8-8bd2-449b-9a55-cf86bce8e325.png" alt="download icon"></button>
+          </div>
+
+
+          <div class="event-notice">
+  <span class="event-notice__btn"><button>
+    유의 사항
+    <span class="icons down-bracket"><img src="https://images.samsung.com/kdp/editor/common/202304/c4d3aff3-25f6-4927-92f5-61f1e05ceac9.png" alt=""></span></button></span>
+            <div class="event-notice__inner">
+              <dl>
+                <div class="notice-box">
+
+
+                  <dt style="list-style: none; margin:0; font-weight: normal;">[AI 비전 인사이드]</dt>
+                  <dd>등록된 식재료 33종은 이미지와 이름 매칭이 가능하며, 그 외 식재료는 더 편리한 사용을 위해 직접 이름 변경 및 보관 기한 설정이 필요합니다.</dd>
+                  <dd>입출고 인식 가능 크기 : 25cm 이상(5cm x 5cm)</dd>
+                  <dd>불투명한 봉지나 상단이 불투명한 용기에 담긴 식품은 어떤 식품인지 인식되지 않습니다.</dd>
+                  <dd>냉장고 내 등이 꺼져 있거나 주변 환경이 어투우면 인식률에 차이가 생길 수 있습니다.</dd>
+                  <dd>도어빈은 입출고 인식 범위가 아니며, 촬영된 이미지만 제공됩니다</dd>
+                  <dd>카메라에 식품을 잠깐 멈춰 보여주거나, 느린 속도로 입고하면 선명하게 촬영되어 인식률이 높아집니다.</dd>
+                  <dd>SmartThings 기능을 사용하기 위해서는 SmartThings 앱 설치 및 연동, 무선 네트워크 연결이 필요합니다.</dd>
+                  <dd>레시피추천은 SmartThings에 등독된 레시피에 한해 이용 가능합니다.</dd>
+                  <dd>보관 기한은 자체 DB에 따른 것으로 식재료를 신선하게 섭취할 수 있는 권장일이며, 실제 식재료의 유통기한/소비기한과 다를 수 있습니다.</dd>
+                  <dd>이해를 돕기 위해 연출된 이미지로 실제와 다를 수 있습니다.</dd>
+
+                  <br>
+
+                  <dt style="list-style: none; margin:0; font-weight: normal;">[AI 하이브리드 쿨링]</dt>
+                  <dd>펠티어 소자는 냉장실 온도가 설정 온도보다 9℃ 이상 올라가거나, 냉장고 외부 온도가 34℃ 이상일 때 냉장실 온도가 설정 온도보다 7℃ 이상 올라가면 작동합니다.</dd>
+                  <dd>냉장고 외부온도는 냉장고가 설치되어 있는 실내 온도 기준입니다.</dd>
+                  <dd>펠티어 소자는 냉매 없이 전기만으로도 냉각을 할 수 있는 반도체 소자입니다.</dd>
+                  <dd>이해를 돕기 위해 연출된 이미지로 실제와 다를 수 있습니다.</dd>
+
+                  <br>
+
+                  <dt style="list-style: none; margin:0; font-weight: normal;">[오토 오픈 도어]</dt>
+                  <dd>도어의 최대 열림 각도는 설치, 실사용 환경에 따라 달라질 수 있으며, 자동 문 닫힘 기능은 적용되지 않습니다.</dd>
+                  <dd>오토 오픈 도어 기능은 냉장고 상칸 냉장실에만 적용되며, 오토 오픈 도어 센서는 냉장고 상칸 좌, 우 각각 작동합니다.</dd>
+                  <dd>오토 오픈 토어 기능은 2024년 이후 출시된 BESPOKE 냉장고 4도어 제품 중 일부 모델에 한합니다.</dd>
+                  <dd>이해를 돕기 위해 연출된 이미지로 실제와 다를 수 있습니다.</dd>
+
+                  <br>
+
+                  <dt style="list-style: none; margin:0; font-weight: normal;">[맞춤 숙성실]</dt>
+                  <dd>상칸이 김치 숙성모드(저온쿨링/상온/동치미/깍두기)로 설정되어 있을 경우, 맞춤숙성실 사용이 불가합니다.</dd>
+                  <dd>육류 해동모드의 경우 상칸이 김치 보관모드 (강냉/표준/약냉/저염김치/아삭김치/구입김치)일 경우에만 작동합니다.</dd>
+                  <dd>과일 숙성, 반죽 발효 모드는 사용자가 작동을 중단할때까지 모드가 유지됩니다.</dd>
+                  <dd>냉장고 운전 조건이나 식품의 종류, 상태 및 크기 등과 보관 방법에 따라 효과가 달라질 수 있습니다.</dd>
+                  <dd>이해를 돕기 위해 연출된 이미지로 실제와 다를 수 있습니다.</dd>
+
+                </div>
+              </dl>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+    <div class="event4_prize">
+      <img src="https://images.samsung.com/kdp/editor/common/202402/a8461daf-37f9-4da5-8aa5-c57dcc5243fe.png" class="pc_display">
+      <img src="https://images.samsung.com/kdp/editor/common/202403/ac17a999-853c-490e-99aa-fc284e24516a.png" class="mo_display">
+    </div>
+
+    <div class="event4_box1 event4_box2">
+      <div class="section__inner">
+
+
+
+        <div class="event_product_info event_product_info4">
+          <div class="copyHashtags">
+            <input type="text" value="#삼성전자이벤트 #AllNEWBESPOKE #삼성하이브리드냉장고 #BESPOKE냉장고 #BESPOKE김치플러스 #AI하이브리드쿨링 #AI비전인사이드 #오토오픈도어 #맞춤숙성실" id="myInput" class="blind">
+            <div class="tooltip">
+              <button onclick="myFunction()" onmouseout="outFunc()">
+                <span class="tooltiptext" id="myTooltip">Copy Hashtags</span>
+                <span class="button_text">asdas</span>
+              </button>
+            </div>
+
+          </div>
+          <div class="blind">
+            <h3>참여방법</h3>
+            <div>
+              <h4>① 이미지 다운로드</h4>
+              <p>신규 기능이 포함된 비스포크 이미지 중
+                원하는 이미지를 선택하여 다운로드
+
+              </p>
+              <img src="https://images.samsung.com/kdp/editor/common/202402/f16105f1-b3b6-4a90-b7e1-47bbd984d2d2.png" alt="tringle">
+            </div>
+            <div>
+              <h4>② SNS 공유</h4>
+              <p>인스타그램, 블로그 등 SNS에
+                필수 해시태그 포함하여
+                공개 계정으로 작성
+                *회원제, 비공개카페 등 작성 시 미인정
+              </p><div class="hashtags">
+              <p>#삼성전자이벤트 #AllNEWBESPOKE
+                #삼성하이브리드냉장고 #BESPOKE냉장고
+                #BESPOKE김치플러스 #AI하이브리드쿨링
+                #AI비전인사이드 #오토오픈도어 #맞춤숙성실
+              </p>
+            </div>
+
+
+              <img src="https://images.samsung.com/kdp/editor/common/202402/eda36725-18e0-40e9-8594-6ca10a6db006.png" alt="sns">
+            </div>
+            <div>
+              <h4>③ 응모하기</h4>
+              <p>하단의 ‘응모하기’ 버튼으로
+                개인정보 및
+                SNS URL 업로드</p>
+              <img src="https://images.samsung.com/kdp/editor/common/202402/a4d25c5b-09bd-4fa0-869c-88cc996fd084.png" alt="upload">
+            </div>
+
+          </div>
+        </div>
+
+        <div class="event_product_info_btn event_product_info_btn4">
+          <button class="comn_btn_link" id="myBtn" type="button" onclick="fnCallPop2(32884)" data-popup-target="popupExhibitionEnter">응모하기</button>
+
+        </div>
+
+
+        <div class="event-notice">
+  <span class="event-notice__btn"><button>
+    유의 사항
+    <span class="icons down-bracket"><img src="//images.samsung.com/kdp/editor/common/202304/c4d3aff3-25f6-4927-92f5-61f1e05ceac9.png" alt=""></span></button></span>
+          <div class="event-notice__inner">
+            <dl>
+              <div class="notice-box">
+                <dd>본 이벤트의 응모를 위해서는 삼성닷컴 회원가입 및 계정 정보가 필요합니다. </dd>
+                <dd>이벤트 응모 기간 : 2024.03.14 – 2024.05.31</dd>
+                <dd>이벤트 신청 대상 : 삼성닷컴 가입 고객 및 인스타그램, SNS, 블로그 등 공개게시물로 신규 기능 이미지 공유 인증한 고객 대상 (*필수 해시태그 포함)</dd>
+                <dd>당첨자 발표 : 2024.06.01 – 2024.06.30, 당첨자 개별 안내</dd>
+                <dd>이벤트 참여 계정 및 게시물/댓글 등은 7월 1일까지 전체공개되어 있어야 정상 참여로 인정됩니다.</dd>
+                <dd>만 14세 미만은 이벤트 참여가 불가능합니다.</dd>
+                <dd>이벤트 혜택은 본 이벤트 신청 시 입력한 주소 혹은 핸드폰 번호로 발송됩니다.</dd>
+                <dd>이벤트 신청 시 잘못 입력한 개인정보로 인해 오발송 또는 반송될 경우 재발송은 불가하오니 신청 전 반드시 입력 정보를 확인해 주시기 바랍니다.</dd>
+                <dd>고객이 잘못 입력한 정보로 인한 혜택 미제공은 당사가 책임지지 않습니다.</dd>
+                <dd>스타벅스 오늘도 달콤하게(HOT) 모바일 상품권은 당첨자별 1개씩 지급됩니다.</dd>
+                <dd>스타벅스 오늘도 달콤하게(HOT) 모바일 상품권은 아메리카노 Tall + 7 레이어 가나슈 케이크 제품으로 제공됩니다.</dd>
+                <dd>본 행사의 상품은 당사 사정에 따라 예고없이 변경될 수 있으며, 당첨자에게는 변경 내용이 개별 안내될 예정입니다.</dd>
+                <dd>본 혜택은 현금 및 타 상품으로 교환되지 않습니다.</dd>
+                <dd>실제 상품은 상기 이미지와 다를 수 있습니다.</dd>
+                <dd>본 행사는 당사 사정에 따라 예고 없이 변경되거나 중단될 수 있습니다.</dd>
+                <dd>혜택 발송을 위해 당사 혜택 운영 관리 대행사에 배송정보가 제공되며 행사 종료일 기준 3개월 후 파기됩니다.</dd>
+                <dd>당첨자별 배송 시점은 다를 수 있습니다.</dd>
+                <dd>당첨자는 삼성닷컴을 통해 응모하신 분들을 대상으로 선정됩니다.</dd>
+                <dd>경품 증정 일자, 증정 방법 등은 당첨자에게 개별 연락드릴 예정이며, 당첨 발표 기간 내 문자 및 전화 등 연락이 닿지 않을 시 당첨이 취소됩니다.</dd>
+                <dd>본 이벤트는 중복 참여 및 중복 당첨이 불가능합니다.</dd>
+                <dd>비 정상적인 방법으로 참여 시 당첨이 제한, 취소될 수 있습니다. (타인 명의 이미지 도용, 가짜 명의 생성, 반복 참여 프로그램 이용, 단순 복사 등)</dd>
+                <dd>혜택 운영 관리: ㈜이든앤앨리스마케팅 1577-2680 (평일 10-17시, 점심시간 12-13시 30분, 주말 및 공휴일 미운영)</dd>
+                <br>
+                <div class="notice-box2">
+                  <dt style="list-style: none; margin:0; font-weight: normal;">[스타벅스 오늘도 달콤하게(HOT) 모바일 상품권]</dt>
+                  <dd>유효기간 : 발행일로부터 30일</dd>
+                  <dd>본 상품은 매장 재고 상황에 따라 동일 상품으로 교환이 불가능할 수 있습니다.</dd>
+                  <dd>동일 상품 교환이 불가한 경우 동일 가격 이상의 다른 상품으로 교환이 가능하며, 동일 상품 외 다른 상품으로 교환할 시 차액이 발생할 수 있습니다.(차액 추가 지불)</dd>
+                  <dd>스타벅스 앱의 사이렌 오더를 통해서도 주문 및 결제가 가능합니다.(MD제외)</dd>
+                  <dd>미군부대 매장, 워터파크 입점 매장, 마장휴게소점 등 일부 매장에서는 사용이 불가합니다.</dd>
+                  <dd>해당 쿠폰과 스타벅스 카드의 복합결제 거래는 스타벅스 카드의 고유 혜택인 Free Extra 및 별 적립은 적용 대상이 아닌 점 이용에 참고하시기 바랍니다.</dd>
+                  <dd>정식 판매처 외의 장소나 경로를 통하여 구매하거나, 기타의 방법으로 보유하신 쿠폰은 정상적인 사용 (환불, 재전송 등 포함)이 금지되거나 제한될 수 있으니 주의하시기 바랍니다.</dd>
+                  <dd>해당 쿠폰을 무단으로 가공하는 등의 행위는 관계 법령에 위반될 수 있습니다.</dd>
+
+                </div>
+              </div>
+            </dl>
+          </div>
+        </div>
+
+      </div>
+    </div></section></div>
+<div class="alert-msg">해시태그가 복사되었습니다.</div>
+<script>
+  // Set the date we're counting down to
+  var countDownDate = new Date("March 14, 2024 15:37:25").getTime();
+
+  // Update the count down every 1 second
+  var x = setInterval(function() {
+
+    // Get today's date and time
+    var now = new Date().getTime();
+
+    // Find the distance between now and the count down date
+    var distance = countDownDate - now;
+
+    // Time calculations for days, hours, minutes and seconds
+    var days = Math.floor(distance / ( 1000 * 60 * 60 * 24));
+    //var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    // var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    // var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    // Output the result in an element with id="demo"
+    //document.getElementById("demo").innerHTML = "<span>D</span><span>" + days +"</span>";
+    document.getElementById("demo").innerHTML = "0" + "0" + days ;
+    // If the count down is over, write some text
+    if (distance < 0) {
+      clearInterval(x);
+      document.getElementById("demo").innerHTML = "EXPIRED";
+    }
+  }, 1000);
+
+
+
+
+
+
+  $(document).ready(function(){
+    // add/remove checked class
+    $(".image-radio").each(function(){
+      if($(this).find('input[type="radio"]').first().attr("checked")){
+        $(this).addClass('image-radio-checked');
+      }else{
+        $(this).removeClass('image-radio-checked');
+      }
+    });
+
+    // sync the input state
+    $(".image-radio").on("click", function(e){
+      $(".image-radio").removeClass('image-radio-checked');
+      $(this).addClass('image-radio-checked');
+      var $radio = $(this).find('input[type="radio"]');
+      $radio.prop("checked",!$radio.prop("checked"));
+
+      e.preventDefault();
+    });
+  });
+
+
+
+  $(document).ready(function(){
+
+    $(".an__item a").on("click", function () {
+      $(".an__item a").removeClass("is-active");
+      $(this).addClass("is-active");
+      const $this = $(this);
+      let href = $this.attr("href");
+      let $sec = $(href);
+      let secTop = $sec.offset().top;
+      $("html, body").animate({ scrollTop: secTop }, 500);
+      return false;
+    });
+
+    const clipboard = new ClipboardJS(".clipboard__btn");
+    clipboard.on("success", function (e) {
+      // console.info("Action:", e.action);
+      // console.info("Text:", e.text);
+      // console.info("Trigger:", e.trigger);
+      e.clearSelection();
+      $(".alert-msg").addClass("on");
+      setTimeout(function () {
+        $(".alert-msg").removeClass("on");
+      }, 1500);
+    });
+
+    let isDropDown = [false, false, false];
+    // let isDropDown = [true, true, true];
+    $(".event-notice__btn button").on("click", function () {
+      const $this = $(this);
+      const index = $(".event-notice__btn button").index($this);
+      const $inner = $this.parent().siblings();
+      isDropDown[index] = !isDropDown[index];
+      if (isDropDown[index]) {
+        $inner.stop().slideDown();
+        $this.addClass("on");
+      } else {
+        $this.removeClass("on");
+        $inner.stop().slideUp();
+      }
+    });
+
+  });
+</script>

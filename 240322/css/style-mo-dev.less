@@ -1,0 +1,81 @@
+@import "../../asset/asset";
+@use-vw: true;
+@vw: 720;
+
+.wrapper { .fs(0); font-family: 'SamsungOneKorean', Dotum, '돋움', sans-serif; .bgc(#000);
+  .mo { .ib; }
+  .web { .hide; }
+  img { .wf; .vat; }
+  .btn { .rel; .pointer; .z(1); }
+  .blind-txt { .hide!important; }
+  .ss-one { font-family: 'SamsungOneKorean', sans-serif; }
+  .sharp { font-family: 'SamsungSharpSans', sans-serif;
+    &.sharp-m { .medium; }
+  }
+  section { .tc;
+    article { .rel;
+      &.top { .wh(720,727); .contain('https://images.samsung.com/kdp/editor/common/202403/ec5aa5f7-d324-4414-a9a6-3a0d9cfe1ae3.png'); }
+      &.art1 { .wh(720,823); .contain('https://images.samsung.com/kdp/editor/common/202403/53a7dd93-73c0-4f44-9251-81812e808738.png'); .pt(344); .-box;
+        .store-wrap { .mb(45);
+          .store-info { .wh(640,206); .mh-c;
+            ul {
+              li { .tl; .hide;
+                div { .p(42,0,0,40); .ib; .vat; .-box;
+                  p { .fs(26,38); .light; .c(#fff); .ls(-0.03em);
+                    span { .sharp; }
+                    &.tit { .fs(30,44); .semi-bold; }
+                  }
+                  &.nm { .w(388); }
+                  &.operating { .w(252); }
+                }
+              }
+            }
+          }
+        }
+        .store-tab { .wh(640,228); .flex; .space-between; .flex-wrap; .mh-c;
+          .dv-tab { .fs(24,68); .c(#fff); .pl(56); .-box; .wh(308,68); .tl; .-a(#3b3b3b,2); .rel; .pointer; .z(1);
+            &:after { .cnt; .f; .abs; .lt; .contain('https://images.samsung.com/kdp/editor/common/202403/ed3cc9e1-d862-4510-9580-d02bee34213d.png'); }
+          }
+        }
+        &[data-store="1"] .store-wrap .store-info ul li.st1,
+        &[data-store="2"] .store-wrap .store-info ul li.st2,
+        &[data-store="3"] .store-wrap .store-info ul li.st3,
+        &[data-store="4"] .store-wrap .store-info ul li.st4,
+        &[data-store="5"] .store-wrap .store-info ul li.st5,
+        &[data-store="6"] .store-wrap .store-info ul li.st6 { .block; }
+        &[data-store="1"] .store-tab [data-tab="1"],
+        &[data-store="2"] .store-tab [data-tab="2"],
+        &[data-store="3"] .store-tab [data-tab="3"],
+        &[data-store="4"] .store-tab [data-tab="4"],
+        &[data-store="5"] .store-tab [data-tab="5"],
+        &[data-store="6"] .store-tab [data-tab="6"] { .-a(#fff,2);
+          &:after { .contain('https://images.samsung.com/kdp/editor/common/202403/5b969b97-c3d2-4a8c-b81b-448190126d35.png'); }
+        }
+      }
+      &.art2 { .wh(720,2856); .contain('https://images.samsung.com/kdp/editor/common/202403/ca1c82d1-d7cb-48c0-ad4e-0bd1c6c37643.png'); }
+      &.art3 { .wh(720,919); .contain('https://images.samsung.com/kdp/editor/common/202403/7cfafc6f-9c2f-4407-8021-3eeab7d85ae2.png');
+        .dv-btn { .wh(210,40); .pointer; .z(1); .abs; .lt(287,840);
+          &:after { .cnt; .f; .contain('https://images.samsung.com/kdp/editor/common/202403/a65528d5-448f-4e09-8a95-3f4f139126a2.png'); .abs; .lt; }
+          &.on:after { transform: rotateX(180deg); }
+        }
+      }
+      &.model { .wh(720,271); .contain('https://images.samsung.com/kdp/editor/common/202403/4609876d-a5c5-4d7b-a238-c876ee0d792d.png'); .pt(95); .-box; .hide;
+        ul { .wh(560,176); .flex; .space-between; .flex-wrap; .mh-c; align-content: space-between;
+          li { .wh(560,38); .flex; .space-between;
+            p { .fs(18,38); .ls(-0.03em); .c(#fff); .tc; .wh(275,38); }
+          }
+        }
+        &.on { .block; }
+      }
+      &.art4 { .wh(720,981); .contain('https://images.samsung.com/kdp/editor/common/202403/e28d657e-1681-4ff7-8c9e-aa54269d0932.png'); }
+      &.art5 { .wh(720,1542); .contain('https://images.samsung.com/kdp/editor/common/202403/c2ba925c-be09-4d31-8692-088291c424de.png');
+        .dv-btn { .wh(163,50); .abs; .l(451); .z(1);
+          &.dv-btn1 { .t(568); }
+          &.dv-btn2 { .t(918); }
+          &.dv-btn3 { .t(1268); }
+        }
+      }
+      &.art6 { .wh(720,330); .contain('https://images.samsung.com/kdp/editor/common/202403/575bfbb4-be9c-4183-aa43-8848f1338e3d.png'); }
+    }
+  }
+}

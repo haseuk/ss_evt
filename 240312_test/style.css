@@ -1,0 +1,1924 @@
+<style scoped="scoped">@font-face {
+  font-family: "SamsungSharpSans";
+  font-style: normal;
+  font-weight: normal;
+  src: url('/sec/static/_font/SamsungSharpSans-regular.TTF') format("truetype"),
+    url('/sec/static/_font/SamsungSharpSans-regular.TTF') format("embedded-opentype");
+}
+
+@font-face {
+  font-family: "SamsungSharpSans";
+  font-style: normal;
+  font-weight: bold;
+  src: url('/sec/static/_font/SamsungSharpSans-Bold.eot');
+  src: url('/sec/static/_font/SamsungSharpSans-Bold.eot?#iefix') format("embedded-opentype"),
+    url('/sec/static/_font/SamsungSharpSans-Bold.woff2') format("woff2"),
+    url('/sec/static/_font/SamsungSharpSans-Bold.woff') format("woff"),
+    url('/sec/static/_font/SamsungSharpSans-Bold.ttf') format("truetype");
+}
+
+@font-face {
+  font-family: "SamsungOneKorean";
+  font-style: normal;
+  font-weight: normal;
+  src: url('/sec/static/_font/SamsungOneKorean-400.eot');
+  src: url('/sec/static/_font/SamsungOneKorean-400.eot?#iefix') format("embedded-opentype"),
+    url('/sec/static/_font/SamsungOneKorean-400.woff2') format("woff2"),
+    url('/sec/static/_font/SamsungOneKorean-400.woff') format("woff"),
+    url('/sec/static/_font/SamsungOneKorean-400.ttf') format("truetype");
+}
+
+@font-face {
+  font-family: "SamsungOneKorean";
+  font-style: normal;
+  font-weight: bold;
+  src: url('/sec/static/_font/SamsungOneKorean-700.eot');
+  src: url('/sec/static/_font/SamsungOneKorean-700.eot?#iefix') format("embedded-opentype"),
+    url('/sec/static/_font/SamsungOneKorean-700.woff2') format("woff2"),
+    url('/sec/static/_font/SamsungOneKorean-700.woff') format("woff"),
+    url('/sec/static/_font/SamsungOneKorean-700.ttf') format("truetype");
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  font-family: "SamsungOneKorean";
+  word-break: keep-all;
+  box-sizing: border-box;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+figure {
+  font-size: 0;
+}
+
+strong {
+  font-weight: bold;
+}
+
+strong.en,
+.font_en {
+  font-family: SamsungSharpSans;
+}
+
+hr {
+  margin: 24px 0;
+}
+
+span.en {
+  font-family: SamsungSharpSans;
+}
+
+.font_w_b {
+  font-weight: bold;
+}
+
+.section {
+  width: 100%;
+  position: relative;
+}
+
+.section .section__inner {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.main_wrap {
+  position: relative;
+}
+
+.anchor-navigation {
+  background-color: #333;
+  height: 124px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -14px;
+}
+
+.anchor-navigation .an__list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.anchor-navigation .an__item {
+  height: 100%;
+  position: relative;
+  margin: 0 4px;
+}
+
+.anchor-navigation .an__item a {
+  display: block;
+  width: 272px;
+  height: 124px;
+  color: #fff;
+  text-align: center;
+}
+
+.anchor-navigation .item-text {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.anchor-navigation .item-text span {
+  display: block;
+}
+
+.event-notice {
+  text-align: center;
+  margin: 0 0;
+  padding: 0 0 80px;
+}
+
+.event-notice .event-notice__btn {
+  border-bottom: 1px solid #333333;
+  display: inline-block;
+}
+
+.event-notice .event-notice__btn button {
+  font-size: 14px;
+  font-weight: bold;
+  color: #333333;
+  padding: 8px 0;
+}
+
+.event-notice .event-notice__btn button .icons {
+  width: 12px;
+  height: 6px;
+  display: inline-block;
+  transition: 0.5s;
+  position: relative;
+  bottom: 3px;
+  margin-left: 4px;
+}
+
+.event-notice .event-notice__btn button .icons img {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.event-notice .event-notice__btn button.on .icons {
+  transform: rotate(180deg);
+}
+
+.event-notice .event-notice__inner {
+  max-width: 1440px;
+  text-align: left;
+  line-height: 1.6;
+  margin: 0 auto;
+  box-sizing: border-box;
+  display: none;
+}
+
+.event-notice .event-notice__inner dt {
+  font-weight: bold;
+  margin-bottom: 24px;
+  font-size: 14px;
+  color: #222;
+}
+
+.event-notice .event-notice__inner dd {
+  display: flex;
+  padding-left: 12px;
+  color: #333333;
+  font-size: 14px;
+  letter-spacing: -0.05em;
+}
+
+.event-notice .event-notice__inner dd:not(:last-child) {
+  margin-bottom: 8px;
+}
+
+.event-notice .event-notice__inner dd:before {
+  content: "•";
+  margin-left: -10px;
+  margin-right: 18px;
+  color: #333;
+}
+
+.event-notice .notice-box {
+  margin-top: 24px;
+}
+
+.event-notice .notice-box:nth-child(2) {
+  margin-top: 60px;
+}
+
+.event-notice3 .event-notice__inner dd,
+.event-notice3 .event-notice__btn button,
+.event-notice3 .event-notice__inner dd:before {
+  color: #fff;
+}
+
+.notice-box2 dd:before {
+  content: "-" !important;
+}
+
+.event-notice3 .event-notice__btn {
+  border-bottom: 1px solid #fff;
+}
+
+.event_notice_board1 {
+  background: url("//images.samsung.com/kdp/editor/common/202402/bb69a6ec-cda5-4038-ab2d-093d183d7d85.jpg");
+}
+
+.event_notice_board3 {
+  background: url("//images.samsung.com/kdp/editor/common/202402/c4f45073-e596-45df-a728-b1e7d4ba2f17.jpg");
+}
+
+/* common event text start */
+.event_text {
+  width: 100%;
+  margin: 50px 0 0;
+}
+
+.event_text h4 {
+  width: 100%;
+  text-align: center;
+  font-size: 34px;
+  font-weight: 400;
+  color: #000;
+  letter-spacing: -1px;
+}
+
+.event_text h1 {
+  width: 100%;
+  text-align: center;
+  font-size: 86px;
+  font-weight: 700;
+  color: #000;
+  letter-spacing: -5px;
+  margin: 30px 0 40px;
+}
+
+.event_text p {
+  width: 100%;
+  text-align: center;
+  font-size: 26px;
+  font-weight: 500;
+  color: #000;
+  letter-spacing: -1px;
+  line-height: 40px;
+}
+
+
+.event_info_boxes {
+  width: 70%;
+  margin: 60px auto 115px;
+}
+.event02 .event_info_boxes {
+  width: 60%;
+}
+
+.event_info_box {
+  width: 100%;
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  margin: 0 0 22px;
+}
+
+.event_info_box > div {
+  width: 50%;
+}
+
+.event_info_box p {
+  width: 100%;
+  font-weight: 500;
+  font-size: 20px;
+  color: #000;
+  letter-spacing: -1px;
+}
+
+.event_info_box p span.evnt_txt_box {
+  float: left;
+  border: solid 2px #000;
+  display: inline-block;
+  font-weight: 700;
+  font-size: 18px;
+  margin-right: 15px;
+  padding: 10px 2px;
+  border-radius: 100px;
+  width: 200px;
+  text-align: center;
+  line-height: 22px;
+}
+
+.event_info_box span.flt_left {
+  float: left;
+  display: inline;
+  width: 63%;
+  padding-top: 10px;
+}
+
+.font_18 {
+  font-size: 18px;
+  margin-top: 3px;
+  display: block;
+}
+
+/* common event text end */
+
+.alert-msg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 40px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #000;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.alert-msg.on {
+  opacity: 1;
+  visibility: visible;
+  transition: 0.75s;
+}
+
+
+.blind {
+  position: absolute !important;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+}
+
+
+/*page opening time start */
+
+.opening_timer {
+  width: 100%;
+  display: inline-block;
+  background: #11111b;
+  padding: 34px 0;
+  color: #fff;
+}
+
+.opening_timing {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.opening_timing .opening_timing_left {}
+
+.opening_timing p {
+  color: #fff;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.opening_timing_right .countdown_box,
+.buy_btn {
+  position: relative;
+  display: inline-block;
+}
+
+.opening_timing_right .countdown_box p {
+  position: absolute;
+  top: 16px;
+  right: -24px;
+  letter-spacing: 46px;
+  font-size: 38px;
+  font-weight: 900;
+  color: #000;
+  font-family: 'SamsungSharpSans';
+}
+
+.buy_btn {
+  top: -25px;
+  margin-left: 50px;
+}
+
+.buy_btn a {
+  font-size: 18px;
+  font-weight: 700;
+  background: #fff;
+  color: #000;
+  padding: 20px 60px;
+  border-radius: 30px;
+}
+
+/* page opening time end */
+
+
+/* KV banner start */
+.header_banner {
+  position: relative;
+  background: url("https://images.samsung.com/kdp/editor/common/202403/87f5638d-acfa-466d-99ef-b7f804e717a7.jpg") no-repeat center center;
+  background-size: cover;
+  height: 690px;
+}
+
+.header_banner img {
+  width: 100%;
+  display: block;
+}
+
+/* KV banner end */
+
+
+/* Event nav start */
+
+.event_navigation {
+  background-color: #11111b;
+  padding: 22px 0;
+}
+
+.event_navigation ul {
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+}
+
+.event_navigation ul li {
+  padding: 0 18px;
+  border-right: solid 2px #555555;
+}
+
+.event_navigation ul li:last-child {
+  border-right: none;
+}
+
+.event_navigation ul li a {
+  color: #fff;
+  font-weight: 700;
+  font-size: 22px;
+}
+
+/* Event nav end */
+
+
+/* purchase banner start */
+.purchase_banner {
+  background-color: #97ba5c;
+  padding: 0px 0;
+  position: relative;
+}
+.purchase_banner img {
+  display: block;
+  width: 100%;
+}
+
+.purchase_banner .purchase_banner_box {
+  background-color: #fff;
+  border-radius: 20px;
+  text-align: center;
+  padding: 100px 0;
+}
+
+.purchase_banner p {
+  font-size: 46px;
+  font-weight: 700;
+  color: #000;
+}
+.link01 {
+  position: absolute;
+  left: 22%;
+  width: 9%;
+  height: 18%;
+  bottom: 30%;
+  font-size: 0;
+  text-indent: -9999px;
+  overflow: hidden;
+}
+
+/* purchase banner end */
+
+
+.events_box {
+  padding: 160px 0 80px;
+}
+
+/* Event 01 start */
+.event01 {
+  background: url("//images.samsung.com/kdp/editor/common/202402/311ae159-1d92-4b21-87fa-191a328a5ccc.jpg") no-repeat top center;
+  background-size: cover;
+}
+
+.main_event01 {
+  width: 100%;
+  display: block;
+}
+
+.main_event01 .event01_flag {
+  width: 190px;
+  display: block;
+  background: url("//images.samsung.com/kdp/editor/common/202402/22b936bd-5437-4531-b53e-6b2037fbc6d2.png") no-repeat center center;
+  background-size: 100% auto;
+  height: 65px;
+  margin: 0 auto;
+}
+
+.event_progress_bar {
+  width: 100%;
+  background-color: #fff;
+  border-radius: 20px;
+  padding:0;
+}
+
+.event_progress_bar h3 {
+  text-align: center;
+  width: 100%;
+  color: #000;
+  font-size: 42px;
+  font-weight: 700;
+  letter-spacing: -1px;
+  margin: 0 0 30px;
+}
+
+.event_progress_bar h3 span {
+  float: right;
+  display: inline;
+  color: #65b41f;
+  font-size: 20px;
+  padding-top: 20px;
+}
+
+.event_progress_bar img {
+  width: 100%;
+}
+
+.product_img {
+  width: 100%;
+  margin: 100px 0 150px;
+  text-align: center;
+}
+
+.product_img img {
+  width: 80%;
+}
+.event04 .product_img img {
+  width: 100%;
+}
+
+.event_product_info {
+  width: 100%;
+  background: url("//images.samsung.com/kdp/editor/common/202403/a909b95d-f25d-46c2-865c-a34aca89b7d3.png") no-repeat top center;
+  background-size: 100% auto;
+  height: 635px;
+}
+
+.event_product_info_btn {
+  width: 100%;
+  text-align: center;
+  margin: 70px 0 160px;
+}
+
+.event_product_info_btn .comn_btn_link {
+  width: auto;
+  color: #fff;
+  background-color: #8a6800;
+  height: 80px;
+  width: 300px;
+  font-size: 26px;
+  font-weight: 600;
+  border-radius: 40px;
+  display: inline-block;
+  line-height: 80px;
+}
+
+/* Event 01 ened */
+
+.event01 .event_product_info_btn,
+.event03 .event_product_info_btn {
+  margin-bottom: 60px;
+}
+
+/* event02 start */
+
+.event02 {
+  background: url("//images.samsung.com/kdp/editor/common/202402/988005d9-a90e-4198-9753-ace271fd31fa.jpg") no-repeat top center;
+  background-size: cover;
+}
+
+.main_event01 .event02_flag {
+  width: 190px;
+  display: block;
+  background: url("//images.samsung.com/kdp/editor/common/202402/a400eff5-b2be-46d0-842f-0d73e8005632.png") no-repeat center center;
+  background-size: 100% auto;
+  height: 65px;
+  margin: 0 auto;
+}
+
+.event_product_info2 {
+  width: 100%;
+  background: url("//images.samsung.com/kdp/editor/common/202403/536b947a-95fa-407f-9458-547de950c4ff.png") no-repeat top center;
+  background-size: 100% auto;
+  height: 635px;
+}
+
+.event_product_info_btn2 .comn_btn_link {
+  background-color: #79a346;
+}
+
+.event_info_box .w100 span.flt_left {
+  width: 72%;
+  line-height: 30px;
+  padding-top: 6px;
+}
+
+/* event02 end */
+
+
+/* event03 start */
+
+.event03 {
+  background: url("//images.samsung.com/kdp/editor/common/202403/ff20abbd-ae1a-49ad-9727-039eba53447d.jpg") no-repeat top center;
+  background-size: cover;
+}
+
+.main_event01 .event03_flag {
+  width: 190px;
+  display: block;
+  background: url("//images.samsung.com/kdp/editor/common/202402/594dca52-db4e-40aa-9d0d-0f3156e63d10.png") no-repeat center center;
+  background-size: 100% auto;
+  height: 65px;
+  margin: 0 auto;
+}
+
+.event_product_info2 {
+  width: 100%;
+  background: url("//images.samsung.com/kdp/editor/common/202403/536b947a-95fa-407f-9458-547de950c4ff.png") no-repeat top center;
+  background-size: 100% auto;
+  height: 635px;
+}
+
+.event_product_info_btn3 .comn_btn_link {
+  background-color: #426a04;
+}
+
+.product_img3 img {
+  width: 60%;
+}
+.product_img3_3.product_img3 img {
+  width: 100%;
+}
+
+.product_img3_3 {
+  position: relative;
+}
+.product_img3_3 .link02 {
+  display: block;
+  font-size: 0;
+  text-indent: -9999px;
+  background: rgba(0, 0, 255, 0);
+  position: absolute;
+  overflow: hidden;
+  width: 24%;
+  height: 34%;
+  bottom: 0%;
+}
+
+.product_img3_3 .link03 {
+  display: block;
+  font-size: 0;
+  text-indent: -9999px;
+  background: rgba(0, 0, 255, 0);
+  position: absolute;
+  overflow: hidden;
+  width: 25%;
+  height: 34%;
+  bottom: 0%;
+  left: 25%;
+}
+
+.product_img3_3 .link04 {
+  display: block;
+  font-size: 0;
+  text-indent: -9999px;
+  background: rgba(0, 0, 255, 0);
+  position: absolute;
+  overflow: hidden;
+  width: 25%;
+  height: 34%;
+  bottom: 0%;
+  left: 50%;
+}
+
+.product_img3_3 .link05 {
+  display: block;
+  font-size: 0;
+  text-indent: -9999px;
+  background: rgba(0, 0, 255, 0);
+  position: absolute;
+  overflow: hidden;
+  width: 24%;
+  height: 34%;
+  bottom: 0%;
+  right: 0;
+}
+
+.close_btn {
+  display: block;
+  font-size: 0;
+  text-indent: -9999px;
+  background: rgba(0, 0, 255, 0);
+  position: absolute;
+  overflow: hidden;
+  width: 6%;
+  height: 23%;
+  left: 47%;
+  top: 58%;
+}
+
+.close_btn2 {
+  top: 0;
+  right: 33%;
+  left: auto;
+  width: 2%;
+  height: 5%;
+}
+
+.product_img4 {
+  margin-bottom: 70px;
+}
+
+.mt60 {
+  margin-top: -60px;
+}
+.event03 p > button {
+  font-size: 20px;
+}
+
+#openModal6 img,
+#openModal7 img {
+  width: 60%;
+}
+/* event03 end */
+
+
+/* event04 start */
+
+.event04 {
+  background: url("//images.samsung.com/kdp/editor/common/202402/fb8e4459-ff50-4e32-a76a-1e177f57595b.jpg") no-repeat top center;
+  background-size: cover;
+}
+
+.main_event01 .event04_flag {
+  width: 190px;
+  display: block;
+  background: url("//images.samsung.com/kdp/editor/common/202402/daa59698-c0c1-45f0-bda7-d2b52ef2b7d5.png") no-repeat center center;
+  background-size: 100% auto;
+  height: 65px;
+  margin: 0 auto;
+}
+
+.event_product_info2 {
+  width: 100%;
+  background: url("//images.samsung.com/kdp/editor/common/202403/536b947a-95fa-407f-9458-547de950c4ff.png") no-repeat top center;
+  background-size: 100% auto;
+  height: 635px;
+}
+
+.event_product_info_btn3 .comn_btn_link {
+  background-color: #426a04;
+}
+
+.product_img3 img {
+  width: 60%;
+}
+.event_product_info3 {
+  width: 100%;
+  background: url("https://images.samsung.com/kdp/editor/common/202403/9fcd510e-61f5-4aa3-aaa3-c9069a40659c.png") no-repeat top center;
+  background-size: 100% auto;
+  height: 720px;
+}
+
+
+.image-radio {
+  cursor: pointer;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  border: 7px solid #fff;
+  margin-bottom: 0;
+  outline: 0;
+  border-radius: 20px;
+  width: 98%;
+  display: inline-block;
+  background: #d7d1c9;
+}
+
+.image-radio input[type="radio"] {
+  display: none;
+}
+
+.image-radio-checked {
+  border-color: #317485;
+}
+
+.image-radio .glyphicon {
+  position: absolute;
+  color: #4a79a3;
+  background-color: #fff;
+  padding: 26px;
+  top: 3.6%;
+  left: 41%;
+  border-radius: 100%;
+}
+
+.image-radio-checked .glyphicon {
+  display: block !important;
+  background: url("//images.samsung.com/kdp/editor/common/202402/cd5aee80-4c6d-4dc9-b8c7-1d2c4244b700.png") no-repeat center;
+  background-color: #317485;
+  background-size: 28px auto;
+}
+
+.image-radio img {
+  width: 100%
+}
+
+.download_prodt_img {
+  width: 100%;
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+}
+
+.download_prodt_img_box {
+  position: relative;
+}
+
+.event4_prize,
+.event4_box1 {
+  width: 100%;
+  position: relative;
+}
+
+.event4_prize img {
+  width: 100%;
+}
+
+.event_product_info_btn4.downdoad_box {
+  margin-bottom: 50px;
+}
+
+.event_product_info4 {
+  position: relative;
+  margin-top: -115px;
+  background: url("//images.samsung.com/kdp/editor/common/202403/52589c94-b621-4f67-9bf7-07c058f42bc0.png") no-repeat top center;
+  background-size: 100% auto;
+}
+
+.event_product_info_btn4 .comn_btn_link {
+  background-color: #317485;
+}
+
+/* event04 end */
+
+
+
+
+
+.disply_blk {
+  display: block
+}
+
+.w100 {
+  width: 100% !important;
+}
+
+#download_button img {
+  width: 10%;
+}
+
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 100%;
+  background-color: #5094a5;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px;
+  position: absolute;
+  z-index: 1;
+  bottom: 111%;
+  left: 0%;
+  margin-left: 0px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+
+.copyHashtags {
+  position: absolute;
+  bottom: 9%;
+  left: 37%;
+  height: 8%;
+  width: 15%;
+  cursor: pointer;
+}
+
+.copyHashtags .tooltip,
+.copyHashtags .tooltip button {
+  width: 100%;
+}
+
+.copyHashtags .tooltip button .button_text {
+  width: 100%;
+  display: block;
+  float: left;
+  padding: 10%;
+  font-size: 0;
+}
+
+.tooltiptext {
+  font-size: 14px;
+}
+
+.copyHashtags.copyHashtags3 {
+  left: 52%;
+  bottom: 10.5%;
+  height: 1.5%;
+  width: 12%;
+}
+
+.copyHashtags.copyHashtags3 .tooltip .tooltiptext {
+  background: #426a04;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.soldout {
+  position: absolute;
+  background: url("https://images.samsung.com/kdp/editor/common/202403/c822ea8e-a6b6-419f-b5e4-1e9f616e7ecd.png") no-repeat center top 25%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: none;
+}
+.event_notice_board1 {
+  position: relative;
+}
+.soldout2 {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  display: none;
+}
+.soldout.active,
+.soldout2.active {
+  display: block;
+}
+
+.custom_popup {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 999;
+  display: none;
+}
+
+.custom_popup > div {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+}
+
+.custom_popup > div {
+}
+
+body.scrollHide {
+  overflow-y: hidden;
+}
+
+.upstyle {
+  text-transform: uppercase;
+}
+
+#openModal2 > div {
+  width: 30%;
+  margin: 0 auto;
+}
+#openModal2 > div img {
+  width: 100%;
+}
+#openModal2 > div .close_btn2 {
+  right: 2%;
+  width: 4%;
+  left: auto;
+}
+
+.pc_display {display: block  !important;}
+.mo_display {display: none !important;}
+
+@media (max-width: 1488px) {
+  .section .section__inner {
+    padding-left: 1.6129032258vw;
+    padding-right: 1.6129032258vw;
+  }
+
+  .anchor-navigation {
+    height: 8.3333333333vw;
+    margin-top: -0.9408602151vw;
+  }
+
+  .anchor-navigation .an__item {
+    margin-left: 0.2688172043vw;
+    margin-right: 0.2688172043vw;
+  }
+
+  .anchor-navigation .an__item a {
+    width: 18.2795698925vw;
+    height: 8.3333333333vw;
+  }
+
+  .opening_timer {
+    padding: 2.285vw 0;
+  }
+
+  .opening_timing p {
+    font-size: 2.016vw;
+  }
+
+  .opening_timing_right .countdown_box p {
+    top: 0.941vw;
+    right: -1.5vw;
+    letter-spacing: 2.78vw;
+    font-size: 2.419vw;
+  }
+
+  .buy_btn {
+    top: -1.68vw;
+    margin-left: 3.36vw;
+  }
+
+  .buy_btn a {
+    padding: 1.344vw 4.032vw;
+    font-size: 1.21vw;
+    border-radius: 2.016vw;
+  }
+
+  .opening_timing_right .countdown_box img {
+    width: 16.801vw;
+  }
+
+
+  .header_banner {
+    height: 32.903vw;
+  }
+
+
+
+  .event_navigation {
+    padding: 1.478vw 0;
+  }
+
+  .event_navigation ul li {
+    padding: 0 1.21vw;
+  }
+
+  .event_navigation ul li a {
+    font-size: 1.3vw;
+  }
+
+
+  .purchase_banner {
+    padding: 0;
+  }
+
+  .purchase_banner .purchase_banner_box {
+    border-radius: 1.344vw;
+    padding: 6.72vw 0;
+  }
+
+  .purchase_banner p {
+    font-size: 3.091vw;
+  }
+
+
+  .events_box {
+    padding: 10.753vw 0 5.376vw;
+  }
+
+  .main_event01 .event01_flag,
+  .main_event01 .event02_flag,
+  .main_event01 .event03_flag,
+  .main_event01 .event04_flag {
+    width: 12.769vw;
+    height: 4.368vw;
+  }
+
+  .event_text {
+    margin: 3.36vw 0 0;
+  }
+
+  .event_text h4 {
+    font-size: 2.285vw;
+  }
+
+  .event_text h1 {
+    font-size: 5vw;
+    margin: 2.016vw 0 2.688vw;
+  }
+
+  .event_text p {
+    font-size: 1.747vw;
+    line-height: 2.688vw;
+  }
+
+  .event_info_boxes {
+    margin: 4.032vw auto 7.728vw;
+  }
+
+  .event_info_box {
+    margin: 0 0 1.478vw;
+  }
+
+  .event_info_box p {
+    font-size: 1.344vw;
+  }
+
+  .event_info_box p span.evnt_txt_box {
+    font-size: 1.21vw;
+    margin-right: 1.008vw;
+    padding: 0.672vw 0.134vw;
+    border-radius: 6.72vw;
+    width: 13.441vw;
+    border: solid 1px #000;
+  }
+
+  .event_info_box span.flt_left {
+    padding-top: 0.672vw;
+  }
+
+  .font_18 {
+    font-size: 1.21vw;
+    margin-top: 0.202vw;
+  }
+
+  .event_progress_bar {
+    border-radius: 1.344vw;
+    padding: 0;
+  }
+
+  .event_progress_bar h3 {
+    margin: 0 0 2.016vw;
+    font-size: 2.823vw;
+  }
+
+  .event_progress_bar h3 span {
+    font-size: 1.344vw;
+    padding-top: 1.344vw;
+  }
+
+  .product_img {
+    margin: 6.72vw 0 10.081vw;
+  }
+
+  .event_product_info {
+    height: 47.675vw;
+  }
+
+  .event_product_info_btn {
+    margin: 4.704vw 0 3.753vw;
+  }
+
+  .event_product_info_btn .comn_btn_link {
+    height: 5.376vw;
+    width: 20.161vw;
+    font-size: 1.747vw;
+    border-radius: 2.688vw;
+    line-height: 6vw;
+  }
+
+  .event-notice {
+    padding: 0 0 5.376vw;
+  }
+
+  .event-notice .event-notice__btn button {
+    padding: 0.538vw 0;
+    font-size: 1.2vw;
+  }
+
+  .event-notice .notice-box {
+    margin-top: 1.613vw;
+  }
+
+  .event-notice .event-notice__inner dd:not(:last-child) {
+    margin-bottom: 0.538vw;
+  }
+
+  .event-notice .event-notice__inner dd {
+    font-size: 1.075vw;
+    padding-left: 2.806vw;
+  }
+
+  .events_box.event02 .event_product_info_btn {
+    margin-bottom: 10vw;
+  }
+
+
+  .image-radio {
+    border: 0.47vw solid #fff;
+    border-radius: 1.344vw;
+  }
+
+  .image-radio-checked .glyphicon {
+    background-size: 1.882vw auto;
+  }
+
+  .image-radio .glyphicon {
+    padding: 1.747vw;
+    top: 4.6%;
+    left: 42%;
+  }
+
+  .image-radio-checked {
+    border-color: #317485;
+  }
+
+
+
+  .event_product_info_btn4.downdoad_box {
+    margin-bottom: 3.36vw;
+  }
+
+  .event_product_info4 {
+    margin-top: -7.728vw;
+  }
+  
+  #openModal2 > div {
+    width: 50%;
+}
+}
+
+
+
+@media (max-width: 767px) {
+  .pc_display {display: none  !important;}
+  .mo_display {display: block  !important;}
+  .section .section__inner {
+    width: 95%;
+  }
+
+  .wrapper .pc {
+    display: none !important;
+  }
+
+  .wrapper .mobile {
+    display: block !important;
+  }
+
+  .section .section__inner {
+    padding: 0;
+  }
+
+  .event_navigation {
+    padding: 2.604vw 0;
+  }
+
+  .event_navigation ul li {
+    padding: 0 2.344vw;
+  }
+
+  .opening_timing {
+    display: block;
+  }
+
+  .opening_timing .opening_timing_left {
+    width: 100%;
+    display: block;
+    text-align: center;
+    margin: 0 0 10px;
+  }
+
+  .opening_timing_right {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+
+  .opening_timer {
+    padding: 4.427vw 0;
+  }
+
+
+  .opening_timing p {
+    font-size: 3.5vw;
+  }
+  .opening_timing .opening_timing_left  {display: none;}
+  .opening_timing_right .countdown_box p {
+    top: 1.7vw;
+    right: -2.4vw;
+    letter-spacing: 6.6vw;
+    font-size: 6.9vw;
+  }
+
+  .buy_btn {
+    top: -3.255vw;
+    margin-left: 6.51vw;
+  }
+
+  .buy_btn a {
+    padding: 2.604vw 7.813vw;
+    font-size: 4.344vw;
+    border-radius: 6.906vw;
+  }
+
+  .opening_timing_right .countdown_box img {
+    width: 45vw;
+  }
+
+  .header_banner {
+    height: 140vw;
+    position: relative;
+background: url(https://images.samsung.com/kdp/editor/common/202403/fe6bc821-a77f-4717-8721-bd1cfccaa1db.jpg) no-repeat center center;
+background-size: cover;
+  }
+  .event_navigation ul li {text-align: center;}
+
+  .event_navigation ul li a {
+    font-size: 2.5vw;
+  }
+
+  .purchase_banner {
+    padding: 0;
+  }
+
+  .purchase_banner .purchase_banner_box {
+    padding: 13.021vw 0;
+  }
+
+  .purchase_banner p {
+    font-size: 5.99vw;
+  }
+  .link01 {    width: 30%;
+    left: 13%;}
+
+  .events_box {
+    padding: 20.833vw 0 0.417vw;
+  }
+
+  .main_event01 .event01_flag,
+  .main_event01 .event02_flag,
+  .main_event01 .event03_flag,
+  .main_event01 .event04_flag {
+    width: 24.74vw;
+    height: 8.464vw;
+  }
+
+  .event_text {
+    margin: 6.51vw 0 0;
+  }
+
+  .event_text h4 {
+    font-size: 3.427vw;
+  }
+
+  .event_text h1 {
+    font-size: 7vw;
+    margin: 3.906vw 0 5.208vw;
+    letter-spacing: -2px;
+  }
+
+  .event_text p {
+    font-size: 3.385vw;
+    line-height: 5.208vw;
+  }
+
+
+  .event_info_box {
+    flex-wrap: wrap;
+  }
+
+  .event_info_box>div {
+    width: 100%;
+    margin: 0 0 2.865vw;
+  }
+
+  .event01 {
+    background: url(https://images.samsung.com/kdp/editor/common/202403/0ed0fd35-0fd4-449c-9adc-ea91d9392d42.jpg) no-repeat top center;
+    background-size:cover;
+  }
+
+  .product_img img {
+    width: 95%;
+  }
+  .event04 .product_img img {
+    width: 100%;
+}
+
+.disply_b_mo {display: block;}
+  .event02 .event_info_boxes {
+    width: 100%;
+}
+
+  .event_info_boxes {
+    margin: 7.813vw auto 14.974vw;
+    width: 100%;
+  }
+
+  .event_info_box {
+    margin: 0;
+  }
+
+  .event_info_box p,
+    .event03 p > button {
+    font-size: 2.604vw;
+  }
+
+  .event_info_box p span.evnt_txt_box {
+    line-height: 2.865vw;
+    font-size: 2.344vw;
+    margin-right: 1.953vw;
+    padding: 1.302vw 0.26vw;
+    border-radius: 13.021vw;
+    width: 26.042vw;
+  }
+
+  .event_info_box span.flt_left {
+    padding-top: 1.302vw;
+  }
+
+  .font_18 {
+    font-size: 2.344vw;
+    margin-top: 0.391vw;
+  }
+
+  .event_progress_bar {
+    border-radius: 2.604vw;
+        margin: 0 0 6vw;
+        padding: 0;
+  }
+
+  .event_progress_bar h3 {
+    margin: 0 0 3.906vw;
+    font-size: 5.469vw;
+  }
+
+  .event_progress_bar h3 span {
+    font-size: 2.604vw;
+    padding-top: 2.604vw;
+  }
+
+  .product_img {
+    margin: 0 0 6vw;
+  }
+
+  .event_product_info {
+    height: 222vw;
+    background: url(https://images.samsung.com/kdp/editor/common/202403/898e9ea6-b4c9-492e-b4b1-bd639521a061.png) no-repeat top center;
+background-size: 100% auto;
+}
+
+.event_product_info2 {
+    height: 222vw;
+    background: url(https://images.samsung.com/kdp/editor/common/202403/b6b60e68-9f52-45b7-bb4e-337eff7a6a80.png) no-repeat top center;
+background-size: 100% auto;
+}
+
+.event_product_info3 {
+    height: 245vw;
+    background: url(https://images.samsung.com/kdp/editor/common/202403/0b94c266-7cd7-4b1b-a10c-2ff83b50d1f7.png) no-repeat top center;
+background-size: 100% auto;
+}
+
+.event_product_info4 {
+    height: 230vw;
+    background: url(https://images.samsung.com/kdp/editor/common/202403/f2356e42-aea9-4e41-b139-832ba7e64e12.png) no-repeat top center;
+background-size: 100% auto;
+}
+
+.event_product_info4 .copyHashtags {
+    bottom: 29%;
+    left: 5%;
+    height: 4%;
+    width: 45%;
+}
+
+.copyHashtags.copyHashtags3 {
+    left: 8%;
+    bottom: 16.5%;
+    height: 1.8%;
+    width: 42%;
+  }
+
+  .event_product_info_btn {
+    margin: 9.115vw 0;
+  }
+
+  .event_product_info_btn .comn_btn_link {
+    height: 10.417vw;
+    width: 39.063vw;
+    font-size: 3.385vw;
+    border-radius: 5.208vw;
+    line-height: 10vw;
+  }
+
+
+  .event-notice {
+    padding: 0 0 10.417vw;
+  }
+
+  .event-notice .event-notice__btn button {
+    padding: 1.042vw 0;
+    font-size: 2.823vw;
+  }
+
+  .event-notice .notice-box {
+    margin-top: 3.125vw;
+  }
+
+  .event-notice .event-notice__inner dd:not(:last-child) {
+    margin-bottom: 1.042vw;
+  }
+
+  .event-notice .event-notice__inner dd {
+    font-size: 2.083vw;
+    padding-left: 1.563vw;
+  }
+
+  .image-radio {
+    border: 0.911vw solid #fff;
+    border-radius: 2.604vw;
+  }
+
+  .image-radio-checked .glyphicon {
+    background-size: 3.646vw auto;
+  }
+
+  .image-radio .glyphicon {
+    padding: 3.385vw;
+  }
+
+  .image-radio-checked {
+    border-color: #317485;
+  }
+
+  .event_product_info_btn4.downdoad_box {
+    margin-bottom: 6.51vw;
+  }
+
+  .event_product_info4 {
+    margin-top: -5.974vw;
+  }
+
+  .event-notice .event-notice__inner dd:before {
+    margin-left: 4px;
+    margin-right: 10px
+  }
+
+  .event_info_box .w100 span.flt_left {
+    width: 63%;
+    line-height: 3.906vw;
+    padding-top: 0.781vw;
+  }
+
+  .event03 {
+    background-size: 300% auto;
+  }
+
+  .download_prodt_img {
+    flex-wrap: wrap;
+  }
+
+  .download_prodt_img_box {
+    width: 50%;
+    margin: 0 0 4px;
+  }
+  .custom_popup img,
+    #openModal6 img,
+    #openModal7 img {
+        width: 90%;
+    }
+    .close_btn {
+        left: 39%;
+        width: 22%;
+    }
+    #openModal2 > div {
+        width: 80%;
+    }
+
+    .copyHashtags.copyHashtags3 .tooltip .tooltiptext {
+        font-size: 2vw;
+    }
+
+    .mdisplay {
+        display: block;
+        width: 100%;
+        float: left;
+        margin-top: 4vw;
+    }
+    .product_img3_3 .link02 {
+      width: 50%;
+      height: 20%;
+      bottom: 18%;
+  }
+  .product_img3_3 .link03 {
+      width: 50%;
+      height: 20%;
+      bottom: 18%;
+      left: 50%;
+  }
+  .product_img3_3 .link04 {
+      width: 50%;
+      height: 20%;
+      bottom: 0%;
+      left: 0;
+  }
+  .product_img3_3 .link05 {
+      width: 50%;
+      height: 20%;
+      bottom: 0%;
+      left: 50%;
+  }
+  /* .opening_timing p {    font-size: 30px;}
+  .opening_timing_right .countdown_box p {    top: 14px;
+    right: -16px;
+    letter-spacing: 42px;
+    font-size: 36px;}
+
+    .buy_btn {
+      top: -25px;
+      margin-left: 50px;
+  }
+  .buy_btn a {    padding: 20px 60px;    font-size: 18px;
+    border-radius: 30px}
+
+    .header_banner {height: 425px;}
+
+  .event_navigation ul li a {    font-size: 22px;}
+
+  .events_box {padding: 160px 0 80px;}
+  .main_event01 .event01_flag, .main_event01 .event02_flag, .main_event01 .event03_flag, .main_event01 .event04_flag {    width: 190px;height: 65px;}
+  .event_text {margin: 50px 0 0;}
+  .event_text h4 {    font-size: 34px;}
+  .event_text h1 {font-size: 86px;    margin: 30px 0 40px;}
+  .event_text p {    font-size: 26px;line-height: 40px;}
+
+  .event_info_boxes {    margin: 60px auto 115px;}
+  .event_info_box {    margin: 0 0 22px;}
+  .event_info_box p {    font-size: 20px;}
+  .event_info_box p span.evnt_txt_box {    font-size: 18px;
+    margin-right: 15px;
+    padding: 10px 2px;
+    border-radius: 100px;
+    width: 200px;}
+    .event_info_box span.flt_left {    padding-top: 10px;}
+    .font_18 {    font-size: 18px;
+      margin-top: 3px;}
+      .event_progress_bar {border-radius: 20px;
+        padding: 40px 45px;}
+        .event_progress_bar h3 {margin: 0 0 30px;    font-size: 42px;}
+        .event_progress_bar h3 span {    font-size: 20px;
+          padding-top: 20px;}
+        .product_img {    margin: 100px 0 150px;}
+
+        .event_product_info {height: 635px;}
+
+        .event_product_info_btn {margin: 70px 0 160px;}
+        .event_product_info_btn .comn_btn_link {height: 80px;
+          width: 300px;
+          font-size: 26px;
+          border-radius: 40px;}
+
+
+          .event-notice {padding: 0 0 80px;}
+            .event-notice .event-notice__btn button {    padding: 8px 0;    font-size: 14px;}
+            .event-notice .notice-box {
+              margin-top: 24px;
+          }
+          .event-notice .event-notice__inner dd:not(:last-child) {
+            margin-bottom: 8px;
+        }
+        .event-notice .event-notice__inner dd {    font-size: 16px;    padding-left: 12px;}
+
+        .image-radio {    border: 7px solid #fff;border-radius: 20px;}
+        .image-radio-checked .glyphicon {background-size: 28px auto;}
+        .image-radio .glyphicon {    padding: 26px;}
+        .image-radio-checked {
+          border-color: #317485;
+      }
+
+      .event_product_info_btn4.downdoad_box {    margin-bottom: 50px;}
+
+      .event_product_info4 {    margin-top: 115px;}*/
+
+}
+
+
+</style>

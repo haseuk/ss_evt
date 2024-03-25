@@ -1,4 +1,28 @@
 @media screen and (max-width: 1440px) {
+  .alert-msg {
+    font-size: 0.83333333vw;
+    line-height: 2.08333333vw;
+    position: fixed;
+    left: 0vw;
+    top: 0vw;
+    right: auto;
+    bottom: auto;
+    width: 100%;
+    height: 2.08333333vw;
+    color: #fff;
+    background-color: #000;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    overflow: hidden;
+  }
+  .alert-msg.on {
+    opacity: 1;
+    visibility: visible;
+    transition: 0.75s;
+  }
   .wrapper {
     font-size: 0vw;
     font-family: 'SamsungOneKorean', Dotum, '돋움', sans-serif;
@@ -32,9 +56,17 @@
   }
   .wrapper section {
     text-align: center;
+    background-color: #222222;
   }
   .wrapper section article {
     position: relative;
+  }
+  .wrapper section article.top {
+    width: 100vw;
+    height: 41.66666667vw;
+    background-image: url("https://images.samsung.com/kdp/editor/common/202402/29510ed4-c2fe-4264-a06b-b01917469563.png");
+    background-repeat: no-repeat;
+    background-size: contain;
   }
   .wrapper section article .step-wrap .step {
     width: 74.94791667vw;
@@ -67,10 +99,11 @@
   }
   .wrapper section article h4 {
     text-align: center;
-    margin-bottom: 2.34375vw;
+    margin-bottom: 3.02083333vw;
   }
   .wrapper section article h4 span {
     font-size: 1.35416667vw;
+    line-height: 1.35416667vw;
     color: #fff;
     font-weight: 700;
     padding-bottom: 0.52083333vw;
@@ -81,7 +114,7 @@
   .wrapper section article.art1 {
     width: 100vw;
     height: 153.64583333vw;
-    background-image: url('../images/pc/evt0224-art1-bg.png');
+    background-image: url('https://images.samsung.com/kdp/editor/common/202402/91bc7e88-0d65-4640-8078-18e908dd82ad.png');
     background-repeat: no-repeat;
     background-size: contain;
     overflow: hidden;
@@ -89,7 +122,7 @@
   .wrapper section article.art1 .tit {
     width: 25.26041667vw;
     height: 2.60416667vw;
-    background-image: url('../images/pc/evt0224-tit.png');
+    background-image: url('https://images.samsung.com/kdp/editor/common/202402/b4374b73-6ed5-400e-904a-031539094090.png');
     background-repeat: no-repeat;
     background-size: contain;
     display: block;
@@ -100,7 +133,7 @@
   .wrapper section article.art1 .sub-tit {
     width: 56.25vw;
     height: 13.64583333vw;
-    background-image: url('../images/pc/evt0224-sub-tit.png');
+    background-image: url('https://images.samsung.com/kdp/editor/common/202402/5118f777-e267-4f58-a8ad-709453febcfa.png');
     background-repeat: no-repeat;
     background-size: contain;
     display: inline-block;
@@ -125,7 +158,7 @@
   .wrapper section article.art1 h3 {
     width: 26.97916667vw;
     height: 4.79166667vw;
-    background-image: url('../images/pc/evt0224-sub-tit2.png');
+    background-image: url('https://images.samsung.com/kdp/editor/common/202402/62f01c57-6416-4db3-a52b-fd3a44d58aeb.png');
     background-repeat: no-repeat;
     background-size: contain;
     display: inline-block;
@@ -180,42 +213,42 @@
   .wrapper section article.art2 {
     width: 100vw;
     height: 92.8125vw;
-    background-image: url('../images/pc/evt0224-art2-bg.png');
+    background-image: url('https://images.samsung.com/kdp/editor/common/202402/2d91d11f-828a-4ad0-ad4f-38e5712e4e49.png');
     background-repeat: no-repeat;
     background-size: contain;
   }
   .wrapper section article.art2 h3 {
     width: 53.07291667vw;
     height: 4.79166667vw;
-    background-image: url('../images/pc/evt0224-sub-tit3.png');
+    background-image: url('https://images.samsung.com/kdp/editor/common/202402/d4727700-5667-4c58-b7eb-9c4dcfd9ee78.png');
     background-repeat: no-repeat;
     background-size: contain;
   }
   .wrapper section article.art3 {
-    width: 100.46875vw;
+    width: 100vw;
     height: 133.17708333vw;
-    background-image: url('../images/pc/evt0224-art3-bg.png');
+    background-image: url('https://images.samsung.com/kdp/editor/common/202402/be11d36c-64bc-48f9-830c-16327759f176.png');
     background-repeat: no-repeat;
     background-size: contain;
   }
   .wrapper section article.art3 h3 {
     width: 58.90625vw;
     height: 4.84375vw;
-    background-image: url('../images/pc/evt0224-sub-tit4.png');
+    background-image: url('https://images.samsung.com/kdp/editor/common/202402/718550c0-9396-437f-a2bb-13aa0cf3640b.png');
     background-repeat: no-repeat;
     background-size: contain;
   }
   .wrapper section article.art4 {
     width: 100vw;
     height: 126.97916667vw;
-    background-image: url('../images/pc/evt0224-art4-bg.png');
+    background-image: url('https://images.samsung.com/kdp/editor/common/202402/fdb907c7-d1ca-456f-bb6d-35d764c603b5.png');
     background-repeat: no-repeat;
     background-size: contain;
   }
   .wrapper section article.art4 h3 {
     width: 31.35416667vw;
     height: 4.79166667vw;
-    background-image: url('../images/pc/evt0224-sub-tit5.png');
+    background-image: url('https://images.samsung.com/kdp/editor/common/202402/8f7622c8-9be4-4439-a47a-9838d79eac63.png');
     background-repeat: no-repeat;
     background-size: contain;
   }
@@ -261,14 +294,14 @@
   .wrapper section article.art5 {
     width: 100vw;
     height: 76.04166667vw;
-    background-image: url('../images/pc/evt0224-art5-bg.png');
+    background-image: url('https://images.samsung.com/kdp/editor/common/202402/9ed0a140-547f-4aec-813d-2c5d2725b4a9.png');
     background-repeat: no-repeat;
     background-size: contain;
   }
   .wrapper section article.art5 h3 {
     width: 55.3125vw;
     height: 4.84375vw;
-    background-image: url('../images/pc/evt0224-sub-tit6.png');
+    background-image: url('https://images.samsung.com/kdp/editor/common/202402/d41c5cf9-d6bc-4f9f-b1d7-36a625a0a324.png');
     background-repeat: no-repeat;
     background-size: contain;
   }
@@ -283,16 +316,26 @@
   .wrapper section article.art6 {
     width: 100vw;
     height: 21.61458333vw;
-    background-image: url('../images/pc/evt0224-art6-bg.png');
+    background-image: url('https://images.samsung.com/kdp/editor/common/202402/b3a6abea-66d4-4f87-ab67-f301acf322d4.png');
     background-repeat: no-repeat;
     background-size: contain;
-    padding: 2.08333333vw;
+    background-color: #183164;
+  }
+  .wrapper section article.art6 .cnt-inner {
+    position: absolute;
+    left: 50%;
+    top: 5.20833333vw;
+    right: auto;
+    bottom: auto;
+    text-align: left;
+    padding-left: 2.96875vw;
     box-sizing: border-box;
   }
-  .wrapper section article.art6 h4 {
+  .wrapper section article.art6 .cnt-inner h4 {
     margin-bottom: 2.08333333vw;
+    text-align: left;
   }
-  .wrapper section article.art6 .g-tit {
+  .wrapper section article.art6 .cnt-inner .g-tit {
     font-size: 1.82291667vw;
     line-height: 2.29166667vw;
     letter-spacing: -0.035em;
@@ -301,7 +344,7 @@
     text-align: left;
     margin-bottom: 0.78125vw;
   }
-  .wrapper section article.art6 .g-txt {
+  .wrapper section article.art6 .cnt-inner .g-txt {
     font-size: 1.35416667vw;
     line-height: 1.875vw;
     letter-spacing: -0.035em;
@@ -312,69 +355,128 @@
   .wrapper section article.art7 {
     width: 100vw;
     height: 42.44791667vw;
-    background-image: url('../images/pc/evt0224-art7-bg.png');
+    background-image: url('https://images.samsung.com/kdp/editor/common/202402/0f837ac8-7fe7-4504-8dd6-8f2ea2d91e5a.png');
     background-repeat: no-repeat;
     background-size: contain;
-    padding: 4.94791667vw;
+    padding-top: 6.25vw;
     box-sizing: border-box;
   }
   .wrapper section article.art8 {
     width: 100vw;
     height: 24.375vw;
-    background-image: url('../images/pc/evt0224-art8-bg.png');
+    background-image: url('https://images.samsung.com/kdp/editor/common/202402/1acc4d22-adcc-4756-b52e-34278d7be898.png');
     background-repeat: no-repeat;
     background-size: contain;
-    padding: 4.94791667vw;
+    padding-top: 6.25vw;
     box-sizing: border-box;
+  }
+  .wrapper section article.art8 ul {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 6.45833333vw;
+    width: 71.97916667vw;
+  }
+  .wrapper section article.art8 ul li {
+    display: flex;
+    justify-content: space-between;
+    height: 2.8125vw;
+    margin-bottom: 0.625vw;
+  }
+  .wrapper section article.art8 ul li p {
+    font-size: 1.35416667vw;
+    line-height: 2.8125vw;
+    font-weight: 500;
+    text-align: center;
+    color: #fff;
+    letter-spacing: -0.03em;
+  }
+  .wrapper section article.art8 ul li .model {
+    width: 53.17708333vw;
+  }
+  .wrapper section article.art8 ul li .reward {
+    width: 18.17708333vw;
   }
   .wrapper section article.art9 {
     width: 100vw;
     height: 56.19791667vw;
-    background-image: url('../images/pc/evt0224-art9-bg.png');
+    background-image: url('https://images.samsung.com/kdp/editor/common/202402/a6eaad60-8467-42b3-9c29-2411866ffc77.png');
     background-repeat: no-repeat;
     background-size: contain;
-    padding: 4.94791667vw;
+    padding-top: 9.375vw;
     box-sizing: border-box;
   }
-  .wrapper section article.art9 .tag-wrap {
+  .wrapper section article.art9 .tag-txt {
+    font-size: 1.04166667vw;
+    line-height: 1.35416667vw;
+    color: #b0b0b0;
+    letter-spacing: -0.025em;
+    width: 19.27083333vw;
+    height: 4.79166667vw;
+    padding-top: 0.98958333vw;
+    padding-right: 1.875vw;
+    padding-bottom: 0.98958333vw;
+    padding-left: 1.875vw;
+    box-sizing: border-box;
+    position: absolute;
+    left: 50%;
+    top: 27.03125vw;
+    right: auto;
+    bottom: auto;
+    margin-left: -9.63541667vw;
+    text-align: left;
+  }
+  .wrapper section article.art9 .clipboard__btn {
+    font-size: 0vw;
     width: 10.9375vw;
     height: 2.08333333vw;
     position: absolute;
-    left: 4.21875vw;
-    top: 41.04166667vw;
+    left: 50%;
+    top: 32.91666667vw;
     right: auto;
     bottom: auto;
+    margin-left: -9.63541667vw;
   }
   .wrapper section article.art9 .event-btn {
     width: 15.625vw;
     height: 4.16666667vw;
-    margin-top: 62.70833333vw;
+    position: absolute;
+    left: 50%;
+    top: 43.75vw;
+    right: auto;
+    bottom: auto;
+    margin-left: -7.8125vw;
   }
   .wrapper .notice-wrap {
-    padding-top: 5.20833333vw;
-    padding-right: 2.08333333vw;
-    padding-bottom: 5.20833333vw;
-    padding-left: 2.08333333vw;
+    padding-top: 7.8125vw;
+    padding-right: 0vw;
+    padding-bottom: 7.8125vw;
+    padding-left: 0vw;
     box-sizing: border-box;
     background-color: #000;
+    text-align: center;
   }
-  .wrapper .notice-wrap p {
+  .wrapper .notice-wrap .noti-inner {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    display: flex;
+    width: 75vw;
+  }
+  .wrapper .notice-wrap .noti-inner p {
     color: #fff;
     letter-spacing: -0.035em;
   }
-  .wrapper .notice-wrap p.tit {
-    font-size: 1.25vw;
+  .wrapper .notice-wrap .noti-inner p.tit {
+    font-size: 1.04166667vw;
     line-height: 1.61458333vw;
     color: #fff;
     font-weight: 700;
-    margin-bottom: 1.14583333vw;
+    margin-right: 5.20833333vw;
   }
-  .wrapper .notice-wrap p.txt {
-    font-size: 1.14583333vw;
-    line-height: 1.77083333vw;
+  .wrapper .notice-wrap .noti-inner p.txt {
+    font-size: 0.9375vw;
+    line-height: 1.66666667vw;
     color: #9c9c9c;
-    text-indent: -0.36458333vw;
-    margin-left: 0.36458333vw;
   }
 }
 /*# sourceMappingURL=style-t.css.map */
