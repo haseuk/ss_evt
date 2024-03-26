@@ -170,7 +170,7 @@
   }
   .wrapper section article.art3 {
     width: 100vw;
-    height: 76.82291667vw;
+    height: 83.22916667vw;
     background-image: url('../images/pc/dv-art3.png');
     background-repeat: no-repeat;
     background-size: contain;
@@ -182,7 +182,7 @@
     z-index: 1;
     position: absolute;
     left: 45.78125vw;
-    top: 71.45833333vw;
+    top: 77.91666667vw;
     right: auto;
     bottom: auto;
   }
@@ -243,14 +243,14 @@
   }
   .wrapper section article.art4 {
     width: 100vw;
-    height: 73.28125vw;
+    height: 85.625vw;
     background-image: url('../images/pc/dv-art4.png');
     background-repeat: no-repeat;
     background-size: contain;
   }
   .wrapper section article.art5 {
     width: 100vw;
-    height: 75.78125vw;
+    height: 75.83333333vw;
     background-image: url('../images/pc/dv-art5.png');
     background-repeat: no-repeat;
     background-size: contain;
