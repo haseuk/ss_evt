@@ -39,7 +39,7 @@
 .wrapper section article.top {
   width: 100vw;
   height: 100.97222222vw;
-  background-image: url('https://images.samsung.com/kdp/editor/common/202403/ec5aa5f7-d324-4414-a9a6-3a0d9cfe1ae3.png');
+  background-image: url('https://images.samsung.com/kdp/editor/common/202403/74a8baf4-031b-4253-87f5-fab2d0d95921.png');
   background-repeat: no-repeat;
   background-size: contain;
 }
@@ -111,7 +111,7 @@
   font-size: 3.33333333vw;
   line-height: 9.44444444vw;
   color: #fff;
-  padding-left: 7.77777778vw;
+  padding-left: 6.11111111vw;
   box-sizing: border-box;
   width: 42.77777778vw;
   height: 9.44444444vw;
@@ -170,8 +170,8 @@
 }
 .wrapper section article.art3 {
   width: 100vw;
-  height: 127.63888889vw;
-  background-image: url('https://images.samsung.com/kdp/editor/common/202403/7cfafc6f-9c2f-4407-8021-3eeab7d85ae2.png');
+  height: 167.77777778vw;
+  background-image: url('https://images.samsung.com/kdp/editor/common/202403/9b4993e8-979b-4cf2-83d1-0c9233d83029.png');
   background-repeat: no-repeat;
   background-size: contain;
 }
@@ -182,7 +182,7 @@
   z-index: 1;
   position: absolute;
   left: 39.86111111vw;
-  top: 116.66666667vw;
+  top: 156.94444444vw;
   right: auto;
   bottom: auto;
 }
@@ -206,7 +206,7 @@
 .wrapper section article.model {
   width: 100vw;
   height: 37.63888889vw;
-  background-image: url('https://images.samsung.com/kdp/editor/common/202403/4609876d-a5c5-4d7b-a238-c876ee0d792d.png');
+  background-image: url('https://images.samsung.com/kdp/editor/common/202403/0264300e-caa3-4dc7-b415-0355db0e6240.png');
   background-repeat: no-repeat;
   background-size: contain;
   padding-top: 13.19444444vw;
@@ -243,15 +243,15 @@
 }
 .wrapper section article.art4 {
   width: 100vw;
-  height: 136.25vw;
-  background-image: url('https://images.samsung.com/kdp/editor/common/202403/e28d657e-1681-4ff7-8c9e-aa54269d0932.png');
+  height: 176.11111111vw;
+  background-image: url('https://images.samsung.com/kdp/editor/common/202403/5ed5d550-3ee2-4b67-80ca-a310fa10b790.png');
   background-repeat: no-repeat;
   background-size: contain;
 }
 .wrapper section article.art5 {
   width: 100vw;
-  height: 214.16666667vw;
-  background-image: url('https://images.samsung.com/kdp/editor/common/202403/c2ba925c-be09-4d31-8692-088291c424de.png');
+  height: 214.02777778vw;
+  background-image: url('https://images.samsung.com/kdp/editor/common/202403/d05ed88c-81cc-4137-aa01-7d5a23a6c743.png');
   background-repeat: no-repeat;
   background-size: contain;
 }

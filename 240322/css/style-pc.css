@@ -163,7 +163,7 @@
     background: url('../images/pc/dv-art2.png') center top no-repeat;
   }
   .wrapper section article.art3 {
-    height: 1475px;
+    height: 1598px;
     background: url('../images/pc/dv-art3.png') center top no-repeat;
   }
   .wrapper section article.art3 .dv-btn {
@@ -173,7 +173,7 @@
     z-index: 1;
     position: absolute;
     left: 50%;
-    top: 1372px;
+    top: 1496px;
     right: auto;
     bottom: auto;
     margin-left: -81px;
