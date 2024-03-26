@@ -1,0 +1,286 @@
+@media screen and (max-width: 1440px) {
+  .alert-msg {
+    font-size: 0.83333333vw;
+    line-height: 2.08333333vw;
+    position: fixed;
+    left: 0vw;
+    top: 0vw;
+    right: auto;
+    bottom: auto;
+    width: 100%;
+    height: 2.08333333vw;
+    color: #fff;
+    background-color: #000;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    overflow: hidden;
+  }
+  .alert-msg.on {
+    opacity: 1;
+    visibility: visible;
+    transition: 0.75s;
+  }
+  .wrapper {
+    font-size: 0vw;
+    font-family: 'SamsungOneKorean', Dotum, '돋움', sans-serif;
+  }
+  .wrapper .mo {
+    display: none;
+  }
+  .wrapper .web {
+    display: inline-block;
+  }
+  .wrapper img {
+    width: 100%;
+    vertical-align: top;
+  }
+  .wrapper .btn {
+    position: relative;
+    cursor: pointer;
+    z-index: 1;
+  }
+  .wrapper .blind-txt {
+    display: none;
+  }
+  .wrapper .ss-one {
+    font-family: 'SamsungOneKorean', sans-serif;
+  }
+  .wrapper .sharp {
+    font-family: 'SamsungSharpSans', sans-serif;
+  }
+  .wrapper .sharp.sharp-m {
+    font-weight: 500;
+  }
+  .wrapper section {
+    text-align: center;
+  }
+  .wrapper section article {
+    position: relative;
+  }
+  .wrapper section article.top {
+    background-image: url("../images/pc/evt0224-top.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100vw;
+    height: 41.66666667vw;
+  }
+  .wrapper section article.art1 {
+    width: 100vw;
+    height: 168.07291667vw;
+    background-image: url('../images/pc/evt0224-v2-bg1.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    overflow: hidden;
+  }
+  .wrapper section article.art1 .model-no {
+    width: 71.875vw;
+    height: 7.34375vw;
+    position: absolute;
+    left: 50%;
+    top: 39.84375vw;
+    right: auto;
+    bottom: auto;
+    margin-left: -35.9375vw;
+    text-align: center;
+    padding-top: 1.5625vw;
+    padding-right: 0vw;
+    padding-bottom: 1.5625vw;
+    padding-left: 0vw;
+    box-sizing: border-box;
+  }
+  .wrapper section article.art1 .model-no p {
+    font-size: 1.35416667vw;
+    line-height: 2.08333333vw;
+    letter-spacing: -0.03em;
+    color: #fff;
+  }
+  .wrapper section article.art1 .event-btn {
+    font-size: 0vw;
+    width: 15.625vw;
+    height: 4.16666667vw;
+    position: absolute;
+    left: 50%;
+    top: 97.29166667vw;
+    right: auto;
+    bottom: auto;
+    margin-left: -7.8125vw;
+  }
+  .wrapper section article.art2 {
+    width: 100vw;
+    height: 92.5vw;
+    background-image: url('../images/pc/evt0224-v2-bg2.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    overflow: hidden;
+  }
+  .wrapper section article.art3 {
+    width: 100vw;
+    height: 140.72916667vw;
+    background-image: url('../images/pc/evt0224-v2-bg3.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    overflow: hidden;
+  }
+  .wrapper section article.art3 .evt-dv-btn {
+    width: 11.45833333vw;
+    height: 2.60416667vw;
+    position: absolute;
+    left: 50%;
+    top: 70.72916667vw;
+    right: auto;
+    bottom: auto;
+    margin-left: 14.73958333vw;
+  }
+  .wrapper section article.art4 {
+    width: 100vw;
+    height: 126.875vw;
+    background-image: url('../images/pc/evt0224-v2-bg4.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    overflow: hidden;
+  }
+  .wrapper section article.art5 {
+    width: 100vw;
+    height: 75.625vw;
+    background-image: url('../images/pc/evt0224-v2-bg5.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    overflow: hidden;
+  }
+  .wrapper section article.art6 {
+    width: 100vw;
+    height: 21.61458333vw;
+    background-image: url('../images/pc/evt0224-v2-bg6.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    overflow: hidden;
+  }
+  .wrapper section article.art7 {
+    width: 100vw;
+    height: 42.44791667vw;
+    background-image: url('../images/pc/evt0224-v2-bg7.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    overflow: hidden;
+  }
+  .wrapper section article.art8 {
+    width: 100vw;
+    height: 24.375vw;
+    background-image: url('../images/pc/evt0224-v2-bg8.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    overflow: hidden;
+  }
+  .wrapper section article.art8 ul {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 14.73958333vw;
+    width: 71.97916667vw;
+  }
+  .wrapper section article.art8 ul li {
+    display: flex;
+    justify-content: space-between;
+    height: 2.8125vw;
+    margin-bottom: 0.625vw;
+  }
+  .wrapper section article.art8 ul li p {
+    font-size: 1.35416667vw;
+    line-height: 2.8125vw;
+    font-weight: 500;
+    text-align: center;
+    color: #fff;
+    letter-spacing: -0.03em;
+  }
+  .wrapper section article.art8 ul li .model {
+    width: 53.17708333vw;
+  }
+  .wrapper section article.art8 ul li .reward {
+    width: 18.17708333vw;
+  }
+  .wrapper section article.art9 {
+    width: 100vw;
+    height: 56.19791667vw;
+    background-image: url('../images/pc/evt0224-v2-bg9.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    overflow: hidden;
+  }
+  .wrapper section article.art9 .tag-txt {
+    font-size: 1.04166667vw;
+    line-height: 1.35416667vw;
+    color: #b0b0b0;
+    letter-spacing: -0.025em;
+    width: 19.27083333vw;
+    height: 4.79166667vw;
+    padding-top: 0.98958333vw;
+    padding-right: 1.875vw;
+    padding-bottom: 0.98958333vw;
+    padding-left: 1.875vw;
+    box-sizing: border-box;
+    position: absolute;
+    left: 50%;
+    top: 26.92708333vw;
+    right: auto;
+    bottom: auto;
+    margin-left: -9.63541667vw;
+    text-align: left;
+  }
+  .wrapper section article.art9 .clipboard__btn {
+    font-size: 0vw;
+    width: 10.9375vw;
+    height: 2.08333333vw;
+    position: absolute;
+    left: 50%;
+    top: 32.91666667vw;
+    right: auto;
+    bottom: auto;
+    margin-left: -9.63541667vw;
+  }
+  .wrapper section article.art9 .event-btn {
+    font-size: 0vw;
+    width: 15.625vw;
+    height: 4.16666667vw;
+    position: absolute;
+    left: 50%;
+    top: 43.75vw;
+    right: auto;
+    bottom: auto;
+    margin-left: -7.8125vw;
+  }
+  .wrapper .notice-wrap {
+    padding-top: 7.8125vw;
+    padding-right: 0vw;
+    padding-bottom: 7.8125vw;
+    padding-left: 0vw;
+    box-sizing: border-box;
+    background-color: #000;
+    text-align: center;
+  }
+  .wrapper .notice-wrap .noti-inner {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    display: flex;
+    width: 75vw;
+  }
+  .wrapper .notice-wrap .noti-inner p {
+    color: #fff;
+    letter-spacing: -0.035em;
+  }
+  .wrapper .notice-wrap .noti-inner p.tit {
+    font-size: 1.04166667vw;
+    line-height: 1.61458333vw;
+    color: #fff;
+    font-weight: 700;
+    margin-right: 5.20833333vw;
+  }
+  .wrapper .notice-wrap .noti-inner p.txt {
+    font-size: 0.9375vw;
+    line-height: 1.66666667vw;
+    color: #9c9c9c;
+  }
+}
+/*# sourceMappingURL=style-t.css.map */
