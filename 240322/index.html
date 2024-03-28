@@ -128,37 +128,39 @@
 
       <article class="art3">
         <p class="blind-txt tit">MICRO LED 런칭 프로모션</p>
-        <p class="blind-txt txt">*모델별 혜택은 상이하며, 정확한 행사모델과 프로모션 내용은 판매 상담사에게 문의 바랍니다.</p>
-        <p class="blind-txt txt">* 혜택을 확인하시려면 모델별 혜택 확인하기를 눌러주세요.</p>
-        <a class="dv-btn model-open">모델별 혜택 확인하기</a>
+        <p class="blind-txt txt">MICRO LED 런칭을 기념하여, 오직 MICRO LED 구매 고객만 누릴 수 있는 다양한 혜택을 만나보세요.</p>
+        <p class="blind-txt txt">구매 기간 24. 04. 01 ~ 24. 12. 31</p>
+        <p class="blind-txt txt">혜택1</p>
+        <p class="blind-txt txt">24년 114형(290cm) MICRO LED 출시를 기념하여, MICRO LED를 구매하신 분들께 최대 1,500만원 상당의 Neo QLED 8K를 추가로 증정합니다.</p>
+        <p class="blind-txt txt">혜택2</p>
+        <p class="blind-txt txt">24년 114형(290cm) MICRO LED 출시를 기념하여 MICRO LED를 구매하신 분들께 JBL L100 MK2 패키지를 저렴하게 구입할 수 있는 500만원 상당의 할인혜택을 증정합니다.</p>
+
+        <div class="model">
+          <ul>
+            <li>
+              <p class="led">114형(290cm)</p>
+              <p class="reward">214cm Neo QLED 8K<br class="mo"> (KQ85QND900FXKR)</p>
+            </li>
+            <li>
+              <p class="led">101형(258cm)</p>
+              <p class="reward">214cm Neo QLED 8K<br class="mo"> (KQ85QND800FXKR)</p>
+            </li>
+            <li>
+              <p class="led">89형(225cm)</p>
+              <p class="reward">194cm OLED<br class="mo"> (KQ77SD90AFXKR)</p>
+            </li>
+          </ul>
+        </div>
       </article>
 
-      <article class="model">
-        <p class="blind-txt tit">대상 모델</p>
-        <ul>
-          <li>
-            <p class="model">MNA114MS1CCXKR</p>
-            <p class="reward">KQ85QND900FXKR</p>
-          </li>
-          <li>
-            <p class="model">MNA101MS1BCXKR</p>
-            <p class="reward">KQ85QND800FXKR</p>
-          </li>
-          <li>
-            <p class="model">MNA89MS1BACXKR</p>
-            <p class="reward">KQ77SD90AFXKR</p>
-          </li>
-          <li>
-            <p class="model">KQ98QNC990FXKR</p>
-            <p class="reward">KQ75LSD03AFXKR</p>
-          </li>
-        </ul>
-      </article>
 
       <article class="art4">
         <p class="blind-txt tit">MICRO LED 사전구매 프로모션</p>
-        <p class="blind-txt txt">사전구매 기간동안 구매하신 분들께만 제공되는 특별한 혜택, 4월에 MICRO LED 구매하고 시그니엘 호텔에서 품격있는 여유를 즐겨보세요!</p>
+        <p class="blind-txt txt">사전구매 기간동안 구매하신 분들께만 제공되는 런칭 프로모션의 특별한 혜택! 사전구매 기간에 MICRO LED 구매하고 시그니엘 호텔에서 품격있는 여유를 즐겨보세요.</p>
+        <p class="blind-txt txt">구매 기간 24. 04. 01 ~ 24. 05. 31</p>
+        <p class="blind-txt txt">대상 모델 MNA114MS1CCXKR, MNA101MS1BCXKR, MNA89MS1BACXKR</p>
         <p class="blind-txt txt">시그니엘 숙박권 프리미어 스위트, 성인 2인 조식 포함</p>
+        <p class="blind-txt txt">* MICRO LED 런칭 프로모션 내 23년 출시된 Neo QLED 8K(247cm) 모델도 포함됩니다.</p>
       </article>
 
       <article class="art5">
@@ -183,8 +185,8 @@
       </article>
 
       <article class="art6">
-        <p class="blind-txt txt">MICRO LED에 대한 문의사항은 아래의 연락처로 문의 부탁드립니다.</p>
-        <p class="blind-txt txt">연락처  010-5220-5364</p>
+        <p class="blind-txt txt">MICRO LED에 대한 문의사항은 아래 전담 연락처로 문의하시면 더욱 빠르게 상담이 가능합니다.</p>
+        <p class="blind-txt txt">연락처  02-3448-9971</p>
         <p class="blind-txt txt">운영시간  평일 오전 10시-17시</p>
         <p class="blind-txt txt">*주말 및 공휴일 미운영</p>
       </article>
@@ -198,18 +200,6 @@
         let idx = e.getAttribute('data-tab');
         art1.setAttribute('data-store', idx);
       });
-    });
-
-    const modelOpen = document.querySelector('.model-open');
-    const modelArticle = document.querySelector('.model');
-    modelOpen.addEventListener('click', function() {
-      if(modelArticle.classList.contains('on')) {
-        modelArticle.classList.remove('on');
-        modelOpen.classList.remove('on');
-      } else {
-        modelArticle.classList.add('on');
-        modelOpen.classList.add('on');
-      }
     });
   </script>
 </body>

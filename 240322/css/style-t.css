@@ -106,6 +106,7 @@
     justify-content: space-between;
     display: flex;
     flex-wrap: wrap;
+    align-content: space-between;
   }
   .wrapper section article.art1 .art-inner .store-tab .dv-tab {
     font-size: 1.5625vw;
@@ -170,80 +171,54 @@
   }
   .wrapper section article.art3 {
     width: 100vw;
-    height: 83.22916667vw;
+    height: 235.78125vw;
     background-image: url('../images/pc/dv-art3.png');
     background-repeat: no-repeat;
     background-size: contain;
   }
-  .wrapper section article.art3 .dv-btn {
-    width: 11.45833333vw;
-    height: 2.08333333vw;
-    cursor: pointer;
-    z-index: 1;
+  .wrapper section article.art3 .model {
+    width: 57.23958333vw;
+    height: 9.6875vw;
     position: absolute;
-    left: 45.78125vw;
-    top: 77.91666667vw;
+    left: 21.30208333vw;
+    top: 116.77083333vw;
     right: auto;
     bottom: auto;
   }
-  .wrapper section article.art3 .dv-btn:after {
-    content: '';
-    display: block;
+  .wrapper section article.art3 .model ul li {
     width: 100%;
-    height: 100%;
-    background-image: url('../images/pc/ico-model-chk.png');
-    background-repeat: no-repeat;
-    background-size: contain;
-    position: absolute;
-    left: 0vw;
-    top: 0vw;
-    right: auto;
-    bottom: auto;
-  }
-  .wrapper section article.art3 .dv-btn.on:after {
-    transform: rotateX(180deg);
-  }
-  .wrapper section article.model {
-    width: 100vw;
-    height: 20.52083333vw;
-    background-image: url('../images/pc/dv-art3-model.png');
-    background-repeat: no-repeat;
-    background-size: contain;
-    padding-top: 7.39583333vw;
-    box-sizing: border-box;
-    display: none;
-  }
-  .wrapper section article.model ul {
-    width: 57.39583333vw;
-    height: 13.125vw;
-    justify-content: space-between;
-    display: flex;
-    flex-wrap: wrap;
-    margin-left: auto;
-    margin-right: auto;
-    align-content: space-between;
-  }
-  .wrapper section article.model ul li {
-    width: 57.39583333vw;
     height: 2.8125vw;
-    display: flex;
-    justify-content: space-between;
+    margin-bottom: 0.625vw;
   }
-  .wrapper section article.model ul li p {
+  .wrapper section article.art3 .model ul li p {
     font-size: 1.35416667vw;
     line-height: 2.8125vw;
     letter-spacing: -0.03em;
+    font-family: 'SamsungSharpSans', sans-serif;
     color: #fff;
     text-align: center;
-    width: 28.38541667vw;
-    height: 2.8125vw;
+    display: inline-block;
+    vertical-align: middle;
   }
-  .wrapper section article.model.on {
-    display: block;
+  .wrapper section article.art3 .model ul li p.sharp-m {
+    font-weight: 500;
+  }
+  .wrapper section article.art3 .model ul li p.led {
+    width: 17.55208333vw;
+    height: 2.8125vw;
+    line-height: 2.8125vw;
+    margin-right: 0.72916667vw;
+  }
+  .wrapper section article.art3 .model ul li p.reward {
+    width: 38.95833333vw;
+    height: 2.8125vw;
+    line-height: 2.8125vw;
+    padding-top: 0vw;
+    box-sizing: border-box;
   }
   .wrapper section article.art4 {
     width: 100vw;
-    height: 85.625vw;
+    height: 85.88541667vw;
     background-image: url('../images/pc/dv-art4.png');
     background-repeat: no-repeat;
     background-size: contain;

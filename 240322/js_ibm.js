@@ -7,16 +7,4 @@
       art1.setAttribute('data-store', idx);
     });
   });
-
-  const modelOpen = document.querySelector('.model-open');
-  const modelArticle = document.querySelector('.model');
-  modelOpen.addEventListener('click', function() {
-    if(modelArticle.classList.contains('on')) {
-      modelArticle.classList.remove('on');
-      modelOpen.classList.remove('on');
-    } else {
-      modelArticle.classList.add('on');
-      modelOpen.classList.add('on');
-    }
-  });
 </script>

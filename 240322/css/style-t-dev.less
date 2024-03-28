@@ -34,7 +34,7 @@
                 }
               }
             }
-            .store-tab { .wh(916,353); .flex; .space-between; .flex-wrap;
+            .store-tab { .wh(916,353); .flex; .space-between; .flex-wrap; align-content: space-between;
               .dv-tab { .fs(30,93); .c(#fff); .pl(73); .-box; .wh(440,93); .tl; .-a(#3b3b3b,2); .rel; .pointer; .z(1);
                 &:after { .cnt; .f; .abs; .lt; .contain('https://images.samsung.com/kdp/editor/common/202403/e07fd7e8-b390-42b8-bd98-2fd90a8d1d28.png'); }
               }
@@ -56,29 +56,25 @@
           }
         }
         &.art2 { .wh(1920,1998); .contain('https://images.samsung.com/kdp/editor/common/202403/0acbb8c4-b622-4039-b017-7ce882320677.png'); }
-        &.art3 { .wh(1920,1598); .contain('https://images.samsung.com/kdp/editor/common/202403/11e0dce5-ca29-4834-9520-47ec7831f40c.png');
-          .dv-btn { .wh(220,40); .pointer; .z(1); .abs; .lt(879,1496);
-            &:after { .cnt; .f; .contain('https://images.samsung.com/kdp/editor/common/202403/db6123c2-733e-4e58-9d7c-f4131636d41d.png'); .abs; .lt; }
-            &.on:after { transform: rotateX(180deg); }
-          }
-        }
-        &.model { .wh(1920,394); .contain('https://images.samsung.com/kdp/editor/common/202403/55137bd5-e621-4fd1-9694-12fbb9ca7de2.png'); .pt(142); .-box; .hide;
-          ul { .wh(1102,252); .flex; .space-between; .flex-wrap; .mh-c; align-content: space-between;
-            li { .wh(1102,54); .flex; .space-between;
-              p { .fs(26,54); .ls(-0.03em); .c(#fff); .tc; .wh(545,54); }
+        &.art3 { .wh(1920,4527); .contain('https://images.samsung.com/kdp/editor/common/202403/ac54eafb-f75c-41f2-9f8b-d8f3fda96a27.png');
+          .model { .wh(1099,186); .abs; .lt(409,2242);
+            ul li { .wh(100%,54); .mb(12);
+              p { .fs(26,54); .ls(-0.03em); .sharp; .c(#fff); .tc; .ib; .vam;
+                &.led { .wh(337,54); .lh(54); .mr(14); }
+                &.reward { .wh(748,54); .lh(54); .pt(0); .-box; }
+              }
             }
           }
-          &.on { .block; }
         }
-        &.art4 { .wh(1920,1644); .contain('https://images.samsung.com/kdp/editor/common/202403/ef21cfa1-7241-45b8-8c32-b287242668cf.png'); }
-        &.art5 { .wh(1920,1456); .contain('https://images.samsung.com/kdp/editor/common/202403/1d19cfe7-1131-4cef-998e-e6cbb9b01616.png');
+        &.art4 { .wh(1920,1649); .contain('https://images.samsung.com/kdp/editor/common/202403/3b3dd2a2-b1de-430f-84cb-2d34e9668e61.png'); }
+        &.art5 { .wh(1920,1456); .contain('https://images.samsung.com/kdp/editor/common/202403/cdc03749-89b3-4ced-bee3-83a1e506bbd1.png');
           .dv-btn { .wh(234,65); .abs; .z(1);
             &.dv-btn1 { .lt(345,1044); }
             &.dv-btn2 { .lt(843,1044); }
             &.dv-btn3 { .lt(1336,1044); }
           }
         }
-        &.art6 { .wh(1920,315); .contain('https://images.samsung.com/kdp/editor/common/202403/9ebed633-83e9-42bc-b2a0-43b193ffbece.png'); }
+        &.art6 { .wh(1920,315); .contain('https://images.samsung.com/kdp/editor/common/202403/f173581d-9a34-485d-b938-f4933bc17756.png'); }
       }
     }
   }

@@ -170,80 +170,53 @@
 }
 .wrapper section article.art3 {
   width: 100vw;
-  height: 167.77777778vw;
+  height: 423.05555556vw;
   background-image: url('../images/mo/dv-art3.png');
   background-repeat: no-repeat;
   background-size: contain;
 }
-.wrapper section article.art3 .dv-btn {
-  width: 29.16666667vw;
-  height: 5.55555556vw;
-  cursor: pointer;
-  z-index: 1;
+.wrapper section article.art3 .model {
+  width: 79.44444444vw;
+  height: 35vw;
   position: absolute;
-  left: 39.86111111vw;
-  top: 156.94444444vw;
+  left: 9.44444444vw;
+  top: 219.44444444vw;
   right: auto;
   bottom: auto;
 }
-.wrapper section article.art3 .dv-btn:after {
-  content: '';
-  display: block;
+.wrapper section article.art3 .model ul li {
   width: 100%;
-  height: 100%;
-  background-image: url('../images/mo/ico-model-chk.png');
-  background-repeat: no-repeat;
-  background-size: contain;
-  position: absolute;
-  left: 0vw;
-  top: 0vw;
-  right: auto;
-  bottom: auto;
+  height: 11.11111111vw;
+  margin-bottom: 0.97222222vw;
 }
-.wrapper section article.art3 .dv-btn.on:after {
-  transform: rotateX(180deg);
-}
-.wrapper section article.model {
-  width: 100vw;
-  height: 37.63888889vw;
-  background-image: url('../images/mo/dv-art3-model.png');
-  background-repeat: no-repeat;
-  background-size: contain;
-  padding-top: 13.19444444vw;
-  box-sizing: border-box;
-  display: none;
-}
-.wrapper section article.model ul {
-  width: 77.77777778vw;
-  height: 24.44444444vw;
-  justify-content: space-between;
-  display: flex;
-  flex-wrap: wrap;
-  margin-left: auto;
-  margin-right: auto;
-  align-content: space-between;
-}
-.wrapper section article.model ul li {
-  width: 77.77777778vw;
-  height: 5.27777778vw;
-  display: flex;
-  justify-content: space-between;
-}
-.wrapper section article.model ul li p {
-  font-size: 2.5vw;
-  line-height: 5.27777778vw;
+.wrapper section article.art3 .model ul li p {
+  font-size: 3.33333333vw;
   letter-spacing: -0.03em;
+  font-family: 'SamsungSharpSans', sans-serif;
   color: #fff;
   text-align: center;
-  width: 38.19444444vw;
-  height: 5.27777778vw;
+  display: inline-block;
+  vertical-align: middle;
 }
-.wrapper section article.model.on {
-  display: block;
+.wrapper section article.art3 .model ul li p.sharp-m {
+  font-weight: 500;
+}
+.wrapper section article.art3 .model ul li p.led {
+  width: 24.72222222vw;
+  height: 11.11111111vw;
+  line-height: 11.11111111vw;
+  margin-right: 1.11111111vw;
+}
+.wrapper section article.art3 .model ul li p.reward {
+  width: 53.61111111vw;
+  height: 11.11111111vw;
+  line-height: 4.16666667vw;
+  padding-top: 1.11111111vw;
+  box-sizing: border-box;
 }
 .wrapper section article.art4 {
   width: 100vw;
-  height: 176.11111111vw;
+  height: 181.80555556vw;
   background-image: url('../images/mo/dv-art4.png');
   background-repeat: no-repeat;
   background-size: contain;
@@ -273,7 +246,7 @@
 }
 .wrapper section article.art6 {
   width: 100vw;
-  height: 45.83333333vw;
+  height: 48.05555556vw;
   background-image: url('../images/mo/dv-art6.png');
   background-repeat: no-repeat;
   background-size: contain;

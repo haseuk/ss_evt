@@ -32,7 +32,7 @@
                 }
               }
             }
-            .store-tab { .wh(916,353); .flex; .space-between; .flex-wrap;
+            .store-tab { .wh(916,353); .flex; .space-between; .flex-wrap; align-content: space-between;
               .dv-tab { .fs(30,93); .c(#fff); .pl(73); .-box; .wh(440,93); .tl; .-a(#3b3b3b,2); .rel; .pointer; .z(1);
                 &:after { .cnt; .f; .abs; .lt; .contain('../images/pc/dv-loc-off.png'); }
               }
@@ -54,22 +54,18 @@
           }
         }
         &.art2 { .h(1998); background: url('../images/pc/dv-art2.png')center top no-repeat; }
-        &.art3 { .h(1598); background: url('../images/pc/dv-art3.png')center top no-repeat;
-          .dv-btn { .wh(220,40); .pointer; .z(1); .abs; .lt(50%,1496); .ml(-81);
-            &:after { .cnt; .f; .contain('../images/pc/ico-model-chk.png'); .abs; .lt; }
-            &.on:after { transform: rotateX(180deg); }
-          }
-        }
-        &.model { .h(394); background: url('../images/pc/dv-art3-model.png')center top no-repeat; .pt(142); .-box; .hide;
-          ul { .wh(1102,252); .flex; .space-between; .flex-wrap; .mh-c; align-content: space-between;
-            li { .wh(1102,54); .flex; .space-between;
-              p { .fs(26,54); .ls(-0.03em); .c(#fff); .tc; .wh(545,54); }
+        &.art3 { .h(4527); background: url('../images/pc/dv-art3.png')center top no-repeat;
+        .model { .wh(1099,186); .abs; .lt(50%,2242); .ml(-551);
+            ul li { .wh(100%,54); .mb(12);
+              p { .fs(26,54); .ls(-0.03em); .sharp; .c(#fff); .tc; .ib; .vam;
+                &.led { .wh(337,54); .lh(54); .mr(14); }
+                &.reward { .wh(748,54); .lh(54); .pt(0); .-box; }
+              }
             }
           }
-          &.on { .block; }
         }
-        &.art4 { .h(1407); background: url('../images/pc/dv-art4.png')center top no-repeat; }
-        &.art5 { .h(1455); background: url('../images/pc/dv-art5.png')center top no-repeat;
+        &.art4 { .h(1649); background: url('../images/pc/dv-art4.png')center top no-repeat; }
+        &.art5 { .h(1456); background: url('../images/pc/dv-art5.png')center top no-repeat;
           .dv-btn { .wh(234,65); .abs; .z(1);
             &.dv-btn1 { .lt(50%,1044); .ml(-616); }
             &.dv-btn2 { .lt(50%,1044); .ml(-118); }
