@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="8f3b32d1-daae-47ae-bc70-cf4b2b404dfb" name="devcraft" url="http://samsung_evt.devcraft.kr">
+        <fileTransfer rootFolder="/var/www/samsung_evt" accessType="SFTP" host="devcraft.kr" port="22" sshConfigId="9d650f63-60b7-4389-846d-ede80354a62c" sshConfig="root@devcraft.kr:22 password">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" keepAliveTimeout="0" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
