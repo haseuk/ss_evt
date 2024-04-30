@@ -1,0 +1,37 @@
+@import "../../asset/asset";
+@use-vw: true;
+@vw: 720;
+
+html { scroll-behavior: smooth; }
+.alert-msg { .fs(20,40); .fix; .lt; .wh(100%,40); .c(#fff); .bgc(#000); .tc; .flex; .flex-center; .justify-center; .o(0); .crop;
+  &.on { .o(1); visibility: visible; transition: 0.75s; }
+}
+.wrapper { .fs(0); font-family: 'SamsungOneKorean', Dotum, '돋움', sans-serif; .bgc(#fff);
+  .mo { .ib; }
+  .web { .hide; }
+  img { .wf; .vat; }
+  .evt-btn { .rel; .pointer; .z(1); }
+  .blind-txt { .hide!important; }
+  section { .rel;
+    .anchor { .abs; .l(0); .wh(100%,1); .o(0); pointer-events: none;
+      &#evt1 { .t(910); }
+      &#evt2 { .t(2160); }
+      &#evt3 { .t(3520); }
+      &#evt4 { .t(4930); }
+    }
+    .tab-wrap { .wh(720,200); .rel; .z(2);
+      .tab-inner { .wh(720,200); .flex; .space-between; align-content: space-between; .flex-wrap; .rel;
+        .evt-tab { .wh(360,100); }
+      }
+    }
+    &[data-view="1"] .tab-wrap { .contain('../images/mo/tab1.png'); }
+    &[data-view="2"] .tab-wrap { .contain('../images/mo/tab2.png'); }
+    &[data-view="3"] .tab-wrap { .contain('../images/mo/tab3.png'); }
+    &[data-view="4"] .tab-wrap { .contain('../images/mo/tab4.png'); }
+
+    .evt-cont { .rel;
+      .evt-btn { .wh(308,66); .abs; .lb(50%,0); transform: translateX(-50%); }
+      &.evt5 .evt-btn { .wh(160,60); .b(108); }
+    }
+  }
+}

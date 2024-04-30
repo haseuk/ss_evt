@@ -1,0 +1,172 @@
+@media screen and (min-width: 1920px) {
+  html {
+    scroll-behavior: smooth;
+  }
+  .alert-msg {
+    font-size: 16px;
+    line-height: 40px;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    right: auto;
+    bottom: auto;
+    width: 100%;
+    height: 40px;
+    color: #fff;
+    background-color: #000;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    overflow: hidden;
+  }
+  .alert-msg.on {
+    opacity: 1;
+    visibility: visible;
+    transition: 0.75s;
+  }
+  .wrapper {
+    font-size: 0px;
+    font-family: 'SamsungOneKorean', Dotum, '돋움', sans-serif;
+    background-color: #fff;
+  }
+  .wrapper .mo {
+    display: none;
+  }
+  .wrapper .web {
+    display: inline-block;
+  }
+  .wrapper img {
+    max-width: 1920px;
+  }
+  .wrapper .btn {
+    position: relative;
+    cursor: pointer;
+    z-index: 1;
+  }
+  .wrapper .blind-txt {
+    display: none !important;
+  }
+  .wrapper section {
+    position: relative;
+    text-align: center;
+  }
+  .wrapper section .anchor {
+    position: absolute;
+    left: 0px;
+    width: 100%;
+    height: 1px;
+    opacity: 0;
+    pointer-events: none;
+  }
+  .wrapper section .anchor#evt1 {
+    top: 875px;
+  }
+  .wrapper section .anchor#evt2 {
+    top: 1829px;
+  }
+  .wrapper section .anchor#evt3 {
+    top: 2957px;
+  }
+  .wrapper section .anchor#evt4 {
+    top: 4096px;
+  }
+  .wrapper section .tab-wrap {
+    max-width: 1920px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: 95px;
+    text-align: center;
+    z-index: 2;
+    background-color: #e97394 !important;
+  }
+  .wrapper section .tab-wrap .tab-inner {
+    width: 1320px;
+    height: 95px;
+    justify-content: space-between;
+    align-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+    display: inline-flex;
+    position: relative;
+  }
+  .wrapper section .tab-wrap .tab-inner .evt-tab {
+    width: 330px;
+    height: 95px;
+  }
+  .wrapper section .tab-wrap .tab-inner .tab1 {
+    background-image: url('../images/pc/tab1.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  .wrapper section .tab-wrap .tab-inner .tab2 {
+    background-image: url('../images/pc/tab2.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  .wrapper section .tab-wrap .tab-inner .tab3 {
+    background-image: url('../images/pc/tab3.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  .wrapper section .tab-wrap .tab-inner .tab4 {
+    background-image: url('../images/pc/tab4.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  .wrapper section[data-view="1"] .tab-wrap {
+    background: none;
+  }
+  .wrapper section[data-view="2"] .tab-wrap {
+    background: none;
+  }
+  .wrapper section[data-view="3"] .tab-wrap {
+    background: none;
+  }
+  .wrapper section[data-view="4"] .tab-wrap {
+    background: none;
+  }
+  .wrapper section[data-view="1"] .tab-wrap .tab1 {
+    background-image: url('../images/pc/tab1-on.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  .wrapper section[data-view="2"] .tab-wrap .tab2 {
+    background-image: url('../images/pc/tab2-on.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  .wrapper section[data-view="3"] .tab-wrap .tab3 {
+    background-image: url('../images/pc/tab3-on.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  .wrapper section[data-view="4"] .tab-wrap .tab4 {
+    background-image: url('../images/pc/tab4-on.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  .wrapper section .evt-cont {
+    position: relative;
+  }
+  .wrapper section .evt-cont .evt-btn {
+    width: 280px;
+    height: 60px;
+    position: absolute;
+    left: 50%;
+    bottom: 0px;
+    right: auto;
+    top: auto;
+    transform: translateX(-50%);
+  }
+  .wrapper section .evt-cont.evt5 .evt-btn {
+    width: 180px;
+    height: 60px;
+    bottom: 145px;
+    transform: translateX(0);
+    margin-left: 240px;
+  }
+}
+/*# sourceMappingURL=style-pc.css.map */

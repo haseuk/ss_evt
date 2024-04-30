@@ -1,0 +1,177 @@
+html {
+  scroll-behavior: smooth;
+}
+.alert-msg {
+  font-size: 2.77777778vw;
+  line-height: 5.55555556vw;
+  position: fixed;
+  left: 0vw;
+  top: 0vw;
+  right: auto;
+  bottom: auto;
+  width: 100%;
+  height: 5.55555556vw;
+  color: #fff;
+  background-color: #000;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  overflow: hidden;
+}
+.alert-msg.on {
+  opacity: 1;
+  visibility: visible;
+  transition: 0.75s;
+}
+.wrapper {
+  font-size: 0vw;
+  font-family: 'SamsungOneKorean', Dotum, '돋움', sans-serif;
+  background-color: #000;
+}
+.wrapper .mo {
+  display: inline-block;
+}
+.wrapper .web {
+  display: none;
+}
+.wrapper img {
+  width: 100%;
+  vertical-align: top;
+}
+.wrapper .evt-btn {
+  position: relative;
+  cursor: pointer;
+  z-index: 1;
+}
+.wrapper .blind-txt {
+  display: none !important;
+}
+.wrapper section {
+  text-align: center;
+}
+.wrapper section article {
+  position: relative;
+}
+.wrapper section article .art-cnt {
+  position: relative;
+}
+.wrapper section article .art-cnt .event-container__btn {
+  width: 47.22222222vw;
+  height: 11.11111111vw;
+  position: absolute;
+  left: 26.38888889vw;
+  bottom: 30.13888889vw;
+  right: auto;
+  top: auto;
+}
+.wrapper section article .art-cnt .event-container__btn button {
+  font-size: 0vw;
+  width: 100%;
+  height: 100%;
+}
+.wrapper section article .art-cnt .noti-btn {
+  width: 26.38888889vw;
+  height: 11.11111111vw;
+  position: absolute;
+  left: 36.80555556vw;
+  bottom: 6.11111111vw;
+  right: auto;
+  top: auto;
+  z-index: 1;
+  cursor: pointer;
+}
+.wrapper section article .art-cnt .noti-btn:after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0vw;
+  top: 0vw;
+  right: auto;
+  bottom: auto;
+  transform: rotateX(180deg);
+  pointer-events: none;
+}
+.wrapper section article .art-cnt .clipboard__btn {
+  font-size: 0vw;
+  width: 29.16666667vw;
+  height: 5.55555556vw;
+  position: absolute;
+  right: 10.83333333vw;
+  bottom: 115vw;
+  left: auto;
+  top: auto;
+}
+.wrapper section article .noti-cnt {
+  display: none;
+}
+.wrapper section article.open .art-cnt .noti-btn:after {
+  transform: rotateX(0deg);
+}
+.wrapper section article.open .noti-cnt {
+  display: block;
+}
+.wrapper section article.art1 .tab-wrap {
+  width: 100vw;
+  height: 14.30555556vw;
+  position: absolute;
+  left: 0vw;
+  bottom: 0vw;
+  right: auto;
+  top: auto;
+}
+.wrapper section article.art1 .tab-wrap .evt-btn {
+  height: 100%;
+  display: inline-block;
+  vertical-align: top;
+}
+.wrapper section article.art1 .tab-wrap .evt-btn.tab1 {
+  width: 18.05555556vw;
+}
+.wrapper section article.art1 .tab-wrap .evt-btn.tab2 {
+  width: 31.94444444vw;
+}
+.wrapper section article.art1 .tab-wrap .evt-btn.tab3 {
+  width: 23.61111111vw;
+}
+.wrapper section article.art1 .tab-wrap .evt-btn.tab4 {
+  width: 26.38888889vw;
+}
+.wrapper section article.art2 .art-cnt .clipboard__btn {
+  bottom: 113.61111111vw;
+}
+.wrapper section article.art2 .art-cnt .noti-btn:after {
+  background-image: url('https://images.samsung.com/kdp/editor/common/202404/264a70bf-91e6-49f7-978e-50a0e805d4b2.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.wrapper section article.art3 .art-cnt .noti-btn:after {
+  background-image: url('https://images.samsung.com/kdp/editor/common/202404/bd232f28-0417-47e2-9512-3089d6836693.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.wrapper section article.art4 .art-cnt .noti-btn:after {
+  background-image: url('https://images.samsung.com/kdp/editor/common/202404/75c5b0d4-f676-42e5-adc9-795219df00c6.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.wrapper section article.art5 .art-cnt .clipboard__btn {
+  bottom: 115.55555556vw;
+}
+.wrapper section article.art5 .art-cnt .noti-btn:after {
+  background-image: url('https://images.samsung.com/kdp/editor/common/202404/1b317928-201e-4cec-8618-d66094d21bbe.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.wrapper section article.art5 .art-cnt1 .event-container__btn {
+  width: 15.83333333vw;
+  height: 15vw;
+  left: 13.88888889vw;
+  bottom: 58.33333333vw;
+  right: auto;
+  top: auto;
+}
+/*# sourceMappingURL=style-mo.css.map */

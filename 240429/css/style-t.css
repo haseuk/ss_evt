@@ -1,0 +1,173 @@
+@media screen and (min-width: 721px) {
+  html {
+    scroll-behavior: smooth;
+  }
+  .alert-msg {
+    font-size: 0.83333333vw;
+    line-height: 2.08333333vw;
+    position: fixed;
+    left: 0vw;
+    top: 0vw;
+    right: auto;
+    bottom: auto;
+    width: 100%;
+    height: 2.08333333vw;
+    color: #fff;
+    background-color: #000;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    overflow: hidden;
+  }
+  .alert-msg.on {
+    opacity: 1;
+    visibility: visible;
+    transition: 0.75s;
+  }
+  .wrapper {
+    font-size: 0vw;
+    font-family: 'SamsungOneKorean', Dotum, '돋움', sans-serif;
+    background-color: #fff;
+  }
+  .wrapper .mo {
+    display: none;
+  }
+  .wrapper .web {
+    display: inline-block;
+  }
+  .wrapper img {
+    width: 100%;
+    vertical-align: top;
+  }
+  .wrapper .btn {
+    position: relative;
+    cursor: pointer;
+    z-index: 1;
+  }
+  .wrapper .blind-txt {
+    display: none !important;
+  }
+  .wrapper section {
+    position: relative;
+    text-align: center;
+  }
+  .wrapper section .anchor {
+    position: absolute;
+    left: 0vw;
+    width: 100%;
+    height: 0.05208333vw;
+    opacity: 0;
+    pointer-events: none;
+  }
+  .wrapper section .anchor#evt1 {
+    top: 45.57291667vw;
+  }
+  .wrapper section .anchor#evt2 {
+    top: 95.26041667vw;
+  }
+  .wrapper section .anchor#evt3 {
+    top: 154.01041667vw;
+  }
+  .wrapper section .anchor#evt4 {
+    top: 213.33333333vw;
+  }
+  .wrapper section .tab-wrap {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: 4.94791667vw;
+    text-align: center;
+    z-index: 2;
+    background-color: #e97394 !important;
+  }
+  .wrapper section .tab-wrap .tab-inner {
+    width: 68.75vw;
+    height: 4.94791667vw;
+    justify-content: space-between;
+    align-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+    display: inline-flex;
+    position: relative;
+    background-color: #ededed;
+  }
+  .wrapper section .tab-wrap .tab-inner .evt-tab {
+    width: 17.1875vw;
+    height: 4.94791667vw;
+  }
+  .wrapper section .tab-wrap .tab-inner .tab1 {
+    background-image: url('../images/pc/tab1.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  .wrapper section .tab-wrap .tab-inner .tab2 {
+    background-image: url('../images/pc/tab2.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  .wrapper section .tab-wrap .tab-inner .tab3 {
+    background-image: url('../images/pc/tab3.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  .wrapper section .tab-wrap .tab-inner .tab4 {
+    background-image: url('../images/pc/tab4.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  .wrapper section[data-view="1"] .tab-wrap {
+    background: none;
+  }
+  .wrapper section[data-view="2"] .tab-wrap {
+    background: none;
+  }
+  .wrapper section[data-view="3"] .tab-wrap {
+    background: none;
+  }
+  .wrapper section[data-view="4"] .tab-wrap {
+    background: none;
+  }
+  .wrapper section[data-view="1"] .tab-wrap .tab1 {
+    background-image: url('../images/pc/tab1-on.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  .wrapper section[data-view="2"] .tab-wrap .tab2 {
+    background-image: url('../images/pc/tab2-on.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  .wrapper section[data-view="3"] .tab-wrap .tab3 {
+    background-image: url('../images/pc/tab3-on.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  .wrapper section[data-view="4"] .tab-wrap .tab4 {
+    background-image: url('../images/pc/tab4-on.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  .wrapper section .evt-cont {
+    position: relative;
+  }
+  .wrapper section .evt-cont .evt-btn {
+    width: 14.58333333vw;
+    height: 3.125vw;
+    position: absolute;
+    left: 50%;
+    bottom: 0vw;
+    right: auto;
+    top: auto;
+    transform: translateX(-50%);
+  }
+  .wrapper section .evt-cont.evt5 .evt-btn {
+    width: 9.375vw;
+    height: 3.125vw;
+    bottom: 7.55208333vw;
+    transform: translateX(0);
+    margin-left: 12.5vw;
+  }
+}
+/*# sourceMappingURL=style-t.css.map */

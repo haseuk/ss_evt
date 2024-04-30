@@ -45,8 +45,8 @@
 }
 .wrapper section article.art1 {
   width: 100vw;
-  height: 114.30555556vw;
-  background-image: url('https://images.samsung.com/kdp/editor/common/202403/53a7dd93-73c0-4f44-9251-81812e808738.png');
+  height: 125.41666667vw;
+  background-image: url('https://images.samsung.com/kdp/editor/common/202404/435764e5-019a-4dc7-ae2f-273aa9f3826e.png');
   background-repeat: no-repeat;
   background-size: contain;
   padding-top: 47.77777778vw;
@@ -100,12 +100,13 @@
 }
 .wrapper section article.art1 .store-tab {
   width: 88.88888889vw;
-  height: 31.66666667vw;
+  height: 42.77777778vw;
   justify-content: space-between;
   display: flex;
   flex-wrap: wrap;
   margin-left: auto;
   margin-right: auto;
+  align-content: space-between;
 }
 .wrapper section article.art1 .store-tab .dv-tab {
   font-size: 3.33333333vw;
@@ -140,7 +141,8 @@
 .wrapper section article.art1[data-store="3"] .store-wrap .store-info ul li.st3,
 .wrapper section article.art1[data-store="4"] .store-wrap .store-info ul li.st4,
 .wrapper section article.art1[data-store="5"] .store-wrap .store-info ul li.st5,
-.wrapper section article.art1[data-store="6"] .store-wrap .store-info ul li.st6 {
+.wrapper section article.art1[data-store="6"] .store-wrap .store-info ul li.st6,
+.wrapper section article.art1[data-store="7"] .store-wrap .store-info ul li.st7 {
   display: block;
 }
 .wrapper section article.art1[data-store="1"] .store-tab [data-tab="1"],
@@ -148,7 +150,8 @@
 .wrapper section article.art1[data-store="3"] .store-tab [data-tab="3"],
 .wrapper section article.art1[data-store="4"] .store-tab [data-tab="4"],
 .wrapper section article.art1[data-store="5"] .store-tab [data-tab="5"],
-.wrapper section article.art1[data-store="6"] .store-tab [data-tab="6"] {
+.wrapper section article.art1[data-store="6"] .store-tab [data-tab="6"],
+.wrapper section article.art1[data-store="7"] .store-tab [data-tab="7"] {
   border: 0.27777778vw solid #fff;
 }
 .wrapper section article.art1[data-store="1"] .store-tab [data-tab="1"]:after,
@@ -156,7 +159,8 @@
 .wrapper section article.art1[data-store="3"] .store-tab [data-tab="3"]:after,
 .wrapper section article.art1[data-store="4"] .store-tab [data-tab="4"]:after,
 .wrapper section article.art1[data-store="5"] .store-tab [data-tab="5"]:after,
-.wrapper section article.art1[data-store="6"] .store-tab [data-tab="6"]:after {
+.wrapper section article.art1[data-store="6"] .store-tab [data-tab="6"]:after,
+.wrapper section article.art1[data-store="7"] .store-tab [data-tab="7"]:after {
   background-image: url('https://images.samsung.com/kdp/editor/common/202403/5b969b97-c3d2-4a8c-b81b-448190126d35.png');
   background-repeat: no-repeat;
   background-size: contain;

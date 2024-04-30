@@ -1,0 +1,131 @@
+html {
+  scroll-behavior: smooth;
+}
+.alert-msg {
+  font-size: 2.77777778vw;
+  line-height: 5.55555556vw;
+  position: fixed;
+  left: 0vw;
+  top: 0vw;
+  right: auto;
+  bottom: auto;
+  width: 100%;
+  height: 5.55555556vw;
+  color: #fff;
+  background-color: #000;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  overflow: hidden;
+}
+.alert-msg.on {
+  opacity: 1;
+  visibility: visible;
+  transition: 0.75s;
+}
+.wrapper {
+  font-size: 0vw;
+  font-family: 'SamsungOneKorean', Dotum, '돋움', sans-serif;
+  background-color: #fff;
+}
+.wrapper .mo {
+  display: inline-block;
+}
+.wrapper .web {
+  display: none;
+}
+.wrapper img {
+  width: 100%;
+  vertical-align: top;
+}
+.wrapper .evt-btn {
+  position: relative;
+  cursor: pointer;
+  z-index: 1;
+}
+.wrapper .blind-txt {
+  display: none !important;
+}
+.wrapper section {
+  position: relative;
+}
+.wrapper section .anchor {
+  position: absolute;
+  left: 0vw;
+  width: 100%;
+  height: 0.13888889vw;
+  opacity: 0;
+  pointer-events: none;
+}
+.wrapper section .anchor#evt1 {
+  top: 126.38888889vw;
+}
+.wrapper section .anchor#evt2 {
+  top: 300vw;
+}
+.wrapper section .anchor#evt3 {
+  top: 488.88888889vw;
+}
+.wrapper section .anchor#evt4 {
+  top: 684.72222222vw;
+}
+.wrapper section .tab-wrap {
+  width: 100vw;
+  height: 27.77777778vw;
+  position: relative;
+  z-index: 2;
+}
+.wrapper section .tab-wrap .tab-inner {
+  width: 100vw;
+  height: 27.77777778vw;
+  justify-content: space-between;
+  align-content: space-between;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+}
+.wrapper section .tab-wrap .tab-inner .evt-tab {
+  width: 50vw;
+  height: 13.88888889vw;
+}
+.wrapper section[data-view="1"] .tab-wrap {
+  background-image: url('../images/mo/tab1.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.wrapper section[data-view="2"] .tab-wrap {
+  background-image: url('../images/mo/tab2.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.wrapper section[data-view="3"] .tab-wrap {
+  background-image: url('../images/mo/tab3.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.wrapper section[data-view="4"] .tab-wrap {
+  background-image: url('../images/mo/tab4.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.wrapper section .evt-cont {
+  position: relative;
+}
+.wrapper section .evt-cont .evt-btn {
+  width: 42.77777778vw;
+  height: 9.16666667vw;
+  position: absolute;
+  left: 50%;
+  bottom: 0vw;
+  right: auto;
+  top: auto;
+  transform: translateX(-50%);
+}
+.wrapper section .evt-cont.evt5 .evt-btn {
+  width: 22.22222222vw;
+  height: 8.33333333vw;
+  bottom: 15vw;
+}
+/*# sourceMappingURL=style-mo.css.map */

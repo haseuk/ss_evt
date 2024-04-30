@@ -2920,7 +2920,7 @@ background-size: 100% auto;
       const $this = $(this);
       let href = $this.attr("href");
       let $sec = $(href);
-      let secTop = $sec.offset().top;
+      let secTop = $sec.offset().top;/**/
       $("html, body").animate({ scrollTop: secTop }, 500);
       return false;
     });

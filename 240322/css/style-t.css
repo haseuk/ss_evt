@@ -40,7 +40,7 @@
   }
   .wrapper section article.art1 {
     width: 100vw;
-    height: 49.94791667vw;
+    height: 56.71875vw;
     background-image: url('../images/pc/dv-art1.png');
     background-repeat: no-repeat;
     background-size: contain;
@@ -95,14 +95,15 @@
     font-weight: 600;
   }
   .wrapper section article.art1 .art-inner .store-wrap .store-info ul li div.nm {
-    width: 20.20833333vw;
+    width: 100%;
+    padding-top: 4.16666667vw;
   }
   .wrapper section article.art1 .art-inner .store-wrap .store-info ul li div.operating {
-    width: 13.125vw;
+    width: 100%;
   }
   .wrapper section article.art1 .art-inner .store-tab {
     width: 47.70833333vw;
-    height: 18.38541667vw;
+    height: 25.15625vw;
     justify-content: space-between;
     display: flex;
     flex-wrap: wrap;
@@ -141,7 +142,8 @@
   .wrapper section article.art1[data-store="3"] .store-wrap .store-info ul li.st3,
   .wrapper section article.art1[data-store="4"] .store-wrap .store-info ul li.st4,
   .wrapper section article.art1[data-store="5"] .store-wrap .store-info ul li.st5,
-  .wrapper section article.art1[data-store="6"] .store-wrap .store-info ul li.st6 {
+  .wrapper section article.art1[data-store="6"] .store-wrap .store-info ul li.st6,
+  .wrapper section article.art1[data-store="7"] .store-wrap .store-info ul li.st7 {
     display: block;
   }
   .wrapper section article.art1[data-store="1"] .store-tab [data-tab="1"],
@@ -149,7 +151,8 @@
   .wrapper section article.art1[data-store="3"] .store-tab [data-tab="3"],
   .wrapper section article.art1[data-store="4"] .store-tab [data-tab="4"],
   .wrapper section article.art1[data-store="5"] .store-tab [data-tab="5"],
-  .wrapper section article.art1[data-store="6"] .store-tab [data-tab="6"] {
+  .wrapper section article.art1[data-store="6"] .store-tab [data-tab="6"],
+  .wrapper section article.art1[data-store="7"] .store-tab [data-tab="7"] {
     border: 0.10416667vw solid #fff;
   }
   .wrapper section article.art1[data-store="1"] .store-tab [data-tab="1"]:after,
@@ -157,7 +160,8 @@
   .wrapper section article.art1[data-store="3"] .store-tab [data-tab="3"]:after,
   .wrapper section article.art1[data-store="4"] .store-tab [data-tab="4"]:after,
   .wrapper section article.art1[data-store="5"] .store-tab [data-tab="5"]:after,
-  .wrapper section article.art1[data-store="6"] .store-tab [data-tab="6"]:after {
+  .wrapper section article.art1[data-store="6"] .store-tab [data-tab="6"]:after,
+  .wrapper section article.art1[data-store="7"] .store-tab [data-tab="7"]:after {
     background-image: url('../images/pc/dv-loc-on.png');
     background-repeat: no-repeat;
     background-size: contain;
