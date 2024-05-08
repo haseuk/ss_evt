@@ -373,7 +373,7 @@ a {
     margin-bottom: 0.97222222vw;
 }
 .wrapper section article.art3 .model ul li p {
-    font-size: 3.33333333vw;
+    font-size: 0;
     letter-spacing: -0.03em;
     font-family: 'SamsungSharpSans', sans-serif;
     color: #fff;
@@ -611,7 +611,7 @@ a {
     }
     .wrapper section article.art3 {
         width: 100vw;
-        height: 235.78125vw;
+        height: 238.85416667vw;
         background-image: url('https://images.samsung.com/kdp/editor/common/202403/ac54eafb-f75c-41f2-9f8b-d8f3fda96a27.png');
         background-repeat: no-repeat;
         background-size: contain;
@@ -621,7 +621,7 @@ a {
         height: 9.6875vw;
         position: absolute;
         left: 21.30208333vw;
-        top: 116.77083333vw;
+        top: 116.875vw;
         right: auto;
         bottom: auto;
     }
@@ -872,7 +872,7 @@ a {
         background: url('https://images.samsung.com/kdp/editor/common/202403/886d7852-3ac3-49ef-8d34-fead07384a02.png') center top no-repeat;
     }
     .wrapper section article.art3 {
-        height: 4527px;
+        height: 4586px;
         background: url('https://images.samsung.com/kdp/editor/common/202403/ac54eafb-f75c-41f2-9f8b-d8f3fda96a27.png') center top no-repeat;
     }
     .wrapper section article.art3 .model {
@@ -880,7 +880,7 @@ a {
         height: 186px;
         position: absolute;
         left: 50%;
-        top: 2242px;
+        top: 2244px;
         right: auto;
         bottom: auto;
         margin-left: -551px;
