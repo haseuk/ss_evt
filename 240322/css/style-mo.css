@@ -45,7 +45,7 @@
 }
 .wrapper section article.art1 {
   width: 100vw;
-  height: 125.41666667vw;
+  height: 114.30555556vw;
   background-image: url('../images/mo/dv-art1.png');
   background-repeat: no-repeat;
   background-size: contain;
@@ -100,7 +100,7 @@
 }
 .wrapper section article.art1 .store-tab {
   width: 88.88888889vw;
-  height: 42.77777778vw;
+  height: 30.55555556vw;
   justify-content: space-between;
   display: flex;
   flex-wrap: wrap;
