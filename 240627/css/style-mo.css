@@ -1,0 +1,271 @@
+html {
+  scroll-behavior: smooth;
+}
+.alert-msg {
+  font-size: 2.77777778vw;
+  line-height: 5.55555556vw;
+  position: fixed;
+  left: 0vw;
+  top: 0vw;
+  right: auto;
+  bottom: auto;
+  width: 100%;
+  height: 5.55555556vw;
+  color: #fff;
+  background-color: #000;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  overflow: hidden;
+  z-index: 2;
+}
+.alert-msg.on {
+  opacity: 1;
+  visibility: visible;
+  transition: 0.75s;
+}
+.wrapper {
+  font-family: 'SamsungOneKorean', Dotum, '돋움', sans-serif;
+  background-color: #fff;
+}
+.wrapper .mo {
+  display: inline-block;
+}
+.wrapper .web {
+  display: none;
+}
+.wrapper img {
+  width: 100%;
+  vertical-align: top;
+}
+.wrapper .evt-btn {
+  position: relative;
+  cursor: pointer;
+  z-index: 1;
+}
+.wrapper .blind-txt {
+  display: none !important;
+}
+.wrapper .event-btn {
+  font-size: 0vw;
+}
+.wrapper section {
+  font-size: 0vw;
+}
+.wrapper section article {
+  position: relative;
+}
+.wrapper section article .anchor {
+  position: absolute;
+  left: 0vw;
+  top: -13.88888889vw;
+  right: auto;
+  bottom: auto;
+  display: block;
+}
+.wrapper section article .notice-open {
+  width: 23.05555556vw;
+  height: 7.77777778vw;
+  position: absolute;
+  left: 37.5vw;
+  bottom: 8.19444444vw;
+  right: auto;
+  top: auto;
+  transform: rotateX(180deg);
+}
+.wrapper section article .notice-open.nt1 {
+  background-image: url('../images/mo/ico-arr1.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.wrapper section article .notice-open.nt2 {
+  background-image: url('../images/mo/ico-arr2.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.wrapper section article .notice-open.nt3 {
+  background-image: url('../images/mo/ico-arr3.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.wrapper section article .notice-open.open {
+  transform: rotateX(0deg);
+}
+.wrapper section article .notice {
+  display: none;
+}
+.wrapper section article .notice.open {
+  display: block;
+}
+.wrapper section article .event-container__btn {
+  width: 41.66666667vw;
+  height: 11.11111111vw;
+  position: absolute;
+  left: 29.16666667vw;
+  bottom: 0vw;
+  right: auto;
+  top: auto;
+}
+.wrapper section article .event-container__btn button {
+  width: 100%;
+  height: 100%;
+}
+.wrapper section article .evt-cnt {
+  position: relative;
+}
+.wrapper section article.tab-wrap {
+  z-index: 2;
+}
+.wrapper section article.tab-wrap .tab {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0vw;
+  top: 0vw;
+  right: auto;
+  bottom: auto;
+  display: flex;
+}
+.wrapper section article.tab-wrap .tab .evt-btn {
+  width: 100%;
+}
+.wrapper section article.tab-wrap .tab .evt-btn.btn1 {
+  width: 31.66666667vw;
+}
+.wrapper section article.tab-wrap .tab .evt-btn.btn2 {
+  width: 28.88888889vw;
+}
+.wrapper section article.tab-wrap .tab .evt-btn.btn3 {
+  width: 39.44444444vw;
+}
+.wrapper section article.evt1 {
+  background-color: #93be3d;
+}
+.wrapper section article.evt1 .evt-cnt .review-list {
+  width: 77.77777778vw;
+  height: 111.11111111vw;
+  position: absolute;
+  left: 11.11111111vw;
+  top: 59.72222222vw;
+  right: auto;
+  bottom: auto;
+}
+.wrapper section article.evt1 .evt-cnt .review-list li {
+  padding: 5px 0!important;
+}
+.wrapper section article.evt1 .evt-cnt .review-list li .list-div {
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+  width: 100% !important;
+}
+.wrapper section article.evt1 .evt-cnt .review-list li .list-div .review-con {
+  margin-left: 0vw !important;
+  float: none!important;
+  width: 65% !important;
+  padding-bottom: 0vw !important;
+}
+.wrapper section article.evt1 .evt-cnt .review-list li .list-div .review-con .review-text a p {
+  -webkit-line-clamp: 2!important;
+  text-align: left !important;
+}
+.wrapper section article.evt1 .evt-cnt .review-list li .list-div .review-con .review-util {
+  display: none !important;
+}
+.wrapper section article.evt1 .evt-cnt .review-list li .review-writerInfo {
+  right: 0vw !important;
+  position: relative !important;
+  width: auto!important;
+  display: inline-block !important;
+  margin-bottom: 0vw !important;
+}
+.wrapper section article.evt1 .evt-cnt .review-list li .review-writerInfo:after {
+  display: none !important;
+}
+.wrapper section article.evt1 .evt-cnt .review-list li .review-writerInfo span {
+  display: block !important;
+  color: #000 !important;
+}
+.wrapper section article.evt1 .evt-cnt .review-list li .review-writerInfo span:before {
+  display: none !important;
+}
+.wrapper section article.evt1 .evt-cnt .review-list li .review-writerInfo span:last-child {
+  font-weight: 700 !important;
+  padding-right: 0vw !important;
+  margin-top: 0.69444444vw !important;
+  margin-right: 0vw !important;
+  margin-bottom: 0vw !important;
+  margin-left: 0vw !important;
+  padding: 0vw !important;
+}
+.wrapper section article.evt1 .evt-cnt .event-container__btn {
+  top: 170.83333333vw;
+}
+.wrapper section article.evt2 .detail-btn {
+  width: 19.44444444vw;
+  height: 6.94444444vw;
+  position: absolute;
+  left: 45.97222222vw;
+  top: 130.69444444vw;
+  right: auto;
+  bottom: auto;
+}
+.wrapper section article.evt3 .clipboard__btn {
+  font-size: 0vw;
+  width: 29.16666667vw;
+  height: 5.55555556vw;
+  position: absolute;
+  left: 11.11111111vw;
+  bottom: 103.05555556vw;
+  right: auto;
+  top: auto;
+}
+.wrapper .evt-pop {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  left: 0vw;
+  top: 0vw;
+  right: auto;
+  bottom: auto;
+  z-index: 10;
+  display: none;
+}
+.wrapper .evt-pop .dim {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0vw;
+  top: 0vw;
+  right: auto;
+  bottom: auto;
+  background-color: #000;
+  opacity: 0.5;
+}
+.wrapper .evt-pop .evt-pop-inner {
+  width: 100%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  right: auto;
+  bottom: auto;
+  transform: translate(-50%, -50%);
+}
+.wrapper .evt-pop .evt-pop-inner img {
+  width: 88.88888889vw;
+  height: 52.77777778vw;
+  margin-left: auto;
+  margin-right: auto;
+}
+.wrapper .evt-pop .evt-pop-inner img.mo {
+  display: block;
+}
+.wrapper .evt-pop .evt-pop-inner img.web {
+  display: none;
+}
+.wrapper .evt-pop.open {
+  display: block;
+}
+/*# sourceMappingURL=style-mo.css.map */

@@ -39,7 +39,7 @@
     background: url('../images/pc/dv-kv.png') center top no-repeat;
   }
   .wrapper section article.art1 {
-    height: 959px;
+    height: 1349px;
     background: url('../images/pc/dv-art1.png') center top no-repeat;
     padding-top: 606px;
     box-sizing: border-box;
@@ -48,17 +48,21 @@
     display: flex;
     justify-content: space-between;
     width: 1439px;
-    height: 353px;
+    height: auto;
     margin-left: auto;
     margin-right: auto;
     flex-direction: row-reverse;
   }
   .wrapper section article.art1 .art-inner .store-wrap {
+    height: 613px;
     margin-bottom: 0px;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
   }
   .wrapper section article.art1 .art-inner .store-wrap .store-info {
     width: 441px;
-    height: 353px;
+    height: auto;
   }
   .wrapper section article.art1 .art-inner .store-wrap .store-info ul li {
     text-align: left;
@@ -78,7 +82,7 @@
     line-height: 38px;
     font-weight: 300;
     color: #fff;
-    letter-spacing: -0.03em;
+    letter-spacing: -0.035em;
   }
   .wrapper section article.art1 .art-inner .store-wrap .store-info ul li div p span {
     font-family: 'SamsungSharpSans', sans-serif;
@@ -90,34 +94,39 @@
     font-size: 30px;
     line-height: 44px;
     font-weight: 600;
+    margin-bottom: 5px;
   }
   .wrapper section article.art1 .art-inner .store-wrap .store-info ul li div.nm {
     width: 100%;
-    padding-top: 80px;
+    padding-top: 0px;
   }
   .wrapper section article.art1 .art-inner .store-wrap .store-info ul li div.operating {
     width: 100%;
   }
   .wrapper section article.art1 .art-inner .store-tab {
     width: 916px;
-    height: 483px;
+    height: 743px;
     justify-content: space-between;
     display: flex;
     flex-wrap: wrap;
     align-content: space-between;
   }
   .wrapper section article.art1 .art-inner .store-tab .dv-tab {
-    font-size: 30px;
+    font-size: 28px;
     line-height: 93px;
     color: #fff;
-    padding-left: 73px;
+    letter-spacing: -0.035em;
+    font-weight: 300;
+    padding-left: 70px;
     box-sizing: border-box;
     width: 440px;
     height: 93px;
     text-align: left;
+    background-color: #000;
     border: 2px solid #3b3b3b;
     position: relative;
     cursor: pointer;
+    margin: 0px;
     z-index: 1;
   }
   .wrapper section article.art1 .art-inner .store-tab .dv-tab:after {
@@ -140,7 +149,11 @@
   .wrapper section article.art1[data-store="4"] .store-wrap .store-info ul li.st4,
   .wrapper section article.art1[data-store="5"] .store-wrap .store-info ul li.st5,
   .wrapper section article.art1[data-store="6"] .store-wrap .store-info ul li.st6,
-  .wrapper section article.art1[data-store="7"] .store-wrap .store-info ul li.st7 {
+  .wrapper section article.art1[data-store="7"] .store-wrap .store-info ul li.st7,
+  .wrapper section article.art1[data-store="8"] .store-wrap .store-info ul li.st8,
+  .wrapper section article.art1[data-store="9"] .store-wrap .store-info ul li.st9,
+  .wrapper section article.art1[data-store="10"] .store-wrap .store-info ul li.st10,
+  .wrapper section article.art1[data-store="11"] .store-wrap .store-info ul li.st11 {
     display: block;
   }
   .wrapper section article.art1[data-store="1"] .store-tab [data-tab="1"],
@@ -149,7 +162,11 @@
   .wrapper section article.art1[data-store="4"] .store-tab [data-tab="4"],
   .wrapper section article.art1[data-store="5"] .store-tab [data-tab="5"],
   .wrapper section article.art1[data-store="6"] .store-tab [data-tab="6"],
-  .wrapper section article.art1[data-store="7"] .store-tab [data-tab="7"] {
+  .wrapper section article.art1[data-store="7"] .store-tab [data-tab="7"],
+  .wrapper section article.art1[data-store="8"] .store-tab [data-tab="8"],
+  .wrapper section article.art1[data-store="9"] .store-tab [data-tab="9"],
+  .wrapper section article.art1[data-store="10"] .store-tab [data-tab="10"],
+  .wrapper section article.art1[data-store="11"] .store-tab [data-tab="11"] {
     border: 2px solid #fff;
   }
   .wrapper section article.art1[data-store="1"] .store-tab [data-tab="1"]:after,
@@ -158,7 +175,11 @@
   .wrapper section article.art1[data-store="4"] .store-tab [data-tab="4"]:after,
   .wrapper section article.art1[data-store="5"] .store-tab [data-tab="5"]:after,
   .wrapper section article.art1[data-store="6"] .store-tab [data-tab="6"]:after,
-  .wrapper section article.art1[data-store="7"] .store-tab [data-tab="7"]:after {
+  .wrapper section article.art1[data-store="7"] .store-tab [data-tab="7"]:after,
+  .wrapper section article.art1[data-store="8"] .store-tab [data-tab="8"]:after,
+  .wrapper section article.art1[data-store="9"] .store-tab [data-tab="9"]:after,
+  .wrapper section article.art1[data-store="10"] .store-tab [data-tab="10"]:after,
+  .wrapper section article.art1[data-store="11"] .store-tab [data-tab="11"]:after {
     background-image: url('../images/pc/dv-loc-on.png');
     background-repeat: no-repeat;
     background-size: contain;

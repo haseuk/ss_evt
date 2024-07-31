@@ -45,7 +45,7 @@
 }
 .wrapper section article.art1 {
   width: 100vw;
-  height: 114.30555556vw;
+  height: 252.5vw;
   background-image: url('../images/mo/dv-art1.png');
   background-repeat: no-repeat;
   background-size: contain;
@@ -66,10 +66,10 @@
   display: none;
 }
 .wrapper section article.art1 .store-wrap .store-info ul li div {
-  padding-top: 5.83333333vw;
+  padding-top: 4.44444444vw;
   padding-right: 0vw;
   padding-bottom: 0vw;
-  padding-left: 5.55555556vw;
+  padding-left: 4.16666667vw;
   display: inline-block;
   vertical-align: top;
   box-sizing: border-box;
@@ -100,27 +100,27 @@
 }
 .wrapper section article.art1 .store-tab {
   width: 88.88888889vw;
-  height: 30.55555556vw;
-  justify-content: space-between;
-  display: flex;
-  flex-wrap: wrap;
   margin-left: auto;
   margin-right: auto;
-  align-content: space-between;
 }
 .wrapper section article.art1 .store-tab .dv-tab {
-  font-size: 3.33333333vw;
-  line-height: 9.44444444vw;
+  font-size: 3.88888889vw;
+  line-height: 12.91666667vw;
   color: #fff;
-  padding-left: 6.11111111vw;
+  letter-spacing: -0.035em;
+  padding-left: 9.72222222vw;
+  font-weight: 300;
   box-sizing: border-box;
-  width: 42.77777778vw;
-  height: 9.44444444vw;
+  width: 100%;
+  height: 12.91666667vw;
   text-align: left;
+  background-color: #000;
   border: 0.27777778vw solid #3b3b3b;
   position: relative;
   cursor: pointer;
   z-index: 1;
+  margin-bottom: 2.77777778vw;
+  display: block;
 }
 .wrapper section article.art1 .store-tab .dv-tab:after {
   content: '';
@@ -134,7 +134,7 @@
   bottom: auto;
   background-image: url('../images/mo/dv-loc-off.png');
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
 }
 .wrapper section article.art1[data-store="1"] .store-wrap .store-info ul li.st1,
 .wrapper section article.art1[data-store="2"] .store-wrap .store-info ul li.st2,
@@ -142,7 +142,11 @@
 .wrapper section article.art1[data-store="4"] .store-wrap .store-info ul li.st4,
 .wrapper section article.art1[data-store="5"] .store-wrap .store-info ul li.st5,
 .wrapper section article.art1[data-store="6"] .store-wrap .store-info ul li.st6,
-.wrapper section article.art1[data-store="7"] .store-wrap .store-info ul li.st7 {
+.wrapper section article.art1[data-store="7"] .store-wrap .store-info ul li.st7,
+.wrapper section article.art1[data-store="8"] .store-wrap .store-info ul li.st8,
+.wrapper section article.art1[data-store="9"] .store-wrap .store-info ul li.st9,
+.wrapper section article.art1[data-store="10"] .store-wrap .store-info ul li.st10,
+.wrapper section article.art1[data-store="11"] .store-wrap .store-info ul li.st11 {
   display: block;
 }
 .wrapper section article.art1[data-store="1"] .store-tab [data-tab="1"],
@@ -151,7 +155,11 @@
 .wrapper section article.art1[data-store="4"] .store-tab [data-tab="4"],
 .wrapper section article.art1[data-store="5"] .store-tab [data-tab="5"],
 .wrapper section article.art1[data-store="6"] .store-tab [data-tab="6"],
-.wrapper section article.art1[data-store="7"] .store-tab [data-tab="7"] {
+.wrapper section article.art1[data-store="7"] .store-tab [data-tab="7"],
+.wrapper section article.art1[data-store="8"] .store-tab [data-tab="8"],
+.wrapper section article.art1[data-store="9"] .store-tab [data-tab="9"],
+.wrapper section article.art1[data-store="10"] .store-tab [data-tab="10"],
+.wrapper section article.art1[data-store="11"] .store-tab [data-tab="11"] {
   border: 0.27777778vw solid #fff;
 }
 .wrapper section article.art1[data-store="1"] .store-tab [data-tab="1"]:after,
@@ -160,10 +168,14 @@
 .wrapper section article.art1[data-store="4"] .store-tab [data-tab="4"]:after,
 .wrapper section article.art1[data-store="5"] .store-tab [data-tab="5"]:after,
 .wrapper section article.art1[data-store="6"] .store-tab [data-tab="6"]:after,
-.wrapper section article.art1[data-store="7"] .store-tab [data-tab="7"]:after {
+.wrapper section article.art1[data-store="7"] .store-tab [data-tab="7"]:after,
+.wrapper section article.art1[data-store="8"] .store-tab [data-tab="8"]:after,
+.wrapper section article.art1[data-store="9"] .store-tab [data-tab="9"]:after,
+.wrapper section article.art1[data-store="10"] .store-tab [data-tab="10"]:after,
+.wrapper section article.art1[data-store="11"] .store-tab [data-tab="11"]:after {
   background-image: url('../images/mo/dv-loc-on.png');
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
 }
 .wrapper section article.art2 {
   width: 100vw;

@@ -14,26 +14,26 @@
     section {
       article { width: auto!important;
         &.top { .h(800); background: url('../images/pc/dv-kv.png')center top no-repeat; }
-        &.art1 { .h(959); background: url('../images/pc/dv-art1.png')center top no-repeat; .pt(606); .-box;
-          .art-inner { .flex; .space-between; .wh(1439,353); .mh-c; flex-direction: row-reverse;
-            .store-wrap { .mb(0);
-              .store-info { .wh(441,353);
+        &.art1 { .h(1349); background: url('../images/pc/dv-art1.png')center top no-repeat; .pt(606); .-box;
+          .art-inner { .flex; .space-between; .w(1439); height:auto; .mh-c; flex-direction: row-reverse;
+            .store-wrap { .h(613); .mb(0); .flex-middle;
+              .store-info { .w(441); height: auto;
                 ul {
                   li { .tl; .hide;
                     div { .p(42,0,0,40); .ib; .vat; .-box;
-                      p { .fs(26,38); .light; .c(#fff); .ls(-0.03em);
+                      p { .fs(26,38); .light; .c(#fff); .ls(-0.035em);
                         span { .sharp; }
-                        &.tit { .fs(30,44); .semi-bold; }
+                        &.tit { .fs(30,44); .semi-bold; .mb(5); }
                       }
-                      &.nm { .wf; .pt(80); }
+                      &.nm { .wf; .pt(0); }
                       &.operating { .wf; }
                     }
                   }
                 }
               }
             }
-            .store-tab { .wh(916,483); .flex; .space-between; .flex-wrap; align-content: space-between;
-              .dv-tab { .fs(30,93); .c(#fff); .pl(73); .-box; .wh(440,93); .tl; .-a(#3b3b3b,2); .rel; .pointer; .z(1);
+            .store-tab { .wh(916,743); .flex; .space-between; .flex-wrap; align-content: space-between;
+              .dv-tab { .fs(28,93); .c(#fff);  .ls(-0.035em); .light; .pl(70); .-box; .wh(440,93); .tl; .bgc(#000); .-a(#3b3b3b,2); .rel; .pointer; .m(0); .z(1);
                 &:after { .cnt; .f; .abs; .lt; .contain('../images/pc/dv-loc-off.png'); }
               }
             }
@@ -44,14 +44,22 @@
           &[data-store="4"] .store-wrap .store-info ul li.st4,
           &[data-store="5"] .store-wrap .store-info ul li.st5,
           &[data-store="6"] .store-wrap .store-info ul li.st6,
-          &[data-store="7"] .store-wrap .store-info ul li.st7 { .block; }
+          &[data-store="7"] .store-wrap .store-info ul li.st7,
+          &[data-store="8"] .store-wrap .store-info ul li.st8,
+          &[data-store="9"] .store-wrap .store-info ul li.st9,
+          &[data-store="10"] .store-wrap .store-info ul li.st10,
+          &[data-store="11"] .store-wrap .store-info ul li.st11 { .block; }
           &[data-store="1"] .store-tab [data-tab="1"],
           &[data-store="2"] .store-tab [data-tab="2"],
           &[data-store="3"] .store-tab [data-tab="3"],
           &[data-store="4"] .store-tab [data-tab="4"],
           &[data-store="5"] .store-tab [data-tab="5"],
           &[data-store="6"] .store-tab [data-tab="6"],
-          &[data-store="7"] .store-tab [data-tab="7"] { .-a(#fff,2);
+          &[data-store="7"] .store-tab [data-tab="7"],
+          &[data-store="8"] .store-tab [data-tab="8"],
+          &[data-store="9"] .store-tab [data-tab="9"],
+          &[data-store="10"] .store-tab [data-tab="10"],
+          &[data-store="11"] .store-tab [data-tab="11"] { .-a(#fff,2);
             &:after { .contain('../images/pc/dv-loc-on.png'); }
           }
         }

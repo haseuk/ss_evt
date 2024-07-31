@@ -40,7 +40,7 @@
   }
   .wrapper section article.art1 {
     width: 100vw;
-    height: 49.94791667vw;
+    height: 70.26041667vw;
     background-image: url('../images/pc/dv-art1.png');
     background-repeat: no-repeat;
     background-size: contain;
@@ -51,17 +51,20 @@
     display: flex;
     justify-content: space-between;
     width: 74.94791667vw;
-    height: 18.38541667vw;
     margin-left: auto;
     margin-right: auto;
     flex-direction: row-reverse;
   }
   .wrapper section article.art1 .art-inner .store-wrap {
+    height: 31.92708333vw;
     margin-bottom: 0vw;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
   }
   .wrapper section article.art1 .art-inner .store-wrap .store-info {
     width: 22.96875vw;
-    height: 18.38541667vw;
+    height: auto;
   }
   .wrapper section article.art1 .art-inner .store-wrap .store-info ul li {
     text-align: left;
@@ -81,7 +84,7 @@
     line-height: 1.97916667vw;
     font-weight: 300;
     color: #fff;
-    letter-spacing: -0.03em;
+    letter-spacing: -0.035em;
   }
   .wrapper section article.art1 .art-inner .store-wrap .store-info ul li div p span {
     font-family: 'SamsungSharpSans', sans-serif;
@@ -93,34 +96,39 @@
     font-size: 1.5625vw;
     line-height: 2.29166667vw;
     font-weight: 600;
+    margin-bottom: 0.26041667vw;
   }
   .wrapper section article.art1 .art-inner .store-wrap .store-info ul li div.nm {
     width: 100%;
-    padding-top: 2.08333333vw;
+    padding-top: 0vw;
   }
   .wrapper section article.art1 .art-inner .store-wrap .store-info ul li div.operating {
     width: 100%;
   }
   .wrapper section article.art1 .art-inner .store-tab {
     width: 47.70833333vw;
-    height: 18.38541667vw;
+    height: 38.69791667vw;
     justify-content: space-between;
     display: flex;
     flex-wrap: wrap;
     align-content: space-between;
   }
   .wrapper section article.art1 .art-inner .store-tab .dv-tab {
-    font-size: 1.5625vw;
+    font-size: 1.45833333vw;
     line-height: 4.84375vw;
     color: #fff;
-    padding-left: 3.80208333vw;
+    letter-spacing: -0.035em;
+    font-weight: 300;
+    padding-left: 3.64583333vw;
     box-sizing: border-box;
     width: 22.91666667vw;
     height: 4.84375vw;
     text-align: left;
+    background-color: #000;
     border: 0.10416667vw solid #3b3b3b;
     position: relative;
     cursor: pointer;
+    margin: 0vw;
     z-index: 1;
   }
   .wrapper section article.art1 .art-inner .store-tab .dv-tab:after {
@@ -143,7 +151,11 @@
   .wrapper section article.art1[data-store="4"] .store-wrap .store-info ul li.st4,
   .wrapper section article.art1[data-store="5"] .store-wrap .store-info ul li.st5,
   .wrapper section article.art1[data-store="6"] .store-wrap .store-info ul li.st6,
-  .wrapper section article.art1[data-store="7"] .store-wrap .store-info ul li.st7 {
+  .wrapper section article.art1[data-store="7"] .store-wrap .store-info ul li.st7,
+  .wrapper section article.art1[data-store="8"] .store-wrap .store-info ul li.st8,
+  .wrapper section article.art1[data-store="9"] .store-wrap .store-info ul li.st9,
+  .wrapper section article.art1[data-store="10"] .store-wrap .store-info ul li.st10,
+  .wrapper section article.art1[data-store="11"] .store-wrap .store-info ul li.st11 {
     display: block;
   }
   .wrapper section article.art1[data-store="1"] .store-tab [data-tab="1"],
@@ -152,7 +164,11 @@
   .wrapper section article.art1[data-store="4"] .store-tab [data-tab="4"],
   .wrapper section article.art1[data-store="5"] .store-tab [data-tab="5"],
   .wrapper section article.art1[data-store="6"] .store-tab [data-tab="6"],
-  .wrapper section article.art1[data-store="7"] .store-tab [data-tab="7"] {
+  .wrapper section article.art1[data-store="7"] .store-tab [data-tab="7"],
+  .wrapper section article.art1[data-store="8"] .store-tab [data-tab="8"],
+  .wrapper section article.art1[data-store="9"] .store-tab [data-tab="9"],
+  .wrapper section article.art1[data-store="10"] .store-tab [data-tab="10"],
+  .wrapper section article.art1[data-store="11"] .store-tab [data-tab="11"] {
     border: 0.10416667vw solid #fff;
   }
   .wrapper section article.art1[data-store="1"] .store-tab [data-tab="1"]:after,
@@ -161,7 +177,11 @@
   .wrapper section article.art1[data-store="4"] .store-tab [data-tab="4"]:after,
   .wrapper section article.art1[data-store="5"] .store-tab [data-tab="5"]:after,
   .wrapper section article.art1[data-store="6"] .store-tab [data-tab="6"]:after,
-  .wrapper section article.art1[data-store="7"] .store-tab [data-tab="7"]:after {
+  .wrapper section article.art1[data-store="7"] .store-tab [data-tab="7"]:after,
+  .wrapper section article.art1[data-store="8"] .store-tab [data-tab="8"]:after,
+  .wrapper section article.art1[data-store="9"] .store-tab [data-tab="9"]:after,
+  .wrapper section article.art1[data-store="10"] .store-tab [data-tab="10"]:after,
+  .wrapper section article.art1[data-store="11"] .store-tab [data-tab="11"]:after {
     background-image: url('../images/pc/dv-loc-on.png');
     background-repeat: no-repeat;
     background-size: contain;

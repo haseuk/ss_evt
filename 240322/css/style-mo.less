@@ -15,12 +15,12 @@
   section { .tc;
     article { .rel;
       &.top { .wh(720,727); .contain('../images/mo/dv-kv.png'); }
-      &.art1 { .wh(720,823); .contain('../images/mo/dv-art1.png'); .pt(344); .-box;
+      &.art1 { .wh(720,1818); .contain('../images/mo/dv-art1.png'); .pt(344); .-box;
         .store-wrap { .mb(45);
           .store-info { .wh(640,206); .mh-c;
             ul {
               li { .tl; .hide;
-                div { .p(42,0,0,40); .ib; .vat; .-box;
+                div { .p(32,0,0,30); .ib; .vat; .-box;
                   p { .fs(26,38); .light; .c(#fff); .ls(-0.03em);
                     span { .sharp; }
                     &.tit { .fs(30,44); .semi-bold; }
@@ -32,9 +32,9 @@
             }
           }
         }
-        .store-tab { .wh(640,220); .flex; .space-between; .flex-wrap; .mh-c; align-content: space-between;
-          .dv-tab { .fs(24,68); .c(#fff); .pl(44); .-box; .wh(308,68); .tl; .-a(#3b3b3b,2); .rel; .pointer; .z(1);
-            &:after { .cnt; .f; .abs; .lt; .contain('../images/mo/dv-loc-off.png'); }
+        .store-tab { .w(640); .mh-c;
+          .dv-tab { .fs(28,93); .c(#fff); .ls(-0.035em); .pl(70); .light; .-box; .wh(100%,93); .tl; .bgc(#000); .-a(#3b3b3b,2); .rel; .pointer; .z(1); .mb(20); .block;
+            &:after { .cnt; .f; .abs; .lt; .cover('../images/mo/dv-loc-off.png'); }
           }
         }
         &[data-store="1"] .store-wrap .store-info ul li.st1,
@@ -43,15 +43,23 @@
         &[data-store="4"] .store-wrap .store-info ul li.st4,
         &[data-store="5"] .store-wrap .store-info ul li.st5,
         &[data-store="6"] .store-wrap .store-info ul li.st6,
-        &[data-store="7"] .store-wrap .store-info ul li.st7 { .block; }
+        &[data-store="7"] .store-wrap .store-info ul li.st7,
+        &[data-store="8"] .store-wrap .store-info ul li.st8,
+        &[data-store="9"] .store-wrap .store-info ul li.st9,
+        &[data-store="10"] .store-wrap .store-info ul li.st10,
+        &[data-store="11"] .store-wrap .store-info ul li.st11 { .block; }
         &[data-store="1"] .store-tab [data-tab="1"],
         &[data-store="2"] .store-tab [data-tab="2"],
         &[data-store="3"] .store-tab [data-tab="3"],
         &[data-store="4"] .store-tab [data-tab="4"],
         &[data-store="5"] .store-tab [data-tab="5"],
         &[data-store="6"] .store-tab [data-tab="6"],
-        &[data-store="7"] .store-tab [data-tab="7"] { .-a(#fff,2);
-          &:after { .contain('../images/mo/dv-loc-on.png'); }
+        &[data-store="7"] .store-tab [data-tab="7"],
+        &[data-store="8"] .store-tab [data-tab="8"],
+        &[data-store="9"] .store-tab [data-tab="9"],
+        &[data-store="10"] .store-tab [data-tab="10"],
+        &[data-store="11"] .store-tab [data-tab="11"] { .-a(#fff,2);
+          &:after { .cover('../images/mo/dv-loc-on.png'); }
         }
       }
       &.art2 { .wh(720,2856); .contain('../images/mo/dv-art2.png'); }
